@@ -3,7 +3,7 @@ const projectsTitle = projects.querySelector('.title');
 const clock = projects.querySelector('.clock');
 const mockUp = projects.querySelector('.mock-up');
 const hand = mockUp.querySelector('img:nth-child(2)');
-console.log(hand);
+
 // let checkPosition = function() {
 //   for (let i = 0; i < projectsTitle.length; i++) {
 //     if(winH > posFromTop) {
@@ -29,13 +29,13 @@ function checkPosition() {
   }
 }
 
-window.addEventListener('scroll', () => {
-  let scroll = window.scrollY;
-  console.log(scroll);
-  let winH = window.innerHeight;
-  let posFromTop = hand.getBoundingClientRect().top;
-  console.log(winH, posFromTop);
+// window.addEventListener('scroll', () => {
+//   let scroll = window.scrollY;
+//   console.log(scroll);
+//   let winH = window.innerHeight;
+//   let posFromTop = hand.getBoundingClientRect().top;
+//   console.log(winH, posFromTop);
 
-  hand.style.transform = `translate3d(0px, ${scroll}, 0px)`;
-  // hand.style.opacity = `${scroll}`;
-});
+//   hand.style.transform = translate3d(0px, ${scroll}, 0px)';
+//   hand.style.opacity = `${scroll}`;
+// });

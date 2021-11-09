@@ -33,7 +33,8 @@ body {
 .landing-page .main {
   width: 1015px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-page .header {
@@ -65,10 +66,25 @@ body {
 }
 
 .landing-page .waving-hand {
-  width: 180px;
-  height: 180px;
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 50px;
+  animation-name: shaking-hand;
+  animation-duration: 0.8s;
+  animation-iteration-count: 10;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
 }
 
+@keyframes shaking-hand {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(50deg);
+  }
+}
 .about-me {
   display: flex;
   justify-content: center;
@@ -139,94 +155,4 @@ body {
   font-size: 22px;
   font-weight: 600;
   color: #000;
-}
-
-.projects {
-  height: 100vh;
-  position: relative;
-}
-
-.projects .header {
-  font-family: bilo, sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: -0.01em;
-  position: absolute;
-  top: 50px;
-  left: 70px;
-}
-
-.projects .title-area {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-top: 120px;
-  box-sizing: border-box;
-}
-
-.projects .title {
-  font-family: bilo, sans-serif;
-  font-size: 100px;
-  font-weight: 900;
-  /* position: fixed;
-  top: 0;
-  left: 0; */
-}
-
-.fade-in {
-  font-family: bilo, sans-serif;
-  font-size: 100px;
-  font-weight: 900;
-  animation: fade-in 1.4s;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: scale(0.7, 0.7);
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.projects .clock {
-  width: 30px;
-  height: 30px;
-}
-
-.active {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 10px;
-  animation: hello 1.4s;
-}
-
-@keyframes hello {
-  from {
-    opacity: 0;
-    transform: scale(0.7, 0.7);
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.projects .mock-up {
-  display: flex;
-  justify-content: center;
-}
-
-.projects .mock-up img:nth-child(1) {
-  width: 346px;
-  height: 436px;
-  margin-top: 52px;
-}
-
-.projects .mock-up img:nth-child(2) {
-  margin-top: 58px;
-  width: 408px;
-  height: 446px;
-  /* transform: rotate(-9.02deg); */
-  transition: 1s;
 }

@@ -21,12 +21,17 @@
     />
     <link rel="stylesheet" href="https://use.typekit.net/xoa5pcx.css" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/projects.css" />
     <script src="/src/main.js" defer></script>
     <title>portfolio</title>
   </head>
   <body>
+    <!-- 랜딩페이지 -->
     <div class="landing-page">
+      <!-- 헤더 -->
       <div class="header">Hyunjoo's web portfolio</div>
+
+      <!-- 메인 영역 -->
       <div class="main">
         <div class="main-text">
           <h1 class="title">Welcome Here</h1>
@@ -37,6 +42,8 @@
         <img class="waving-hand" src="img/waving-hand.png" alt="waving-hand" />
       </div>
     </div>
+
+    <!-- about me -->
     <div class="about-me">
       <div class="main">
         <div class="main-text">
@@ -58,15 +65,51 @@
         <img class="memoji" src="img/memoji.PNG" alt="memoji" />
       </div>
     </div>
+
+    <!-- project -->
     <div class="projects">
       <div class="header">🎨 This is My Project : timer</div>
       <div class="title-area">
         <div class="title">Timer</div>
-        <img class="clock" src="img/clock.png" alt="clock" />
+        <img class="clock" src="img/clock.svg" alt="clock" />
       </div>
       <div class="mock-up">
-        <img src="img/iphone mockup1.png" alt="mockup" />
-        <img src="img/iphone mockup2.png" alt="mockup2" />
+        <img src="img/iphone-mockup.svg" alt="iphone mock up" />
+        <img src="img/iphone-mockup2.svg" alt="iphone mock up" />
+      </div>
+      <img class="imac" src="img/iMac-mockup.svg" alt="iMac mock up" />
+      <div class="explain">
+        <div class="left mode">
+          <div class="light-mode"></div>
+          <div class="dark-mode"></div>
+        </div>
+        <div class="right">
+          <div class="line"></div>
+          <ul class="icon-list">
+            <li class="icon">
+              <img src="./img/icon/switch.svg" alt="" />
+              <span>light mode / dark mode</span>
+            </li>
+            <li class="icon">
+              <img src="./img/icon/reset.svg" alt="" />
+              <span>reset button</span>
+            </li>
+            <li class="icon">
+              <img src="./img/icon/timer-setting.svg" alt="" />
+              <span>timer setting value</span>
+            </li>
+          </ul>
+          <div class="line"></div>
+          <span
+            >타이머의 시간을 실시간으로 저장하여<br />
+            새로고침하거나 재부팅했을 때 시간유지</span
+          >
+          <div class="line"></div>
+          <span
+            >Start / Pause button<br />
+            Space bar<span>로 컨트롤가능</span></span
+          >
+        </div>
       </div>
     </div>
   </body>
