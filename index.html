@@ -23,94 +23,134 @@
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="src/projects.css" />
     <script src="/src/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <title>portfolio</title>
   </head>
   <body>
-    <!-- 랜딩페이지 -->
-    <div class="landing-page">
-      <!-- 헤더 -->
-      <div class="header">Hyunjoo's web portfolio</div>
-
-      <!-- 메인 영역 -->
-      <div class="main">
-        <div class="main-text">
-          <h1 class="title">Welcome Here</h1>
-          <p class="sub-title">
-            I'm <span class="name">Hyunjoo Seo</span>. Web publisher
-          </p>
-        </div>
-        <img class="waving-hand" src="img/waving-hand.png" alt="waving-hand" />
+    <div class="container">
+      <!-- 랜딩페이지 -->
+      <div class="landing-page">
+        <!-- 헤더 -->
+        <header class="header">Hyunjoo's web portfolio</header>
+        <!-- 메인 영역 -->
+        <main>
+          <!-- 왼쪽 텍스트섹션 -->
+          <section class="main-text" >
+            <h1 class="test">HELLO GOOGLE FONT google font</h1>
+            <h1 class="test1">HELLO GOOGLE FONT google font</h1>
+            <h1 class="test2">HELLO GOOGLE FONT google font</h1>
+            <h1 class="test3">HELLO GOOGLE FONT google font</h1>
+            <h1 class="title">Welcome Here</h1>
+            <h2 class="sub-title">
+              I'm <span class="name">Hyunjoo Seo</span>. Web publisher
+            </h2>
+          </section>
+          <section>
+            <img
+              class="waving-hand"
+              src="img/waving-hand.png"
+              alt="waving-hand"
+            />
+          </section>
+        </main>
       </div>
-    </div>
-
-    <!-- about me -->
-    <div class="about-me">
-      <div class="main">
-        <div class="main-text">
-          <h2 class="title">What I Did</h2>
-          <ul class="career">
-            <li class="list">🌮 온더보더 멕시칸 레스토랑에서 바텐더, 서버</li>
-            <li class="list">☕️ 그라노 드 카페에서 바리스타, 로스터로 근무</li>
-            <li class="list">
-              👩🏻‍💻 아이올리 패션회사에서 간단한 웹페이지 제작, 외주업무
-            </li>
-            <li class="list">💍 악세사리 스토어 운영</li>
-            <li class="list">📹 유튜브와 블로그에 기록하는 취미</li>
-          </ul>
-          <div class="info">
-            <a href="mailto:hakuseo@gmail.com">hakuseo@gmail.com</a>
-            <button class="info-btn">Resume</button>
+      <!-- about me -->
+      <div class="about-me">
+        <main>
+          <section class="main-text">
+            <h2 class="title ">What I Did</h2>
+            <ul class="career">
+              <li class="list">🌮 온더보더 멕시칸 레스토랑에서 바텐더, 서버</li>
+              <li class="list">
+                ☕️ 그라노 드 카페에서 바리스타, 로스터로 근무
+              </li>
+              <li class="list">
+                👩🏻‍💻 아이올리 패션회사에서 간단한 웹페이지 제작, 외주업무
+              </li>
+              <li class="list">💍 악세사리 스토어 운영</li>
+              <li class="list">📹 유튜브와 블로그에 기록하는 취미</li>
+            </ul>
+            <div class="info">
+              <a href="mailto:hakuseo@gmail.com">hakuseo@gmail.com</a>
+              <button class="info-btn">Resume</button>
+            </div>
+          </section>
+          <section>
+            <img
+              class="memoji "
+              src="img/memoji.PNG"
+              alt="memoji"
+            />
+          </section>
+        </main>
+      </div>
+      <!-- project -->
+      <div class="projects">
+        <div class="header" >🎨 This is My Project : timer</div>
+        <section class="title-area">
+          <h2 class="title ">Timer</h2>
+          <img class="clock " src="img/clock.svg" alt="clock" />
+        </section>
+        <section class="iphone-mockup" >
+          <div class="rellax " data-rellax-speed="1">
+            <img
+            class="mockup-light up-on-scroll"
+            src="img/iphone-mockup.svg"
+            alt="iphone mock up"
+          />
+          </div>
+          <div class="rellax" data-rellax-speed="2">
+            <img
+            class="mockup-dark up-on-scroll"
+            src="img/iphone-mockup2.svg"
+            alt="iphone mock up"
+          />
+          </div>
+        </section>
+        <img class="imac " src="img/iMac-mockup.svg" alt="iMac mock up" />
+        <div class="explain">
+          <div class="left mode">
+            <div class="light-mode"></div>
+            <div class="dark-mode"></div>
+          </div>
+          <div class="right">
+            <div class="line"></div>
+            <ul class="icon-list">
+              <li class="icon">
+                <img src="./img/icon/switch.svg" alt="" />
+                <span>light mode / dark mode</span>
+              </li>
+              <li class="icon">
+                <img src="./img/icon/reset.svg" alt="" />
+                <span>reset button</span>
+              </li>
+              <li class="icon">
+                <img src="./img/icon/timer-setting.svg" alt="" />
+                <span>timer setting value</span>
+              </li>
+            </ul>
+            <div class="line"></div>
+            <span
+              >타이머의 시간을 실시간으로 저장하여<br />
+              새로고침하거나 재부팅했을 때 시간유지</span
+            >
+            <div class="line"></div>
+            <span
+              >Start / Pause button<br />
+              Space bar<span>로 컨트롤가능</span></span
+            >
           </div>
         </div>
-        <img class="memoji" src="img/memoji.PNG" alt="memoji" />
+        
+          
+        </div>
+        
       </div>
     </div>
-
-    <!-- project -->
-    <div class="projects">
-      <div class="header">🎨 This is My Project : timer</div>
-      <div class="title-area">
-        <div class="title">Timer</div>
-        <img class="clock" src="img/clock.svg" alt="clock" />
-      </div>
-      <div class="mock-up">
-        <img src="img/iphone-mockup.svg" alt="iphone mock up" />
-        <img src="img/iphone-mockup2.svg" alt="iphone mock up" />
-      </div>
-      <img class="imac" src="img/iMac-mockup.svg" alt="iMac mock up" />
-      <div class="explain">
-        <div class="left mode">
-          <div class="light-mode"></div>
-          <div class="dark-mode"></div>
-        </div>
-        <div class="right">
-          <div class="line"></div>
-          <ul class="icon-list">
-            <li class="icon">
-              <img src="./img/icon/switch.svg" alt="" />
-              <span>light mode / dark mode</span>
-            </li>
-            <li class="icon">
-              <img src="./img/icon/reset.svg" alt="" />
-              <span>reset button</span>
-            </li>
-            <li class="icon">
-              <img src="./img/icon/timer-setting.svg" alt="" />
-              <span>timer setting value</span>
-            </li>
-          </ul>
-          <div class="line"></div>
-          <span
-            >타이머의 시간을 실시간으로 저장하여<br />
-            새로고침하거나 재부팅했을 때 시간유지</span
-          >
-          <div class="line"></div>
-          <span
-            >Start / Pause button<br />
-            Space bar<span>로 컨트롤가능</span></span
-          >
-        </div>
-      </div>
-    </div>
+    <script>
+      
+      var rellax = new Rellax('.rellax', {
+      });
+    </script>
   </body>
 </html>
