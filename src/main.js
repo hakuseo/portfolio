@@ -1,70 +1,71 @@
-const projects = document.querySelector('.projects');
-const projectsTitle = projects.querySelector('.title');
-const clock = projects.querySelector('.clock');
-const mockUp = projects.querySelector('.mock-up');
-const test = document.getElementById('test');
-const testContainer = document.querySelector('.test-container');
+// const project = document.querySelector('.project');
+// const mini = document.querySelector('.mini');
+// const projectContainer = document.querySelector('.projects-container');
 
-// window.addEventListener('scroll', function () {
-//   checkPosition();
-// });
+// const projectBtom = project.getBoundingClientRect().bottom;
+// console.log(projectBtom);
 
-// function checkPosition() {
-//   let winH = window.innerHeight;
-//   let posFromTop = projectsTitle.getBoundingClientRect().top;
+// // window.addEventListener('scroll', () => {
+// //   console.log(projectBtom);
+// //   console.log(window.scrollY);
+// //   if (projectBtom == window.scrollY) {
+// //     // projectContainer.style.display = 'none';
+// //     mini.style.display = 'flex';
+// //   } else if (projectBtom > window.scrollY) {
+// //     mini.style.display = 'none';
+// //   }
+// // });
 
-//   if (winH > posFromTop) {
-//     clock.className = clock.className.replace('clock', 'active');
-//     projectsTitle.className = projectsTitle.className.replace(
-//       'title',
-//       'fade-in',
-//     );
-//   }
-// }
+// const aboutMe = document.querySelector('.about-me');
+// console.log(aboutMe);
 
-// window.addEventListener('scroll', () => {
-//   let scroll = window.scrollY;
-//   const test = document.querySelectorAll('.test');
-//   test.forEach((element) => {
-//     let speed = element.dataset.speed;
-//     element.style.transform = `translateY(${scroll * speed}%)`;
-// let a = element.getAttribute('style');
-// console.log(a);
-// a = a.replace(/[^0-9]/g, '');
-// a = a.substr(0, 3);
-// console.log(a);
-// if(a < 0) {}
+// let scrollY = window.scrollY;
+// let aboutMeTop = aboutMe.getBoundingClientRect().top;
+// let absoluteValue = scrollY + aboutMeTop;
+
+// console.log('winH', winH);
+// console.log('scrollY', scrollY);
+// console.log('aboutMeTop', aboutMeTop);
+// console.log('absoluteValue', absoluteValue);
+
+// let addEventHandlers = function () {
+//   window.addEventListener('scroll', checkPosition);
+//   window.addEventListener('load', checkPosition);
+//   window.addEventListener('resize', () => {
+//     let winH = window.innerHeight;
+//     addEventHandlers();
+//     checkPosition(winH);
 //   });
-// });
+// };
 
-function isElementUnderBottom(item, triggerDiff) {
-  const top = item.getBoundingClientRect().top;
-  const innerHeight = window.innerHeight;
+// let checkPosition = function (winH) {
+//   let aboutMeTop = aboutMe.getBoundingClientRect().top;
 
-  return top > innerHeight + (triggerDiff || 0);
-}
-
-function handleScroll() {
-  const items = document.querySelectorAll('.up-on-scroll');
-  items.forEach((item) => {
-    if (isElementUnderBottom(item, 0)) {
-      item.style.opacity = '0';
-      item.style.transform = 'translateY(200px)';
-    } else {
-      item.style.opacity = '1';
-      item.style.transform = 'translateY(0px)';
-    }
-  });
-}
-
-window.addEventListener('scroll', handleScroll);
-
-// const background = document.querySelector('.landing-page');
-// const backgroundHeight = background.getBoundingClientRect().height;
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY > backgroundHeight) {
-//     background.setAttribute('style', 'background: red');
-//   } else {
-//     background.setAttribute('style', 'background: white');
+//   if (winH > aboutMeTop) {
+//     aboutMe.style.backgroundColor = '#FFF';
 //   }
-// });
+
+//   console.log(winH, aboutMeTop);
+// };
+
+const aboutMe = document.querySelector('.about-me');
+const background = document.querySelector('.background');
+
+window.addEventListener('scroll', checkPosition);
+window.addEventListener('load', checkPosition);
+window.addEventListener('resize', windowHeight);
+
+function windowHeight() {
+  let innerHeight = window.innerHeight;
+  console.log(innerHeight);
+}
+
+function checkPosition() {
+  let aboutMeTop = aboutMe.getBoundingClientRect().top;
+
+  if (innerHeight > aboutMeTop + 300) {
+    background.style.opacity = '1';
+  }
+
+  console.log('aboutMeTop, innerHeight', aboutMeTop, innerHeight);
+}

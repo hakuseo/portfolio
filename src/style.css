@@ -1,43 +1,13 @@
 :root {
-  --mainColor: #748ffc;
+  --mainColor: #20c997;
   --backGroundColor: #eeeff0;
-}
-
-@font-face {
-  font-family: 'Product Sans';
-  font-weight: 400;
-  src: url('/font/ProductSans-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'Product Sans';
-  font-weight: 500;
-  src: url('/font/ProductSans-Medium.woff') format('woff');
-}
-@font-face {
-  font-family: 'Product Sans';
-  font-weight: 800;
-  src: url('/font/ProductSans-Black.woff') format('woff');
-}
-
-.test {
-  font-family: 'Product Sans';
-}
-.test1 {
-  font-family: 'Product Sans';
-  font-weight: 400;
-}
-.test2 {
-  font-family: 'Product Sans';
-  font-weight: 500;
-}
-.test3 {
-  font-family: 'Product Sans';
-  font-weight: 800;
+  --font-futura: futura-pt, sans-serif;
+  --font-noto: 'Noto Sans KR', sans-serif;
 }
 
 body {
-  font-family: 'Noto Sans KR';
   position: relative;
+  font-family: futura-pt, sans-serif;
 }
 
 .landing-page {
@@ -57,27 +27,15 @@ body {
   align-items: center;
 }
 
-.landing-page .header {
-  font-family: bilo, sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  letter-spacing: -0.01em;
-  position: absolute;
-  top: 50px;
-  left: 70px;
-}
-
 .landing-page .title {
   font-size: 100px;
   font-weight: bold;
-  font-family: bilo, sans-serif;
   letter-spacing: -0.02em;
 }
 
 .landing-page .sub-title {
   margin-top: 20px;
   font-size: 30px;
-  font-family: bilo, sans-serif;
   font-weight: 600;
 }
 
@@ -110,11 +68,97 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--backGroundColor);
   height: 100vh;
-  transition: 1.5s;
-
   box-sizing: border-box;
+  position: relative;
+}
+
+.background {
+  background: linear-gradient(
+      90deg,
+      rgba(184, 224, 142, 0.3) 0%,
+      rgba(32, 201, 151, 0.3) 100%
+    ),
+    rgba(32, 201, 151, 0.3);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 0;
+  transition: 2.5s;
+}
+
+.about-me .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 80%;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me .memoji {
+  width: 246px;
+  height: 310px;
+}
+
+.about-me .name {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 136px;
+  height: 30px;
+  margin-top: 18px;
+}
+
+.about-me .nickname {
+  font-size: 20px;
+  font-family: var(--font-futura);
+  font-weight: 400;
+}
+
+.about-me .desc {
+  margin-top: 24px;
+  font-size: 18px;
+  font-family: var(--font-noto);
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.about-me .info-btn {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 10px;
+  padding: 8px 12px;
+  padding-top: 10px;
+  background-color: #20c997;
+  color: var(--backGroundColor);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+.about-me .info-btn:hover {
+  background-color: #16bf8d;
+}
+
+.about-me .info-btn:active {
+  background-color: #02ab79;
+}
+
+.about-me a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
 }
 
 .about-me main {
@@ -124,65 +168,63 @@ body {
   width: 952px;
 }
 
-.about-me .main-text {
-  transition: 2.5s;
+.about-me .career {
+  height: 100%;
 }
 
 .about-me .title {
   margin-bottom: 30px;
-  font-size: 50px;
-  font-family: bilo, sans-serif;
+  font-size: 35px;
   font-weight: 800;
   color: rgba(0, 0, 0, 0.8);
 }
 
 .about-me .career {
+  display: block;
+  width: 50%;
   color: #484848;
   font-size: 24px;
-  margin-bottom: 50px;
+  height: 80%;
+  overflow-y: scroll;
 }
 
-.about-me .list {
-  height: 36px;
-  margin: 14px 0;
+.career .list {
+  width: 526px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  font-family: var(--font-noto);
+  padding: 30px 40px;
+  box-sizing: border-box;
+}
+
+.career-list .list .list-title {
+  font-size: 20px;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 
-.about-me .memoji {
-  width: 250px;
-  height: 322px;
-  transition: 2s;
-  transform: rotate(-4.99deg);
+.career-list .list .list-desc {
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.about-me .info {
-  font-family: bilo, sans-serif;
+.career-list .list:nth-child(1) {
+  height: 182px;
 }
 
-.about-me .info-btn {
-  font-size: 18px;
-  font-weight: 600;
-  margin-left: 10px;
-  padding: 8px 12px;
-  padding-top: 10px;
-  background-color: var(--mainColor);
-  color: var(--backGroundColor);
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  transition: 0.3s;
+.career-list .list:nth-child(2) {
+  height: 206px;
 }
 
-.about-me .info-btn:hover {
-  background-color: #607be8;
+.career-list .list:nth-child(3) {
+  height: 158px;
 }
 
-.about-me .info-btn:active {
-  background-color: #4c67d4;
+.career-list .list:nth-child(4) {
+  height: 206px;
 }
 
-.about-me a {
-  font-size: 22px;
-  font-weight: 600;
-  color: #000;
+.career-list .list:nth-child(5) {
+  height: 200px;
 }

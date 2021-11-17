@@ -1,0 +1,160 @@
+.timer {
+  background-color: #f2f3f7;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.title-mockup {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-area {
+  display: flex;
+  width: 380px;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.timer .title-area .title {
+  font-size: 100px;
+  font-weight: 800;
+}
+
+.clock {
+  display: inline-block;
+  width: 35px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.mockup {
+  width: 50%;
+  height: 60%;
+  overflow-y: scroll;
+  background-color: #f2f3f7;
+  background: linear-gradient(110.7deg, #e8ebf2 0%, #f2f3f7 100%), #ffffff;
+  box-shadow: 20px 20px 30px rgba(15, 41, 107, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.mockup .mockup-light {
+  width: 400px;
+}
+
+.mockup .mockup-dark {
+  width: 410px;
+}
+
+.imac {
+  width: 500px;
+  height: 450px;
+}
+
+.mockup img {
+  margin-top: 50px;
+}
+
+.icon-list .icon:nth-child(1) img {
+  width: 42px;
+  height: 22px;
+}
+
+.icon-list .icon:nth-child(2) img {
+  width: 18px;
+  height: 18px;
+}
+
+.icon-list .icon:nth-child(3) img {
+  width: 100px;
+  height: 35px;
+}
+
+.explain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  height: 100vh;
+}
+
+.left {
+  width: 60%;
+  position: relative;
+  margin-right: 40px;
+}
+
+.light-mode > img,
+.dark-mode > img {
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(15, 41, 107, 0.25);
+}
+
+.light-mode img {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.dark-mode img {
+  z-index: -10;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 13px;
+  margin-top: 30px;
+  /* justify-content: flex-end; */
+}
+
+.line {
+  background-color: #000;
+  width: 280px;
+  height: 1px;
+  margin-bottom: 10px;
+}
+
+.icon-list {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.icon-list .icon:nth-child(2) span {
+  margin-top: 3px;
+}
+
+.icon img {
+  margin-right: 10px;
+}
+
+.right .span {
+  text-align: right;
+  line-height: 1.5em;
+}
+
+.right .three {
+  margin-top: 80px;
+}
+
+.right .desc {
+  margin-bottom: 6em;
+}
