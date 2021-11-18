@@ -23,53 +23,59 @@
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="src/projects.css" />
     <script src="/src/main.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
     <title>portfolio</title>
   </head>
   <body>
+    <!-- 전체 컨테이너 -->
     <div class="container">
-      <!-- 랜딩페이지 -->
+      <!-- 1. 랜딩페이지 -->
       <div class="landing-page">
-        <!-- 메인 영역 -->
-        <main>
-          <!-- 왼쪽 텍스트섹션 -->
-          <section class="main-text">
-            <h1 class="title">WELCOME HERE</h1>
-            <h2 class="sub-title">
-              I'm <span class="name">Hyunjoo Seo</span>. Web publisher
-            </h2>
-          </section>
-          <section>
-            <img
-              class="waving-hand"
-              src="img/waving-hand.png"
-              alt="waving-hand"
-            />
-          </section>
-        </main>
+        <!-- 왼쪽 텍스트섹션 -->
+        <section class="main-text">
+          <h1 class="title">WELCOME HERE</h1>
+          <h2 class="sub-title">
+            I'm <span class="name">Hyunjoo Seo</span>. Web publisher
+          </h2>
+        </section>
+        <!-- 오른쪽 손인사 이모티콘 섹션 -->
+        <section>
+          <img
+            class="waving-hand"
+            src="img/waving-hand.png"
+            alt="waving-hand"
+          />
+        </section>
       </div>
-      <!-- about me -->
+
+      <!-- 2. about me -->
       <div class="about-me">
+        <!-- 그라데이션 배경 -->
         <div class="background"></div>
-        <section class="profile">
+        <!-- 왼쪽 섹션 -->
+        <section class="left">
+          <!-- 왼쪽 위 섹션 -->
           <div class="top">
-            <img class="memoji" src="img/memoji.PNG" alt="memoji" />
+            <img class="memoji" src="img/memoji.svg" alt="memoji" />
             <div class="name">서현주 <span class="nickname">@Haku</span></div>
             <div class="desc">
               안녕하세요. 다양한 경험을 해온 <br />다채로운 신입 웹 퍼블리셔
               서현주입니다.
             </div>
           </div>
+          <!-- 왼쪽 아래 섹션 -->
           <div class="bottom">
             <div class="info">
-              <a href="mailto:hakuseo@gmail.com">hakuseo@gmail.com</a>
+              <a class="mail" href="mailto:hakuseo@gmail.com"
+                >hakuseo@gmail.com</a
+              >
               <button class="info-btn">Resume</button>
             </div>
           </div>
         </section>
-        <section class="career">
+        <!-- 오른쪽 섹션 -->
+        <section class="right">
           <h2 class="title">What I Did</h2>
-
           <ul class="career-list">
             <li class="list">
               <div class="list-title">
@@ -173,9 +179,5 @@
         </ul>
       </div>
     </div>
-
-    <script>
-      var rellax = new Rellax('.rellax', {});
-    </script>
   </body>
 </html>

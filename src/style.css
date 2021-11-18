@@ -10,21 +10,15 @@ body {
   font-family: futura-pt, sans-serif;
 }
 
+/* 1. 랜딩페이지 */
 .landing-page {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
-  padding: 20px;
+  padding: 40px;
   box-sizing: border-box;
-}
-
-.landing-page main {
-  width: 1015px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .landing-page .title {
@@ -64,6 +58,7 @@ body {
   }
 }
 
+/* 2. aboutme 페이지 */
 .about-me {
   display: flex;
   justify-content: center;
@@ -90,7 +85,7 @@ body {
   transition: 2.5s;
 }
 
-.about-me .profile {
+.about-me .left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -99,18 +94,18 @@ body {
   height: 80%;
 }
 
-.top {
+.about-me .left .top {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-me .memoji {
+.about-me .left .top .memoji {
   width: 246px;
   height: 310px;
 }
 
-.about-me .name {
+.about-me .left .top .name {
   font-size: 25px;
   font-weight: 600;
   font-family: 'Noto Sans KR', sans-serif;
@@ -119,13 +114,13 @@ body {
   margin-top: 18px;
 }
 
-.about-me .nickname {
+.about-me .left .top .nickname {
   font-size: 20px;
   font-family: var(--font-futura);
   font-weight: 400;
 }
 
-.about-me .desc {
+.about-me .left .top .desc {
   margin-top: 24px;
   font-size: 18px;
   font-family: var(--font-noto);
@@ -133,7 +128,13 @@ body {
   text-align: center;
 }
 
-.about-me .info-btn {
+.about-me .left .bottom .info .mail {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+.about-me .left .bottom .info .info-btn {
   font-size: 18px;
   font-weight: 600;
   margin-left: 10px;
@@ -147,48 +148,37 @@ body {
   transition: 0.3s;
 }
 
-.about-me .info-btn:hover {
+.about-me .left .bottom .info .info-btn:hover {
   background-color: #16bf8d;
 }
 
-.about-me .info-btn:active {
+.about-me .left .bottom .info .info-btn:active {
   background-color: #02ab79;
 }
 
-.about-me a {
-  font-size: 22px;
-  font-weight: 600;
-  color: #000;
-}
-
-.about-me main {
+.about-me .right {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 952px;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 80%;
+  color: #484848;
+  font-size: 24px;
 }
 
-.about-me .career {
-  height: 100%;
-}
-
-.about-me .title {
+.about-me .right .title {
   margin-bottom: 30px;
   font-size: 35px;
   font-weight: 800;
   color: rgba(0, 0, 0, 0.8);
 }
 
-.about-me .career {
-  display: block;
-  width: 50%;
-  color: #484848;
-  font-size: 24px;
-  height: 80%;
+.about-me .right .career-list {
+  height: 100%;
   overflow-y: scroll;
 }
 
-.career .list {
+.about-me .right .career-list .list {
   width: 526px;
   background-color: #fff;
   border-radius: 15px;
@@ -198,33 +188,33 @@ body {
   box-sizing: border-box;
 }
 
-.career-list .list .list-title {
+.about-me .right .career-list .list .list-title {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
-.career-list .list .list-desc {
+.about-me .right .career-list .list .list-desc {
   font-size: 16px;
   line-height: 24px;
 }
 
-.career-list .list:nth-child(1) {
+.about-me .right .career-list .list:nth-child(1) {
   height: 182px;
 }
 
-.career-list .list:nth-child(2) {
+.about-me .right .career-list .list:nth-child(2) {
   height: 206px;
 }
 
-.career-list .list:nth-child(3) {
+.about-me .right .career-list .list:nth-child(3) {
   height: 158px;
 }
 
-.career-list .list:nth-child(4) {
+.about-me .right .career-list .list:nth-child(4) {
   height: 206px;
 }
 
-.career-list .list:nth-child(5) {
+.about-me .right .career-list .list:nth-child(5) {
   height: 200px;
 }
