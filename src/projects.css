@@ -65,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 500ms ease-in-out;
+  transition: transform;
 }
 
 .project img {
@@ -103,7 +103,6 @@ body {
 .projects .project:hover {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
-  /* transition: 500ms ease-in-out; */
 }
 
 .line {
