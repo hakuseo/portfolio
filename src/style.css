@@ -106,7 +106,7 @@ body {
 }
 
 .about-me .left .top .name {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 600;
   font-family: 'Noto Sans KR', sans-serif;
   width: 136px;
@@ -115,14 +115,14 @@ body {
 }
 
 .about-me .left .top .nickname {
-  font-size: 20px;
+  font-size: 18px;
   font-family: var(--font-futura);
   font-weight: 400;
 }
 
 .about-me .left .top .desc {
   margin-top: 24px;
-  font-size: 18px;
+  font-size: 16px;
   font-family: var(--font-noto);
   line-height: 1.5em;
   text-align: center;
@@ -199,7 +199,7 @@ body {
   line-height: 24px;
 }
 
-.about-me .right .career-list .list:nth-child(1) {
+/* .about-me .right .career-list .list:nth-child(1) {
   height: 182px;
 }
 
@@ -217,4 +217,4 @@ body {
 
 .about-me .right .career-list .list:nth-child(5) {
   height: 200px;
-}
+} */

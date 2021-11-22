@@ -1,4 +1,4 @@
-// hover me
+// hover here
 const hover = document.querySelector('.hover');
 const light = document.querySelector('.light');
 
@@ -15,12 +15,56 @@ function checkPosition() {
     setTimeout(() => {
       hover.style.opacity = '0';
       setTimeout(() => {
-        hover.style.zIndex = '-10';
+        hover.style.display = 'none';
       }, 500);
     }, 1000);
   }
 }
 
-document.querySelector('.container').addEventListener('click', function () {
-  document.querySelector('.container').style.transform = 'translate(-100%)';
-});
+// slide show
+const container = document.querySelector('.container');
+const slideBtn = document.querySelector('.slide-button');
+const array = ['translateX(0%)', 'translateX(-100%)', 'translateX(-200%)'];
+
+// setInterval(slideShow, 3000);
+
+let i = 1;
+let slideShow = setInterval(function () {
+  if (i === 0) {
+    clearInterval(slideShow);
+  }
+  container.style.transform = array[i];
+  i++;
+  if (i >= slideBtn.children.length) {
+    i = 0;
+  }
+}, 3000);
+
+slideBtn.addEventListener(
+  'click',
+  (e) => {
+    if (e.target.tagName === 'BUTTON') {
+      for (let i = 0; i < slideBtn.children.length; i++) {
+        if (e.target === e.target.parentNode.children[i]) {
+          container.style.transform = array[i];
+          e.target.classList.add('button-opacity');
+          if (!e.target.matches('.slide-button')) {
+            [...slideBtn.children].map((button) =>
+              button.classList.toggle(
+                'button-opacity',
+                button.id === e.target.id,
+              ),
+            );
+          }
+        }
+      }
+    } else {
+      return false;
+    }
+  },
+
+  // [slideBtn.children].map((item) => console.log(item));
+  //
+
+  // if (e.target.style.opacity)
+);
