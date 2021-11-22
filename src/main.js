@@ -12,11 +12,6 @@ function checkPosition() {
   if (innerHeight > aboutMeTop + 300) {
     background.style.opacity = '1';
   }
-  // if (innerHeight > aboutMeTop) {
-  //   aboutMe.style.position = 'sticky';
-  //   aboutMe.style.top = '0';
-  //   aboutMe.style.left = '0';
-  // }
 
   console.log(
     'aboutMeTop, innerHeight,aboutMeBottom',
