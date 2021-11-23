@@ -10,6 +10,9 @@ body {
   font-family: futura-pt, sans-serif;
 }
 
+.container {
+  width: 100%;
+}
 /* 1. 랜딩페이지 */
 .landing-page {
   display: flex;
@@ -22,14 +25,14 @@ body {
 }
 
 .landing-page .title {
-  font-size: 100px;
+  font-size: 70px;
   font-weight: bold;
   letter-spacing: -0.02em;
 }
 
 .landing-page .sub-title {
   margin-top: 20px;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 600;
 }
 
@@ -61,7 +64,7 @@ body {
 /* 2. aboutme 페이지 */
 .about-me {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
   box-sizing: border-box;
@@ -77,7 +80,7 @@ body {
     rgba(32, 201, 151, 0.3);
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: -10;
@@ -90,8 +93,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
-  height: 80%;
+  height: 76%;
 }
 
 .about-me .left .top {
@@ -101,17 +103,14 @@ body {
 }
 
 .about-me .left .top .memoji {
-  width: 246px;
-  height: 310px;
+  width: 200px;
 }
 
 .about-me .left .top .name {
   font-size: 24px;
   font-weight: 600;
   font-family: 'Noto Sans KR', sans-serif;
-  width: 136px;
-  height: 30px;
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 .about-me .left .top .nickname {
@@ -121,25 +120,25 @@ body {
 }
 
 .about-me .left .top .desc {
-  margin-top: 24px;
-  font-size: 16px;
+  margin-top: 10px;
+  font-size: 15px;
   font-family: var(--font-noto);
-  line-height: 1.5em;
+  line-height: 1.6em;
   text-align: center;
 }
 
 .about-me .left .bottom .info .mail {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   color: #000;
 }
 
 .about-me .left .bottom .info .info-btn {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   margin-left: 10px;
   padding: 8px 12px;
-  padding-top: 10px;
+  padding-top: 9px;
   background-color: #20c997;
   color: var(--backGroundColor);
   border-radius: 5px;
@@ -160,20 +159,22 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  align-items: center;
   height: 80%;
   color: #484848;
   font-size: 24px;
 }
 
 .about-me .right .title {
-  margin-bottom: 30px;
-  font-size: 35px;
-  font-weight: 800;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 700;
   color: rgba(0, 0, 0, 0.8);
+  align-self: flex-start;
 }
 
 .about-me .right .career-list {
+  width: 100%;
   height: 100%;
   overflow-y: scroll;
 }
@@ -188,33 +189,110 @@ body {
   box-sizing: border-box;
 }
 
+.about-me .right .career-list .list {
+  width: 450px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 16px;
+  font-family: var(--font-noto);
+  padding: 28px 30px;
+  box-sizing: border-box;
+}
+
 .about-me .right .career-list .list .list-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .about-me .right .career-list .list .list-desc {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 1.6em;
 }
 
-/* .about-me .right .career-list .list:nth-child(1) {
-  height: 182px;
-}
+/* 768px */
+@media (max-width: 768px) {
+  .about-me {
+    justify-content: unset;
+    border: 2px solid red;
+    flex-direction: column;
+  }
+  .landing-page .title {
+    font-size: 50px;
+  }
 
-.about-me .right .career-list .list:nth-child(2) {
-  height: 206px;
-}
+  .landing-page .sub-title {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.2em;
+  }
 
-.about-me .right .career-list .list:nth-child(3) {
-  height: 158px;
-}
+  .landing-page .waving-hand {
+    width: 86px;
+    height: 86px;
+    margin-left: 15px;
+  }
 
-.about-me .right .career-list .list:nth-child(4) {
-  height: 206px;
-}
+  .about-me .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    align-items: center;
 
-.about-me .right .career-list .list:nth-child(5) {
-  height: 200px;
-} */
+    height: 80%;
+    margin-top: 40px;
+  }
+
+  .about-me .left .bottom {
+    margin-top: 20px;
+  }
+
+  .about-me .left .top .memoji {
+    width: 140px;
+  }
+
+  .about-me .left .top .name {
+    font-size: 20px;
+  }
+
+  .about-me .left .top .nickname {
+    font-size: 16px;
+  }
+  .about-me .left .top .desc {
+    font-size: 14px;
+  }
+
+  .about-me .left .bottom .info .mail {
+    font-size: 14px;
+  }
+
+  .about-me .left .bottom .info .info-btn {
+    font-size: 13px;
+    padding: 6px 10px;
+    padding-top: 7px;
+  }
+
+  .about-me .right .title {
+    margin-top: 50px;
+    font-size: 24px;
+    margin-left: 12%;
+  }
+  .about-me .right .career-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-me .right .career-list .list {
+    width: 80%;
+  }
+
+  .about-me .right .career-list .list .list-title {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+
+  .about-me .right .career-list .list .list-desc {
+    font-size: 13px;
+    line-height: 1.5em;
+  }
+}

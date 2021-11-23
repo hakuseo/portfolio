@@ -23,33 +23,29 @@
     <script src="./src/timer.js" defer></script>
   </head>
   <body>
-    <div class="timer">
+    <div class="todolist">
       <section class="title-mockup">
-        <!-- <div class="back-clock">
-          <img src="./img/icon/timer-black.svg" alt="" />
-        </div> -->
         <div class="title-area">
           <h2 class="title">Todolist</h2>
-          <img class="clock" src="img/icon/timer-black.svg" alt="clock" />
         </div>
         <div class="slide">
           <div class="container">
-            <div class="inner">
+            <div class="inner mockup1">
               <img
                 class="mockup-light"
-                src="img/iphone-light.svg"
+                src="img/todolist/todolist-mockup.svg"
                 alt="iphone mock up"
               />
             </div>
-            <div class="inner">
+            <div class="inner mockup2">
               <img
                 class="mockup-dark"
-                src="img/iphone-dark.svg"
+                src="img/todolist/todolist-mockup1.svg"
                 alt="iphone mock up"
               />
             </div>
-            <div class="inner">
-              <img class="imac" src="img/iMac-mockup.svg" alt="iMac mock up" />
+            <div class="inner mockup3">
+              <img class="imac" src="img/todolist/iMac-mockup.svg" alt="iMac mock up" />
             </div>
           </div>
         </div>
@@ -63,32 +59,39 @@
       <section class="explain">
         <div class="left">
           <div class="hover"></div>
-          <div class="light"></div>
-          <!-- <img class="dark" src="./img/dark-mode.jpg" alt="" /> -->
+          <div class="light">
+            <img
+              class="list"
+              src="./img/todolist/list-hover.svg"
+              alt="리스트 호버 시"
+            />
+            <img class="list" src="./img/todolist/list-checked.svg" alt="" />
+            <img class="list" src="./img/todolist/input.svg" alt="input창" />
+          </div>
         </div>
         <div class="right">
           <ul class="icon-list">
             <li class="icon">
-              <img src="./img/icon/switch.svg" alt="" />
-              <span>Light mode / Dark mode</span>
+              <p>오늘 날짜 업데이트</p> 
             </li>
             <li class="icon">
-              <img src="./img/icon/reset.svg" alt="" />
-              <span>Reset button</span>
+              <span class="desc">
+                <img class="trash" src="./img/todolist/trash.svg" alt="휴지통 아이콘">
+                메인화면을 최대한 깔끔하게 하기 위해<br>
+                hover시 휴지통 아이콘이 보이도록 구현
+              </span>
             </li>
-            <li class="icon">
-              <img src="./img/icon/timer-setting.svg" alt="" />
-              <span>Timer setting value</span>
-            </li>
+              
+            
           </ul>
           <span class="desc">
-            타이머의 시간을 실시간으로 저장하여<br />
-            새로고침하거나 재부팅했을 때 시간유지
+            todolist와 체크 유무를 localstorage에<br />
+            저장하여 새로고침해도 데이터가 그대로 저장
           </span>
           <div class="line three"></div>
           <span class="desc start">
-            Start / Pause button<br />
-            Space bar<span>로 컨트롤 가능</span>
+            input창을 숨겨놓았다가 add 버튼을<br />
+            누르면 나오게 동적인 요소를 추가</span>
           </span>
         </div>
       </section>
