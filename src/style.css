@@ -103,14 +103,14 @@ body {
 }
 
 .about-me .left .top .memoji {
-  width: 200px;
+  width: 180px;
 }
 
 .about-me .left .top .name {
   font-size: 24px;
   font-weight: 600;
   font-family: 'Noto Sans KR', sans-serif;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .about-me .left .top .nickname {
@@ -161,7 +161,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 78%;
   color: #484848;
   font-size: 24px;
 }
