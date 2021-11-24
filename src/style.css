@@ -279,8 +279,8 @@ body {
 
   .about-me .right .title {
     margin-top: 50px;
-    font-size: 24px;
-    margin-left: 12%;
+    font-size: 22px;
+    margin-left: 6%;
   }
 
   .about-me .right .career-list {
@@ -290,17 +290,18 @@ body {
   }
 
   .about-me .right .career-list .list {
-    width: 80%;
-    max-width: 680px;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px 26px;
   }
 
   .about-me .right .career-list .list .list-title {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.5em;
   }
 
   .about-me .right .career-list .list .list-desc {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.5em;
   }
 }
