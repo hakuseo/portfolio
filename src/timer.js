@@ -22,18 +22,16 @@ function checkPosition() {
 }
 
 // slide show
-const container = document.querySelector('.container');
+const slideContainer = document.querySelector('.slide-container');
 const slideBtn = document.querySelector('.slide-button');
 const array = ['translateX(0%)', 'translateX(-100%)', 'translateX(-200%)'];
-
-// setInterval(slideShow, 3000);
 
 let i = 1;
 let slideShow = setInterval(function () {
   if (i === 0) {
     clearInterval(slideShow);
   }
-  container.style.transform = array[i];
+  slideContainer.style.transform = array[i];
   i++;
   if (i >= slideBtn.children.length) {
     i = 0;
@@ -46,7 +44,7 @@ slideBtn.addEventListener(
     if (e.target.tagName === 'BUTTON') {
       for (let i = 0; i < slideBtn.children.length; i++) {
         if (e.target === e.target.parentNode.children[i]) {
-          container.style.transform = array[i];
+          slideContainer.style.transform = array[i];
           e.target.classList.add('button-opacity');
           if (!e.target.matches('.slide-button')) {
             [...slideBtn.children].map((button) =>

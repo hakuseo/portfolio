@@ -103,7 +103,7 @@ body {
 }
 
 .about-me .left .top .memoji {
-  width: 180px;
+  width: 160px;
 }
 
 .about-me .left .top .name {
@@ -291,7 +291,7 @@ body {
 
   .about-me .right .career-list .list {
     width: 90%;
-    max-width: 600px;
+    max-width: 590px;
     padding: 20px 26px;
   }
 

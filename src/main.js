@@ -8,15 +8,21 @@ window.addEventListener('resize', checkPosition);
 function checkPosition() {
   let innerHeight = window.innerHeight;
   let aboutMeTop = aboutMe.getBoundingClientRect().top;
-  let aboutMeBottom = aboutMe.getBoundingClientRect().bottom;
+
   if (innerHeight > aboutMeTop + 300) {
     background.style.opacity = '1';
   }
-
-  console.log(
-    'aboutMeTop, innerHeight,aboutMeBottom',
-    aboutMeTop,
-    innerHeight,
-    aboutMeBottom,
-  );
 }
+
+const projectsContainer = document.querySelector('.projects-container');
+const btnArr = projectsContainer.getElementsByTagName('button');
+console.log(btnArr);
+for (let i = 0; i < btnArr.length; i++) {
+  btnArr[i].addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('.box' + (i + 1)).scrollIntoView(true);
+  });
+}
+
+const list = document.getElementById('.career-llist');
+console.log(list.scrollBy);

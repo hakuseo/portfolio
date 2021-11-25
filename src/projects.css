@@ -40,6 +40,9 @@ body {
   justify-content: space-between;
   transition-property: transform, box-shaodw;
   transition: 500ms ease-in-out;
+  background-color: transparent;
+  border: none;
+  font-family: futura-pt, sans-serif;
 }
 
 .project img {
@@ -54,6 +57,7 @@ body {
 .project .project-title {
   font-size: 20px;
   font-weight: bold;
+  text-align: left;
 }
 
 .project .project-tools {

@@ -27,7 +27,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/tyo3ieg.css" />
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="src/projects.css" />
+    <link rel="stylesheet" href="src/timer.css" />
     <script src="./src/main.js" defer></script>
+    <script src="./src/timer.js" defer></script>
 
     <title>portfolio</title>
   </head>
@@ -138,36 +140,112 @@
       <!-- projects -->
       <div class="projects-container">
         <div class="title">My Projects</div>
-        <ul class="projects">
-          <li class="project">
+        <div class="projects">
+          <button class="project">
             <img class="portfolio" src="./img/icon/portfolio.svg" alt="" />
             <div class="text">
               <div class="project-title">PORTFOLIO</div>
               <div class="project-tools">HTML, CSS, JS, Figma</div>
             </div>
-          </li>
-          <li class="project">
+          </button>
+          <button class="project">
             <img src="./img/icon/timer.svg" alt="" />
             <div class="text">
               <div class="project-title">TIMER</div>
               <div class="project-tools">HTML, CSS, Java script</div>
             </div>
-          </li>
-          <li class="project">
+          </button>
+          <button class="project">
             <img src="./img/icon/todolist.svg" alt="" />
             <div class="text">
               <div class="project-title">TODOLIST</div>
               <div class="project-tools">HTML, CSS, Java script</div>
             </div>
-          </li>
-          <li class="project">
+          </button>
+          <button class="project">
             <img src="./img/icon/netflix.svg" alt="" />
             <div class="text">
               <div class="project-title">NETFLIX</div>
               <div class="project-tools">PHOTOSHOP, adobe XD</div>
             </div>
-          </li>
-        </ul>
+          </button>
+        </div>
+      </div>
+
+      <!-- timer -->
+      <div class="timer box2">
+        <section class="title-mockup">
+          <div class="title-area">
+            <h2 class="title">Timer</h2>
+            <img class="clock" src="img/icon/timer-black.svg" alt="clock" />
+          </div>
+          <div class="slide">
+            <div class="slide-container">
+              <div class="inner">
+                <img
+                  class="mockup-light"
+                  src="img/iphone-light.svg"
+                  alt="iphone mock up"
+                />
+              </div>
+              <div class="inner">
+                <img
+                  class="mockup-dark"
+                  src="img/iphone-dark.svg"
+                  alt="iphone mock up"
+                />
+              </div>
+              <div class="inner">
+                <img
+                  class="imac"
+                  src="img/iMac-mockup.svg"
+                  alt="iMac mock up"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="slide-button">
+            <button id="1"></button>
+            <button id="2"></button>
+            <button id="3"></button>
+          </div>
+        </section>
+
+        <section class="explain">
+          <div class="left">
+            <div class="hover"></div>
+            <div class="light"></div>
+            <!-- <img class="dark" src="./img/dark-mode.jpg" alt="" /> -->
+          </div>
+          <div class="right">
+            <div class="desc-part">
+              <div class="icon">
+                <img class="switch" src="./img/icon/switch.svg" alt="" />
+                <span>Light mode / Dark mode</span>
+              </div>
+              <div class="icon">
+                <img class="reset" src="./img/icon/reset.svg" alt="" />
+                <span>Reset button</span>
+              </div>
+              <div class="icon">
+                <img
+                  class="timer-setting"
+                  src="./img/icon/timer-setting.svg"
+                  alt=""
+                />
+                <span>Timer setting value</span>
+              </div>
+            </div>
+            <p class="desc-part">
+              타이머의 시간을 실시간으로 저장하여<br />
+              새로고침하거나 재부팅했을 때 시간유지
+            </p>
+            <p class="desc-part">
+              Start / Pause button<br />
+              Space bar<span>로 컨트롤 가능</span>
+            </p>
+          </div>
+        </section>
       </div>
     </div>
   </body>
