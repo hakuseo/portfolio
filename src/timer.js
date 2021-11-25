@@ -12,12 +12,12 @@ function checkPosition() {
   if (innerHeight > lightTop + 300) {
     hover.classList.add('hover-me');
 
-    setTimeout(() => {
-      hover.style.opacity = '0';
-      setTimeout(() => {
-        hover.style.display = 'none';
-      }, 500);
-    }, 1000);
+    // setTimeout(() => {
+    //   hover.style.opacity = '0';
+    //   setTimeout(() => {
+    //     hover.style.display = 'none';
+    //   }, 500);
+    // }, 1000);
   }
 }
 

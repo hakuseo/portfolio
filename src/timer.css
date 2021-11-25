@@ -110,7 +110,6 @@
 /* 3. 두번째 페이지 왼쪽 섹션 */
 .timer .explain .left {
   position: relative;
-  min-width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,21 +215,18 @@
 }
 
 @media (max-width: 1024px) {
-  .explain {
-    border: 3px solid rosybrown;
+  .timer .explain .left .light {
+    width: 600px;
+    height: 500px;
   }
 
-  .timer .explain .left .light {
+  .hover {
     width: 600px;
     height: 500px;
   }
 }
 
 @media (max-width: 768px) {
-  .title-mockup {
-    border: 2px solid saddlebrown;
-  }
-
   .timer .slide {
     width: 76vw;
     max-width: 700px;
@@ -250,6 +246,11 @@
   }
 
   .timer .explain .left .light {
+    width: 500px;
+    height: 420px;
+  }
+
+  .hover {
     width: 500px;
     height: 420px;
   }
@@ -292,5 +293,12 @@
   .timer .explain .left .light {
     width: 80vw;
     height: 360px;
+  }
+
+  .hover {
+    width: 80vw;
+    height: 360px;
+    top: auto;
+    left: auto;
   }
 }
