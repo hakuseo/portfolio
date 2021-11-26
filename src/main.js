@@ -25,8 +25,3 @@ for (let i = 0; i < btnArr.length; i++) {
 }
 
 const list = document.getElementById('.career-llist');
-// console.log(list.scrollBy);
-
-window.addEventListener('resize', () => {
-  console.log(innerWidth);
-});

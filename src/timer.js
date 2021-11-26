@@ -31,6 +31,8 @@ window.addEventListener('scroll', titleMockUpCheck);
 // window.addEventListener('load', titleMockUpCheck);
 // window.addEventListener('resize', titleMockUpCheck);
 
+titleMockUpCheck();
+
 function titleMockUpCheck() {
   let innerHeight = window.innerHeight;
   let titleMockupTop = titleMockup.getBoundingClientRect().top;
@@ -47,6 +49,8 @@ function titleMockUpCheck() {
       }
     }, 3000);
   }
+  console.log(innerHeight);
+  console.log(titleMockupTop);
 }
 
 slideBtn.addEventListener('click', (e) => {
