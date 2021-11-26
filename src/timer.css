@@ -77,13 +77,13 @@
 
 .timer .title-mockup .slide-button {
   margin-top: 5px;
-  /* height: 20px; */
-  transform: scale(0.7);
+  height: 20px;
+  transform: scale(0.8);
 }
 
 .timer .title-mockup .slide-button > button {
   display: inline-block;
-  width: 5px;
+  width: 12px;
   height: 12px;
   border-radius: 50%;
   border: none;
@@ -243,7 +243,7 @@
 
   .timer .explain .left {
     margin-right: 0;
-    height: 40%;
+    /* height: 40%; */
   }
 
   .timer .explain .left .light {
@@ -254,12 +254,21 @@
   .hover {
     width: 500px;
     height: 420px;
+    top: auto;
+    left: auto;
   }
 
   .timer .explain .right {
     height: auto;
-    flex-direction: row;
+
     align-items: flex-start;
+  }
+
+  .timer .explain .right .desc-part {
+    margin: 0;
+    text-align: left;
+    align-items: flex-start;
+    flex-direction: row;
   }
 
   .timer .explain .right .icon-list .icon span {
@@ -292,8 +301,9 @@
   }
 
   .timer .explain .left .light {
+    background-size: 94%;
     width: 84vw;
-    height: 82%;
+    height: 300px;
   }
 
   .hover {
