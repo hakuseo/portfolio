@@ -243,6 +243,7 @@
 
   .timer .explain .left {
     margin-right: 0;
+    height: 40%;
   }
 
   .timer .explain .left .light {
@@ -291,13 +292,13 @@
   }
 
   .timer .explain .left .light {
-    width: 80vw;
-    height: 360px;
+    width: 84vw;
+    height: 82%;
   }
 
   .hover {
-    width: 80vw;
-    height: 360px;
+    width: 84vw;
+    height: 82%;
     top: auto;
     left: auto;
   }
