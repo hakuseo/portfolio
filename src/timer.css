@@ -83,7 +83,7 @@
 
 .timer .title-mockup .slide-button > button {
   display: inline-block;
-  /* width: 5px; */
+  width: 5px;
   height: 12px;
   border-radius: 50%;
   border: none;
