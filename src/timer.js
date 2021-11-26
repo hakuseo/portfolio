@@ -25,44 +25,47 @@ function checkPosition() {
 const slideContainer = document.querySelector('.slide-container');
 const slideBtn = document.querySelector('.slide-button');
 const array = ['translateX(0%)', 'translateX(-100%)', 'translateX(-200%)'];
+const titleMockup = document.querySelector('.title-mockup');
 
-let i = 1;
-let slideShow = setInterval(function () {
-  if (i === 0) {
-    clearInterval(slideShow);
-  }
-  slideContainer.style.transform = array[i];
-  i++;
-  if (i >= slideBtn.children.length) {
-    i = 0;
-  }
-}, 3000);
+window.addEventListener('scroll', titleMockUpCheck);
+// window.addEventListener('load', titleMockUpCheck);
+// window.addEventListener('resize', titleMockUpCheck);
 
-slideBtn.addEventListener(
-  'click',
-  (e) => {
-    if (e.target.tagName === 'BUTTON') {
-      for (let i = 0; i < slideBtn.children.length; i++) {
-        if (e.target === e.target.parentNode.children[i]) {
-          slideContainer.style.transform = array[i];
-          e.target.classList.add('button-opacity');
-          if (!e.target.matches('.slide-button')) {
-            [...slideBtn.children].map((button) =>
-              button.classList.toggle(
-                'button-opacity',
-                button.id === e.target.id,
-              ),
-            );
-          }
+function titleMockUpCheck() {
+  let innerHeight = window.innerHeight;
+  let titleMockupTop = titleMockup.getBoundingClientRect().top;
+  if (innerHeight > titleMockupTop + 300) {
+    let i = 1;
+    let slideShow = setInterval(function () {
+      if (i === 0) {
+        clearInterval(slideShow);
+      }
+      slideContainer.style.transform = array[i];
+      i++;
+      if (i >= slideBtn.children.length) {
+        i = 0;
+      }
+    }, 3000);
+  }
+}
+
+slideBtn.addEventListener('click', (e) => {
+  if (e.target.tagName === 'BUTTON') {
+    for (let i = 0; i < slideBtn.children.length; i++) {
+      if (e.target === e.target.parentNode.children[i]) {
+        slideContainer.style.transform = array[i];
+        e.target.classList.add('button-opacity');
+        if (!e.target.matches('.slide-button')) {
+          [...slideBtn.children].map((button) =>
+            button.classList.toggle(
+              'button-opacity',
+              button.id === e.target.id,
+            ),
+          );
         }
       }
-    } else {
-      return false;
     }
-  },
-
-  // [slideBtn.children].map((item) => console.log(item));
-  //
-
-  // if (e.target.style.opacity)
-);
+  } else {
+    return false;
+  }
+});
