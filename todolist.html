@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Todolist</title>
+    <title>timer</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
@@ -20,32 +19,38 @@
     <link rel="stylesheet" href="src/todolist.css" />
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/tyo3ieg.css" />
-    <script src="./src/timer.js" defer></script>
+    <script src="./src/todolist.js" defer></script>
   </head>
   <body>
-    <div class="todolist">
+    <div class="todolist box2">
       <section class="title-mockup">
         <div class="title-area">
           <h2 class="title">Todolist</h2>
+          <img class="clock" src="img/icon/todolist.svg" alt="clock" />
         </div>
+
         <div class="slide">
-          <div class="container">
-            <div class="inner mockup1">
+          <div class="slide-container">
+            <div class="inner">
               <img
-                class="mockup-light"
+                class="mockup-loading"
                 src="img/todolist/todolist-mockup.svg"
                 alt="iphone mock up"
               />
             </div>
-            <div class="inner mockup2">
+            <div class="inner">
               <img
-                class="mockup-dark"
+                class="mockup-main"
                 src="img/todolist/todolist-mockup1.svg"
                 alt="iphone mock up"
               />
             </div>
-            <div class="inner mockup3">
-              <img class="imac" src="img/todolist/iMac-mockup.svg" alt="iMac mock up" />
+            <div class="inner">
+              <img
+                class="imac"
+                src="img/todolist/iMac-mockup.svg"
+                alt="iMac mock up"
+              />
             </div>
           </div>
         </div>
@@ -56,43 +61,34 @@
         </div>
       </section>
 
+      <!-- 두번째 창 -->
       <section class="explain">
         <div class="left">
           <div class="hover"></div>
-          <div class="light">
-            <img
+          <div class="todo-basic">
+            <!-- <img
               class="list"
               src="./img/todolist/list-hover.svg"
               alt="리스트 호버 시"
             />
             <img class="list" src="./img/todolist/list-checked.svg" alt="" />
-            <img class="list" src="./img/todolist/input.svg" alt="input창" />
+            <img class="list" src="./img/todolist/input.svg" alt="input창" /> -->
           </div>
         </div>
         <div class="right">
-          <ul class="icon-list">
-            <li class="icon">
-              <p>오늘 날짜 업데이트</p> 
-            </li>
-            <li class="icon">
-              <span class="desc">
-                <img class="trash" src="./img/todolist/trash.svg" alt="휴지통 아이콘">
-                메인화면을 최대한 깔끔하게 하기 위해<br>
-                hover시 휴지통 아이콘이 보이도록 구현
-              </span>
-            </li>
-              
-            
-          </ul>
-          <span class="desc">
-            todolist와 체크 유무를 localstorage에<br />
-            저장하여 새로고침해도 데이터가 그대로 저장
-          </span>
-          <div class="line three"></div>
-          <span class="desc start">
+          <p class="desc-part desc1">오늘 날짜 업데이트</p>
+          <p class="desc-part desc2">
+            메인화면을 최대한 깔끔하게 하기 위해<br />
+            hover시 휴지통 아이콘이 보이도록 구현
+          </p>
+          <p class="desc-part desc3">
+            todolist와 체크 유무를 localstorage에 저장하여<br />
+            새로고침해도 데이터가 그대로 유지 되도록 구현
+          </p>
+          <p class="desc-part desc4">
             input창을 숨겨놓았다가 add 버튼을<br />
-            누르면 나오게 동적인 요소를 추가</span>
-          </span>
+            누르면 나오게끔 하여동적인 요소를 추가
+          </p>
         </div>
       </section>
     </div>
