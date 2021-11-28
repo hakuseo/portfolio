@@ -56,7 +56,7 @@
   border-radius: 50px;
 }
 
-.slide-container {
+.todolist .slide-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -67,18 +67,18 @@
   transition: transform 500ms ease-in-out;
 }
 
-.slide-container .inner {
+.todolist .slide-container .inner {
   width: 100%;
   height: 80%;
   display: flex;
   justify-content: center;
 }
 
-.slide-container .inner > img {
+.todolist .slide-container .inner > img {
   width: 45%;
 }
 
-.slide-container .inner .mockup-main {
+.todolist .slide-container .inner .mockup-main {
   width: 50%;
 }
 
@@ -142,7 +142,7 @@
   background-image: url('../img/todolist/lists-hover.svg');
 }
 
-.todolist .explain .left .hover {
+.todolist .explain .left .todolist-hover {
   width: 420px;
   height: 554px;
   border-radius: 20px;
@@ -155,16 +155,16 @@
   z-index: 100;
 }
 
-.todolist .explain .left .hover-me {
+.todolist .explain .left .todolist-hoverme {
   background-color: rgba(0, 0, 0, 0.8);
   transition: 500ms ease-in-out;
 }
 
-.todolist .explain .left .hover-me::before {
+.todolist .explain .left .todolist-hoverme::before {
   content: 'Hover Here!';
   font-family: 'futura-pt', sans-serif;
-  font-weight: 800;
-  font-size: 30px;
+  font-weight: 700;
+  font-size: 28px;
   color: #fff;
   padding-bottom: 20px;
   box-sizing: border-box;
@@ -215,7 +215,6 @@
   }
 
   .todolist .explain {
-    padding: 30px 0;
     box-sizing: border-box;
   }
 
@@ -228,7 +227,7 @@
     height: 396px;
   }
 
-  .todolist .explain .left .hover {
+  .todolist .explain .left .todolist-hover {
     width: 300px;
     height: 396px;
   }
@@ -250,9 +249,6 @@
 
   /* 480px */
   @media (max-width: 480px) {
-    .todolist .explain {
-      height: 100%;
-    }
     .todolist .title-mockup .title-area {
       margin-bottom: 20px;
     }
@@ -284,7 +280,7 @@
       height: 376px;
     }
 
-    .todolist .explain .left .hover {
+    .todolist .explain .left .todolist-hover {
       width: 280px;
       height: 376px;
       top: auto;
@@ -292,9 +288,9 @@
     }
 
     .todolist .explain .right {
+      height: 40%;
       display: flex;
       align-items: left;
-      margin-top: 10px;
     }
 
     .todolist .explain .right .desc-part {

@@ -16,7 +16,6 @@ function checkPosition() {
 
 const projectsContainer = document.querySelector('.projects-container');
 const btnArr = projectsContainer.getElementsByTagName('button');
-console.log(btnArr);
 for (let i = 0; i < btnArr.length; i++) {
   btnArr[i].addEventListener('click', function (e) {
     e.preventDefault();

@@ -28,9 +28,9 @@
     <link rel="stylesheet" href="src/style.css" />
     <link rel="stylesheet" href="src/projects.css" />
     <link rel="stylesheet" href="src/timer.css" />
+    <link rel="stylesheet" href="src/todolist.css" />
     <script src="./src/main.js" defer></script>
     <script src="./src/timer.js" defer></script>
-
     <title>portfolio</title>
   </head>
   <body>
@@ -137,7 +137,7 @@
         </section>
       </div>
 
-      <!-- projects -->
+      <!-- 3. projects -->
       <div class="projects-container">
         <div class="title">My Projects</div>
         <div class="projects">
@@ -173,7 +173,7 @@
         </div>
       </div>
 
-      <!-- timer -->
+      <!-- 4. timer -->
       <div class="timer box2">
         <section class="title-mockup">
           <div class="title-area">
@@ -244,6 +244,78 @@
             <p class="desc-part desc3">
               Start / Pause button<br />
               Space bar로 컨트롤 가능
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- 5. todolist -->
+      <div class="todolist box3">
+        <section class="title-mockup">
+          <div class="title-area">
+            <h2 class="title">Todolist</h2>
+            <img class="clock" src="img/icon/todolist.svg" alt="clock" />
+          </div>
+
+          <div class="slide">
+            <div class="slide-container">
+              <div class="inner">
+                <img
+                  class="mockup-loading"
+                  src="img/todolist/todolist-mockup.svg"
+                  alt="iphone mock up"
+                />
+              </div>
+              <div class="inner">
+                <img
+                  class="mockup-main"
+                  src="img/todolist/todolist-mockup1.svg"
+                  alt="iphone mock up"
+                />
+              </div>
+              <div class="inner">
+                <img
+                  class="imac"
+                  src="img/todolist/iMac-mockup.svg"
+                  alt="iMac mock up"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="slide-button">
+            <button id="1"></button>
+            <button id="2"></button>
+            <button id="3"></button>
+          </div>
+        </section>
+
+        <!-- 두번째 창 -->
+        <section class="explain">
+          <div class="left">
+            <div class="todolist-hover"></div>
+            <div class="todo-basic">
+              <!-- <img
+                class="list"
+                src="./img/todolist/list-hover.svg"
+                alt="리스트 호버 시"
+              />
+              <img class="list" src="./img/todolist/list-checked.svg" alt="" />
+              <img class="list" src="./img/todolist/input.svg" alt="input창" /> -->
+            </div>
+          </div>
+          <div class="right">
+            <p class="desc-part desc1">오늘 날짜 업데이트</p>
+            <p class="desc-part desc2">
+              메인화면을 최대한 깔끔하게 하기 위해<br />
+              hover시 휴지통 아이콘이 보이도록 구현
+            </p>
+            <p class="desc-part desc3">
+              todolist와 체크 유무를 localstorage에 저장하여<br />
+              새로고침해도 데이터가 그대로 유지 되도록 구현
+            </p>
+            <p class="desc-part desc4">
+              input창을 숨겨놓았다가 add 버튼을<br />
+              누르면 나오게끔 하여동적인 요소를 추가
             </p>
           </div>
         </section>
