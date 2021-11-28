@@ -27,31 +27,40 @@ const slideBtn = document.querySelector('.slide-button');
 const array = ['translateX(0%)', 'translateX(-100%)', 'translateX(-200%)'];
 const titleMockup = document.querySelector('.title-mockup');
 
-window.addEventListener('scroll', titleMockUpCheck);
+// window.addEventListener('scroll', () => {
+//   console.log(window.scrollY);
+//   let scrollValue = window.scrollY;
+//   console.log(scrollValue);
+//   slideContainer.style.transform = `translateX(-${scrollValue}px)`;
+//   console.log(slideContainer.style.transform);
+// });
 // window.addEventListener('load', titleMockUpCheck);
 // window.addEventListener('resize', titleMockUpCheck);
 
-titleMockUpCheck();
+// let innerHeight = window.innerHeight;
+//   let titleMockupTop = titleMockup.getBoundingClientRect().top;
+//   if (innerHeight > titleMockupTop + 300) {
+//     slideContainer.style.transform = ``;
+//   }
 
-function titleMockUpCheck() {
-  let innerHeight = window.innerHeight;
-  let titleMockupTop = titleMockup.getBoundingClientRect().top;
-  if (innerHeight > titleMockupTop + 300) {
-    let i = 1;
-    let slideShow = setInterval(function () {
-      if (i === 0) {
-        clearInterval(slideShow);
-      }
-      slideContainer.style.transform = array[i];
-      i++;
-      if (i >= slideBtn.children.length) {
-        i = 0;
-      }
-    }, 3000);
-  }
-  console.log(innerHeight);
-  console.log(titleMockupTop);
-}
+// function titleMockUpCheck() {
+//   let innerHeight = window.innerHeight;
+//   let titleMockupTop = titleMockup.getBoundingClientRect().top;
+//   if (innerHeight > titleMockupTop + 300) {
+//     let i = 1;
+//     let slideShow = setInterval(function () {
+//       if (i === 0) {
+//         clearInterval(slideShow);
+//       }
+//       slideContainer.style.transform = array[i];
+//       i++;
+//       if (i >= slideBtn.children.length) {
+//         i = 0;
+//       }
+//     }, 3000);
+//   }
+
+// }
 
 slideBtn.addEventListener('click', (e) => {
   if (e.target.tagName === 'BUTTON') {
