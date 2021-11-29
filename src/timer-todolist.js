@@ -43,7 +43,6 @@ const array = ['translateX(0%)', 'translateX(-100%)', 'translateX(-200%)'];
 slideBtn.forEach((button) =>
   button.addEventListener('click', (e) => {
     const targetEl = button.previousElementSibling.firstElementChild;
-    console.log(targetEl);
     if (e.target.tagName === 'BUTTON') {
       for (let i = 0; i < button.children.length; i++) {
         if (e.target === e.target.parentNode.children[i]) {

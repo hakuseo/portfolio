@@ -74,7 +74,7 @@
 }
 
 .work-container .title-mockup .slide .slide-container .inner .imac {
-  width: 56%;
+  width: 64%;
 }
 
 .work-container .title-mockup .slide-button {
@@ -135,6 +135,7 @@
 
   .work-container .explain .right .desc-part {
     font-size: 13px;
+    text-align: left;
   }
 }
 

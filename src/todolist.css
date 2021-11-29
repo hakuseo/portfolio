@@ -45,7 +45,7 @@
 }
 
 .todolist .explain .left .todolist-hoverme::before {
-  content: 'Hover Here!';
+  content: 'Hover Here !';
   font-family: 'futura-pt', sans-serif;
   font-weight: 700;
   font-size: 28px;

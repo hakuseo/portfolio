@@ -26,7 +26,6 @@ for (let i = 0; i < btnArr.length; i++) {
 }
 
 //3. work페이지부터 projects로 돌아갈 수 있는 버튼
-const timer = document.querySelector('.timer');
 const todolist = document.querySelector('.todolist');
 const projectsBtn = document.querySelector('.projects-btn');
 

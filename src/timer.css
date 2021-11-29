@@ -58,9 +58,9 @@
 }
 
 .timer .explain .left .hover-me::before {
-  content: 'Hover Here!';
+  content: 'Hover Here !';
   font-family: 'futura-pt', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 30px;
   color: #fff;
   padding-bottom: 20px;
