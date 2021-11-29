@@ -36,63 +36,31 @@ function checkPosition() {
 }
 
 // slide show
-const slideContainer = timer.querySelector('.slide-container');
-const slideBtn = timer.querySelector('.slide-button');
+const slideContainer = document.querySelectorAll('.slide-container');
+const slideBtn = document.querySelectorAll('.slide-button');
 const array = ['translateX(0%)', 'translateX(-100%)', 'translateX(-200%)'];
-const titleMockup = timer.querySelector('.title-mockup');
 
-// window.addEventListener('scroll', () => {
-//   console.log(window.scrollY);
-//   let scrollValue = window.scrollY;
-//   console.log(scrollValue);
-//   slideContainer.style.transform = `translateX(-${scrollValue}px)`;
-//   console.log(slideContainer.style.transform);
-// });
-// window.addEventListener('load', titleMockUpCheck);
-// window.addEventListener('resize', titleMockUpCheck);
-
-// let innerHeight = window.innerHeight;
-//   let titleMockupTop = titleMockup.getBoundingClientRect().top;
-//   if (innerHeight > titleMockupTop + 300) {
-//     slideContainer.style.transform = ``;
-//   }
-
-// function titleMockUpCheck() {
-//   let innerHeight = window.innerHeight;
-//   let titleMockupTop = titleMockup.getBoundingClientRect().top;
-//   if (innerHeight > titleMockupTop + 300) {
-//     let i = 1;
-//     let slideShow = setInterval(function () {
-//       if (i === 0) {
-//         clearInterval(slideShow);
-//       }
-//       slideContainer.style.transform = array[i];
-//       i++;
-//       if (i >= slideBtn.children.length) {
-//         i = 0;
-//       }
-//     }, 3000);
-//   }
-
-// }
-
-slideBtn.addEventListener('click', (e) => {
-  if (e.target.tagName === 'BUTTON') {
-    for (let i = 0; i < slideBtn.children.length; i++) {
-      if (e.target === e.target.parentNode.children[i]) {
-        slideContainer.style.transform = array[i];
-        e.target.classList.add('button-opacity');
-        if (!e.target.matches('.slide-button')) {
-          [...slideBtn.children].map((button) =>
-            button.classList.toggle(
-              'button-opacity',
-              button.id === e.target.id,
-            ),
-          );
+slideBtn.forEach((button) =>
+  button.addEventListener('click', (e) => {
+    const targetEl = button.previousElementSibling.firstElementChild;
+    console.log(targetEl);
+    if (e.target.tagName === 'BUTTON') {
+      for (let i = 0; i < button.children.length; i++) {
+        if (e.target === e.target.parentNode.children[i]) {
+          targetEl.style.transform = array[i];
+          e.target.classList.add('button-opacity');
+          if (!e.target.matches('.slide-button')) {
+            [...button.children].map((buttonColor) =>
+              buttonColor.classList.toggle(
+                'button-opacity',
+                buttonColor.id === e.target.id,
+              ),
+            );
+          }
         }
       }
+    } else {
+      return false;
     }
-  } else {
-    return false;
-  }
-});
+  }),
+);

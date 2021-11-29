@@ -1,121 +1,22 @@
 /* 전체 페이지 */
 .timer {
   background-color: rgba(92, 124, 250, 0.1);
-  font-family: 'Noto Sans KR', sans-serif;
-  width: 100%;
-}
-
-/* 1. 타이머 첫번째 페이지 */
-.timer .title-mockup {
-  width: 100%;
-  /* background-color: rosybrown; */
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  /* background-color: rgba(92, 124, 250, 0.1); */
-}
-
-.timer .title-mockup .title-area {
-  display: flex;
-  margin-bottom: 30px;
-  justify-content: center;
-  align-items: center;
 }
 
 .timer .title-mockup .title-area .title {
-  font-size: 100px;
-  font-weight: 700;
-  font-family: 'futura-pt', sans-serif;
-  margin-left: 30px;
   color: #5c7cfa;
 }
 
-.timer .title-mockup .title-area .clock {
-  display: inline-block;
-  width: 30px;
-  margin-left: 10px;
-  margin-top: 40px;
-}
-
 .timer .slide {
-  overflow: hidden;
-  width: 760px;
-  max-width: 700px;
-  height: 60%;
-  background: linear-gradient(
-    136.67deg,
-    rgba(255, 255, 255, 0.1) 15.23%,
-    rgba(255, 255, 255, 0.1) 83.75%
-  );
   box-shadow: 0px 2px 14px -1px rgba(92, 124, 250, 0.28);
-  border-top: 1px solid rgba(255, 255, 255, 0.7);
-  border-left: 1px solid rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  border-radius: 50px;
-}
-
-.slide-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  transition: transform 500ms ease-in-out;
-}
-
-.slide-container .inner {
-  width: 100%;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-}
-
-.slide-container .inner > img {
-  width: 42%;
-}
-
-.timer .title-mockup .slide-button {
-  margin-top: 10px;
-}
-
-.timer .title-mockup .slide-button button {
-  all: unset;
-  background-color: rgb(0, 0, 0);
-  opacity: 0.3;
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  border: none;
-  border-radius: 50%;
-  margin: 0 2px;
-  font-size: 5px;
 }
 
 .timer .title-mockup .slide-button .button-opacity {
   opacity: 0.7;
 }
-/* 2. 타이머 두번째 페이지 */
-.timer .explain {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  box-sizing: border-box;
-}
 
 /* 3. 두번째 페이지 왼쪽 섹션 */
 .timer .explain .left {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-right: 50px;
 }
 
@@ -166,8 +67,7 @@
   box-sizing: border-box;
 }
 
-/* 4. 두번째 페이지 오른쪽 섹션 */
-.timer .explain .right {
+.todolist .explain .right {
   height: 70%;
   display: flex;
   flex-direction: column;
@@ -177,14 +77,10 @@
 }
 
 .timer .explain .right .desc-part {
-  display: flex;
   flex-direction: column;
   align-items: flex-end;
-  font-family: 'Hind', sans-serif;
-  font-size: 14px;
-  text-align: right;
+
   margin: 5em 0;
-  line-height: 1.5em;
 }
 
 .timer .explain .right .desc-part .icon {
@@ -230,16 +126,6 @@
 }
 
 @media (max-width: 768px) {
-  .timer .slide {
-    width: 76vw;
-    max-width: 700px;
-    max-height: 420px;
-  }
-
-  .timer .slide-container .inner > img {
-    width: 50%;
-  }
-
   .timer .explain {
     flex-direction: column;
   }
@@ -272,16 +158,16 @@
     margin-top: 20px;
   }
 
-  .timer .desc1 {
+  .timer .explain .right .desc1 {
     grid-area: desc1;
     height: 130px;
   }
 
-  .timer .desc2 {
+  .timer .explain .right .desc2 {
     grid-area: desc2;
   }
 
-  .timer .desc3 {
+  .timer .explain .right .desc3 {
     grid-area: desc3;
   }
 
@@ -295,8 +181,10 @@
     box-sizing: border-box;
     border-radius: 10px;
     display: flex;
-    font-size: 1;
-    font-size: 13px;
+  }
+
+  .timer .explain .right .desc-part .icon {
+    margin: 8px 0;
   }
 
   .timer .explain .right .desc-part .icon img {
@@ -304,36 +192,13 @@
   }
 
   @media (max-width: 480px) {
-    .timer .title-mockup .title-area {
-      margin-bottom: 20px;
-    }
-
-    .timer .title-mockup .title-area .title {
-      font-size: 70px;
-    }
-
-    .timer .title-mockup .title-area .clock {
-      width: 20px;
-      margin-left: 4px;
-      margin-top: 32px;
-    }
-
-    .timer .slide {
-      max-height: 300px;
-      border-radius: 30px;
-    }
-
-    .timer .slide-container .inner > img {
-      width: 58%;
-    }
-
     .timer .explain .left .light {
       background-size: 94%;
       width: 84vw;
       height: 300px;
     }
 
-    .hover {
+    .timer .explain .left .hover {
       width: 84vw;
       height: 300px;
       top: auto;
@@ -343,6 +208,7 @@
     .timer .explain .right {
       display: flex;
       align-items: center;
+      flex-direction: column;
     }
 
     .timer .explain .right .desc-part {
@@ -351,6 +217,10 @@
       align-items: center;
       text-align: center;
       box-shadow: none;
+    }
+
+    .timer .explain .right .desc-part .icon {
+      margin: 2px 0;
     }
   }
 }

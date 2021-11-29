@@ -4,20 +4,16 @@
   --font-futura: futura-pt, sans-serif;
   --font-noto: 'Noto Sans KR', sans-serif;
 }
-
 body {
   position: relative;
   font-family: futura-pt, sans-serif;
 }
-
 a {
   text-decoration: none;
 }
-
 .container {
   width: 100%;
 }
-/* 1. 랜딩페이지 */
 .landing-page {
   display: flex;
   justify-content: center;
@@ -27,23 +23,19 @@ a {
   padding: 40px;
   box-sizing: border-box;
 }
-
 .landing-page .title {
   font-size: 70px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
-
 .landing-page .sub-title {
   margin-top: 20px;
   font-size: 26px;
   font-weight: 600;
 }
-
 .landing-page .name {
   color: var(--mainColor);
 }
-
 .landing-page .waving-hand {
   width: 100px;
   height: 100px;
@@ -55,7 +47,6 @@ a {
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
-
 @keyframes shaking-hand {
   from {
     transform: rotate(-5deg);
@@ -64,8 +55,6 @@ a {
     transform: rotate(50deg);
   }
 }
-
-/* 2. aboutme 페이지 */
 .about-me {
   display: flex;
   justify-content: space-evenly;
@@ -74,11 +63,10 @@ a {
   box-sizing: border-box;
   position: relative;
 }
-
 .background {
   background: linear-gradient(
       90deg,
-      rgba(184, 224, 142, 0.3) 0%,
+      rgba(184, 224, 142, 0.3) 0,
       rgba(32, 201, 151, 0.3) 100%
     ),
     rgba(32, 201, 151, 0.3);
@@ -91,7 +79,6 @@ a {
   opacity: 0;
   transition: 2.5s;
 }
-
 .about-me .left {
   display: flex;
   flex-direction: column;
@@ -99,30 +86,25 @@ a {
   align-items: center;
   height: 76%;
 }
-
 .about-me .left .top {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .about-me .left .top .memoji {
   width: 160px;
 }
-
 .about-me .left .top .name {
   font-size: 24px;
   font-weight: 600;
   font-family: 'Noto Sans KR', sans-serif;
   margin-top: 14px;
 }
-
 .about-me .left .top .nickname {
   font-size: 18px;
   font-family: var(--font-futura);
   font-weight: 400;
 }
-
 .about-me .left .top .desc {
   margin-top: 10px;
   font-size: 15px;
@@ -130,19 +112,11 @@ a {
   line-height: 1.6em;
   text-align: center;
 }
-
 .about-me .left .bottom .info .mail {
   font-size: 18px;
   font-weight: 600;
-  color: #484848;
-  text-decoration: underline;
-  transition: color 300ms ease-in-out;
+  color: #000;
 }
-
-.about-me .left .bottom .info .mail:hover {
-  color: #02ab79;
-}
-
 .about-me .left .bottom .info .info-btn {
   font-size: 14px;
   font-weight: 600;
@@ -153,19 +127,16 @@ a {
   color: var(--backGroundColor);
   border-radius: 5px;
   border: none;
-  outline: none;
+  outline: 0;
   transition: 0.3s;
   box-sizing: border-box;
 }
-
 .about-me .left .bottom .info .info-btn:hover {
   background-color: #16bf8d;
 }
-
 .about-me .left .bottom .info .info-btn:active {
   background-color: #02ab79;
 }
-
 .about-me .right {
   display: flex;
   flex-direction: column;
@@ -175,7 +146,6 @@ a {
   color: #484848;
   font-size: 24px;
 }
-
 .about-me .right .title {
   margin-bottom: 12px;
   font-size: 28px;
@@ -183,13 +153,11 @@ a {
   color: rgba(0, 0, 0, 0.8);
   align-self: flex-start;
 }
-
 .about-me .right .career-list {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
 }
-
 .about-me .right .career-list .list {
   width: 526px;
   background-color: #fff;
@@ -199,7 +167,6 @@ a {
   padding: 30px 40px;
   box-sizing: border-box;
 }
-
 .about-me .right .career-list .list {
   width: 450px;
   background-color: #fff;
@@ -209,42 +176,34 @@ a {
   padding: 28px 30px;
   box-sizing: border-box;
 }
-
 .about-me .right .career-list .list .list-title {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 16px;
 }
-
 .about-me .right .career-list .list .list-desc {
   font-size: 15px;
   line-height: 1.6em;
 }
-
-/* 768px */
 @media (max-width: 768px) {
   .about-me {
     justify-content: unset;
     flex-direction: column;
     height: auto;
   }
-
   .landing-page .title {
     font-size: 50px;
   }
-
   .landing-page .sub-title {
     margin-top: 15px;
     font-size: 16px;
     line-height: 1.2em;
   }
-
   .landing-page .waving-hand {
     width: 86px;
     height: 86px;
     margin-left: 15px;
   }
-
   .about-me .left {
     display: flex;
     flex-direction: column;
@@ -253,63 +212,51 @@ a {
     height: 80%;
     margin-top: 40px;
   }
-
   .about-me .left .bottom {
     margin-top: 20px;
   }
-
   .about-me .left .top .memoji {
     width: 140px;
   }
-
   .about-me .left .top .name {
     font-size: 20px;
   }
-
   .about-me .left .top .nickname {
     font-size: 16px;
   }
   .about-me .left .top .desc {
     font-size: 14px;
   }
-
   .about-me .left .bottom .info .mail {
     font-size: 14px;
   }
-
   .about-me .left .bottom .info .info-btn {
     font-size: 13px;
     margin-left: 8px;
     padding: 6px 8px;
   }
-
   .about-me .right {
     margin-bottom: 24px;
   }
-
   .about-me .right .title {
     margin-top: 50px;
     font-size: 22px;
     margin-left: 6%;
   }
-
   .about-me .right .career-list {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .about-me .right .career-list .list {
     width: 90%;
     max-width: 590px;
     padding: 20px 26px;
   }
-
   .about-me .right .career-list .list .list-title {
     font-size: 15px;
     line-height: 1.5em;
   }
-
   .about-me .right .career-list .list .list-desc {
     font-size: 12px;
     line-height: 1.5em;

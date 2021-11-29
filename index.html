@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="src/projects.css" />
     <link rel="stylesheet" href="src/timer.css" />
     <link rel="stylesheet" href="src/todolist.css" />
+    <link rel="stylesheet" href="src/timer-todolist.css" />
     <script src="./src/main.js" defer></script>
     <script src="./src/timer.js" defer></script>
     <title>portfolio</title>
@@ -174,18 +175,22 @@
       </div>
 
       <!-- 4. timer -->
-      <div class="timer box2">
+      <div class="work-container timer box2">
         <section class="title-mockup">
           <div class="title-area">
             <h2 class="title">Timer</h2>
-            <img class="clock" src="img/icon/timer.svg" alt="clock" />
+            <img
+              class="title-icon"
+              src="img/icon/timer.svg"
+              alt="타이머 아이콘"
+            />
           </div>
 
           <div class="slide">
             <div class="slide-container">
               <div class="inner">
                 <img
-                  class="mockup-light"
+                  class="mockup-first"
                   src="img/iphone-light.svg"
                   alt="iphone mock up"
                 />
@@ -200,7 +205,7 @@
               <div class="inner">
                 <img
                   class="imac"
-                  src="img/iMac-mockup.svg"
+                  src="img/iMac-mockup.png"
                   alt="iMac mock up"
                 />
               </div>
@@ -250,11 +255,15 @@
       </div>
 
       <!-- 5. todolist -->
-      <div class="todolist box3">
+      <div class="work-container todolist box3">
         <section class="title-mockup">
           <div class="title-area">
             <h2 class="title">Todolist</h2>
-            <img class="clock" src="img/icon/todolist.svg" alt="clock" />
+            <img
+              class="title-icon"
+              src="img/icon/todolist.svg"
+              alt="투두리스트 아이콘"
+            />
           </div>
 
           <div class="slide">
@@ -268,7 +277,7 @@
               </div>
               <div class="inner">
                 <img
-                  class="mockup-main"
+                  class="mockup-first"
                   src="img/todolist/todolist-mockup1.svg"
                   alt="iphone mock up"
                 />
@@ -276,7 +285,7 @@
               <div class="inner">
                 <img
                   class="imac"
-                  src="img/todolist/iMac-mockup.svg"
+                  src="img/todolist/iMac-mockup.png"
                   alt="iMac mock up"
                 />
               </div>
@@ -294,13 +303,23 @@
           <div class="left">
             <div class="todolist-hover"></div>
             <div class="todo-basic">
-              <!-- <img
-                class="list"
-                src="./img/todolist/list-hover.svg"
-                alt="리스트 호버 시"
-              />
-              <img class="list" src="./img/todolist/list-checked.svg" alt="" />
-              <img class="list" src="./img/todolist/input.svg" alt="input창" /> -->
+              <div class="todolist-lists">
+                <img
+                  class="todolist-list"
+                  src="./img/todolist/list-hover.svg"
+                  alt="리스트 호버 시"
+                />
+                <img
+                  class="todolist-list"
+                  src="./img/todolist/list-checked.svg"
+                  alt=""
+                />
+                <img
+                  class="todolist-list input"
+                  src="./img/todolist/input.svg"
+                  alt="input창"
+                />
+              </div>
             </div>
           </div>
           <div class="right">

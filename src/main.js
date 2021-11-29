@@ -1,3 +1,12 @@
+const loading = document.querySelector('.loading');
+const container = document.querySelector('.container');
+
+// window.onload = function () {
+//   console.log('window onload');
+//   container.style.display = 'block';
+//   loading.style.display = 'none';
+// };
+
 const aboutMe = document.querySelector('.about-me');
 const background = document.querySelector('.background');
 
