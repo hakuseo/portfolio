@@ -1,12 +1,4 @@
-const loading = document.querySelector('.loading');
-const container = document.querySelector('.container');
-
-// window.onload = function () {
-//   console.log('window onload');
-//   container.style.display = 'block';
-//   loading.style.display = 'none';
-// };
-
+// 1. aboutme 페이지 백그라운드 이벤트
 const aboutMe = document.querySelector('.about-me');
 const background = document.querySelector('.background');
 
@@ -23,6 +15,7 @@ function checkPosition() {
   }
 }
 
+// 2. projects 버튼 클릭 시 해당 페이지로 이동
 const projectsContainer = document.querySelector('.projects-container');
 const btnArr = projectsContainer.getElementsByTagName('button');
 for (let i = 0; i < btnArr.length; i++) {
@@ -32,4 +25,28 @@ for (let i = 0; i < btnArr.length; i++) {
   });
 }
 
-const list = document.getElementById('.career-llist');
+//3. work페이지부터 projects로 돌아갈 수 있는 버튼
+const timer = document.querySelector('.timer');
+const todolist = document.querySelector('.todolist');
+const projectsBtn = document.querySelector('.projects-btn');
+
+window.addEventListener('scroll', workCheckPosition);
+window.addEventListener('load', workCheckPosition);
+window.addEventListener('resize', workCheckPosition);
+
+function workCheckPosition() {
+  let innerHeight = window.innerHeight;
+  let timerTop = timer.getBoundingClientRect().top;
+  let todolistTop = todolist.getBoundingClientRect().top;
+
+  if (timerTop < 0) {
+    projectsBtn.style.visibility = 'visible';
+  } else {
+    projectsBtn.style.visibility = 'hidden';
+  }
+
+  projectsBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    projectsContainer.scrollIntoView(true);
+  });
+}
