@@ -35,9 +35,7 @@ window.addEventListener('load', workCheckPosition);
 window.addEventListener('resize', workCheckPosition);
 
 function workCheckPosition() {
-  let innerHeight = window.innerHeight;
   let timerTop = timer.getBoundingClientRect().top;
-  let todolistTop = todolist.getBoundingClientRect().top;
 
   if (timerTop < 0) {
     projectsBtn.style.visibility = 'visible';

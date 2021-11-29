@@ -79,8 +79,7 @@
 .timer .explain .right .desc-part {
   flex-direction: column;
   align-items: flex-end;
-
-  margin: 5em 0;
+  margin: 8em 0;
 }
 
 .timer .explain .right .desc-part .icon {
@@ -114,6 +113,9 @@
 }
 
 @media (max-width: 1024px) {
+  .timer .explain .left {
+    margin-right: 30px;
+  }
   .timer .explain .left .light {
     width: 600px;
     height: 500px;
