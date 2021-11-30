@@ -67,10 +67,19 @@ slideBtn.forEach((button) =>
 const workDetailBtn = document.querySelector('.work-detail');
 const modalBody = document.querySelector('.modal--body');
 const exitBtn = document.querySelector('.exit-btn');
+const modalWindow = document.querySelector('.modal--window');
+const body = document.querySelector('body');
+
 workDetailBtn.addEventListener('click', () => {
   modalBody.style.visibility = 'visible';
+  modalWindow.style.visibility = 'visible';
+  body.style.overflow = 'hidden';
+  body.style.touchAction = 'none';
 });
 
 exitBtn.addEventListener('click', () => {
   modalBody.style.visibility = 'hidden';
+  modalWindow.style.visibility = 'hidden';
+  body.style.overflow = 'auto';
+  body.style.touchAction = 'pan-y';
 });
