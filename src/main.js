@@ -46,5 +46,7 @@ function workCheckPosition() {
   projectsBtn.addEventListener('click', (e) => {
     e.preventDefault();
     projectsContainer.scrollIntoView(true);
+    body.style.overflow = 'auto';
+    body.style.touchAction = 'pan-y';
   });
 }
