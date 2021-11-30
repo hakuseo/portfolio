@@ -48,5 +48,7 @@ function workCheckPosition() {
     projectsContainer.scrollIntoView(true);
     body.style.overflow = 'auto';
     body.style.touchAction = 'pan-y';
+    modalBody.style.visibility = 'hidden';
+    modalWindow.style.visibility = 'hidden';
   });
 }
