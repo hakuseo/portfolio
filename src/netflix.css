@@ -1,0 +1,78 @@
+.netflix {
+  position: relative;
+}
+
+.netflix .title-mockup {
+  background-color: rgba(255, 107, 107, 0.2);
+}
+
+.netflix .title-mockup .title-area .title {
+  color: #ff6b6b;
+  margin-left: 0 !important;
+}
+
+.netflix .work-detail {
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-top: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.netflix .work-detail:hover {
+  color: #ff6b6b;
+}
+.modal--body {
+  position: absolute;
+  width: 86%;
+  max-width: 1200px;
+  height: 80vh;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  visibility: hidden;
+  /* padding: 40px 30px; */
+  box-sizing: border-box;
+}
+
+.modal--body .exit-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  padding: 4px;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: rgb(126, 126, 126);
+  cursor: pointer;
+}
+
+.modal--body .exit-btn span {
+  font-size: 26px;
+}
+
+.modal--content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  /* justify-content: center; */
+  align-items: center;
+  border-radius: 10px;
+}
+
+.modal--content img {
+  width: 100%;
+}
+
+.netflix-video {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.netflix .title-mockup .slide .slide-container .inner > img {
+  width: 86% !important;
+}

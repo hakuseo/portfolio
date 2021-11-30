@@ -63,3 +63,14 @@ slideBtn.forEach((button) =>
     }
   }),
 );
+
+const workDetailBtn = document.querySelector('.work-detail');
+const modalBody = document.querySelector('.modal--body');
+const exitBtn = document.querySelector('.exit-btn');
+workDetailBtn.addEventListener('click', () => {
+  modalBody.style.visibility = 'visible';
+});
+
+exitBtn.addEventListener('click', () => {
+  modalBody.style.visibility = 'hidden';
+});

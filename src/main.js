@@ -34,6 +34,7 @@ window.addEventListener('load', workCheckPosition);
 window.addEventListener('resize', workCheckPosition);
 
 function workCheckPosition() {
+  const timer = document.querySelector('.timer');
   let timerTop = timer.getBoundingClientRect().top;
 
   if (timerTop < 0) {

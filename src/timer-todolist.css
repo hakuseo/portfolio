@@ -70,11 +70,11 @@
 
 .work-container .title-mockup .slide .slide-container .inner > img {
   margin: 10%;
-  width: 48%;
+  width: 42%;
 }
 
 .work-container .title-mockup .slide .slide-container .inner .imac {
-  width: 64%;
+  width: 58%;
 }
 
 .work-container .title-mockup .slide-button {
@@ -129,6 +129,18 @@
     max-height: 420px;
   }
 
+  .work-container .title-mockup .slide .slide-container .inner > img {
+    width: 52%;
+  }
+
+  .work-container .title-mockup .slide .slide-container .inner .imac {
+    width: 58%;
+  }
+
+  .work-container .title-mockup .slide .slide-container .inner .mockup-loading {
+    width: 52%;
+  }
+
   .work-container .title-mockup .title-area .title-icon {
     margin-top: 30px;
   }
@@ -145,7 +157,7 @@
   }
 
   .work-container .title-mockup .title-area .title {
-    font-size: 56px;
+    font-size: 50px;
     margin-left: 10px;
   }
 
@@ -156,11 +168,15 @@
   }
 
   .work-container .title-mockup .slide {
-    max-height: 300px;
+    max-height: 280px;
     border-radius: 30px;
   }
 
   .work-container .title-mockup .slide .slide-container .inner > img {
     width: 58%;
+  }
+
+  .work-container .explain .right .desc-part {
+    text-align: center;
   }
 }
