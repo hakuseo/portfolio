@@ -3,7 +3,11 @@
 }
 
 .netflix .title-mockup {
-  background-color: rgba(255, 107, 107, 0.2);
+  background-color: rgba(255, 107, 107, 0.15);
+}
+
+.netflix .slide {
+  box-shadow: 0px 2px 14px -1px rgba(255, 107, 107, 0.28);
 }
 
 .netflix .title-mockup .title-area .title {
@@ -16,7 +20,7 @@
   border-radius: 6px;
   box-sizing: border-box;
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: 20px;
   text-decoration: underline;
   cursor: pointer;
 }

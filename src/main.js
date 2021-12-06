@@ -37,7 +37,7 @@ function workCheckPosition() {
   const timer = document.querySelector('.timer');
   let timerTop = timer.getBoundingClientRect().top;
 
-  if (timerTop < 0) {
+  if (timerTop < 1) {
     projectsBtn.style.visibility = 'visible';
   } else {
     projectsBtn.style.visibility = 'hidden';

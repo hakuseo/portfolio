@@ -1,4 +1,4 @@
-// hover here
+// timer, todolist hover here 화면 띄우기
 const timer = document.querySelector('.timer');
 const hover = timer.querySelector('.hover');
 const light = timer.querySelector('.light');
@@ -35,7 +35,7 @@ function checkPosition() {
   }
 }
 
-// slide show
+// timer, todolist 목업 슬라이드쇼
 const slideContainer = document.querySelectorAll('.slide-container');
 const slideBtn = document.querySelectorAll('.slide-button');
 const array = ['translateX(0%)', 'translateX(-100%)', 'translateX(-200%)'];

@@ -42,7 +42,7 @@
   height: 60%;
   background: linear-gradient(
     136.67deg,
-    rgba(255, 255, 255, 0.2) 15.23%,
+    rgba(255, 255, 255, 0.3) 15.23%,
     rgba(255, 255, 255, 0.2) 83.75%
   );
   border-top: 1px solid rgba(255, 255, 255, 0.7);
@@ -116,7 +116,6 @@
 
 .work-container .explain .right .desc-part {
   display: flex;
-  font-family: 'Hind', sans-serif;
   font-size: 14px;
   line-height: 1.5em;
   text-align: right;

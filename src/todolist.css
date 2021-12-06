@@ -72,8 +72,8 @@
   opacity: 0;
   position: absolute;
   width: 72%;
-  left: 60px;
-  top: 130px;
+  left: 59px;
+  top: 129px;
   transition: 500ms ease-in-out;
 }
 
@@ -82,12 +82,12 @@
 }
 
 .todolist .explain .left .todo-basic .todolist-list {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .todolist .explain .left .todo-basic .todolist-lists .input {
   width: 107%;
-  margin-top: 229px;
+  margin-top: 224px;
   margin-left: -12px;
 }
 
@@ -176,7 +176,7 @@
   }
 
   .todolist .explain .right .desc-part {
-    margin: 1.4em 0;
+    margin: 1.6em 0;
     text-align: left;
   }
 
