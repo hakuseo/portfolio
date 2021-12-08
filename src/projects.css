@@ -16,7 +16,7 @@ body {
   font-size: 28px;
   font-weight: bold;
   color: #5c5c5c;
-  width: 940px;
+  width: 920px;
 }
 
 .projects {
@@ -91,6 +91,7 @@ body {
 @media (max-width: 1024px) {
   .projects-container .title {
     width: 730px;
+    font-size: 24px;
   }
 
   .projects .project {
@@ -118,7 +119,7 @@ body {
 
 @media (max-width: 768px) {
   .projects-container .title {
-    width: 400px;
+    width: 380px;
   }
 
   .projects {

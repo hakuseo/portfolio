@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="src/todolist.css" />
     <link rel="stylesheet" href="src/netflix.css" />
     <link rel="stylesheet" href="src/timer-todolist.css" />
+    <link rel="stylesheet" href="src/portfolio.css" />
     <script src="./src/main.js" defer></script>
     <script src="./src/timer-todolist.js" defer></script>
     <title>portfolio</title>
@@ -167,7 +168,7 @@
             </div>
           </button>
           <button class="project">
-            <img class="portfolio" src="./img/icon/portfolio.svg" alt="" />
+            <img class="portfolio-icon" src="./img/icon/portfolio.svg" alt="" />
             <div class="text">
               <div class="project-title">PORTFOLIO</div>
               <div class="project-tools">HTML, CSS, JS, Figma</div>
@@ -190,6 +191,11 @@
           </div>
 
           <div class="slide">
+            <div class="slide-button">
+              <button id="1" class="button-opacity"></button>
+              <button id="2"></button>
+              <button id="3"></button>
+            </div>
             <div class="slide-container">
               <div class="inner">
                 <img
@@ -200,7 +206,7 @@
               </div>
               <div class="inner">
                 <img
-                  class="mockup-dark"
+                  class="mockup-second"
                   src="img/iphone-dark.svg"
                   alt="iphone mock up"
                 />
@@ -214,11 +220,18 @@
               </div>
             </div>
           </div>
-          <div class="slide-button">
-            <button id="1"></button>
-            <button id="2"></button>
-            <button id="3"></button>
-          </div>
+          <a
+            class="github"
+            href="https://hakuseo.github.io/timer/"
+            target="_blank"
+          >
+            <img
+              class="github-icon"
+              src="./img/icon/github.png"
+              alt="github 아이콘"
+            />
+            <span class="github-page">Github page</span>
+          </a>
         </section>
 
         <section class="explain">
@@ -270,17 +283,22 @@
           </div>
 
           <div class="slide">
+            <div class="slide-button">
+              <button id="1" class="button-opacity"></button>
+              <button id="2"></button>
+              <button id="3"></button>
+            </div>
             <div class="slide-container">
               <div class="inner">
                 <img
-                  class="mockup-loading"
+                  class="mockup-first"
                   src="img/todolist/todolist-mockup.svg"
                   alt="iphone mock up"
                 />
               </div>
               <div class="inner">
                 <img
-                  class="mockup-first"
+                  class="mockup-second"
                   src="img/todolist/todolist-mockup1.svg"
                   alt="iphone mock up"
                 />
@@ -294,10 +312,152 @@
               </div>
             </div>
           </div>
-          <div class="slide-button">
-            <button id="1"></button>
-            <button id="2"></button>
-            <button id="3"></button>
+          <a
+            class="github"
+            href="https://hakuseo.github.io/todolist/"
+            target="_blank"
+          >
+            <img
+              class="github-icon"
+              src="./img/icon/github.png"
+              alt="github 아이콘"
+            />
+            <span class="github-page">Github page</span>
+          </a>
+        </section>
+
+        <!-- 두번째 창 -->
+        <section class="explain">
+          <div class="left">
+            <div class="todolist-hover"></div>
+            <div class="todo-basic">
+              <div class="todolist-lists">
+                <img
+                  class="todolist-list"
+                  src="./img/todolist/list-hover.svg"
+                  alt="리스트 호버 시"
+                />
+                <img
+                  class="todolist-list"
+                  src="./img/todolist/list-checked.svg"
+                  alt=""
+                />
+                <img
+                  class="todolist-list input"
+                  src="./img/todolist/input.svg"
+                  alt="input창"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="desc-part">
+              <p class="desc1">
+                <b>삭제 아이콘</b>
+                메인화면을 최대한 깔끔하게 하기 위해<br />
+                hover시 삭제 아이콘이 보이도록 구현
+              </p>
+            </div>
+            <div class="desc-part">
+              <img
+                src="./img/todolist/something-wrong.png"
+                alt="빈칸 시 오류창"
+              />
+              <p class="desc2">add input창 빈칸 제출 시 경고창</p>
+            </div>
+            <div class="desc-part">
+              <p class="desc3">
+                todolist와 체크 유무를 localstorage에 저장하여<br />
+                새로고침해도 데이터가 그대로 유지 되도록 구현
+              </p>
+            </div>
+            <div class="desc-part">
+              <p class="desc4">
+                input창을 숨겨놓았다가 add 버튼을<br />
+                누르면 나오게끔 하여동적인 요소를 추가
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 6. netflix -->
+      <div class="work-container netflix box3">
+        <section class="title-mockup">
+          <div class="title-area">
+            <h2 class="title">Netflix</h2>
+          </div>
+
+          <div class="slide">
+            <div class="slide-container">
+              <div class="inner">
+                <img
+                  class="mockup-first"
+                  src="img/netflix-mockup.png"
+                  alt="넷플릭스 목업"
+                />
+              </div>
+            </div>
+          </div>
+          <a class="work-detail">> 작업물 자세히보기</a>
+          <div class="modal--window">
+            <div class="modal--body">
+              <button class="exit-btn">
+                <span class="material-icons">close</span>
+              </button>
+              <div class="modal--content">
+                <img src="./img/netflix-1200.webp" alt="" />
+                <video
+                  class="netflix-video"
+                  controls
+                  src="img/netflix-video.mov"
+                ></video>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 7. portfolio -->
+      <div class="work-container portfolio box2">
+        <section class="title-mockup">
+          <div class="title-area">
+            <h2 class="title">Portfolio</h2>
+            <img
+              class="title-icon"
+              src="img/icon/portfolio.svg"
+              alt="포트폴리오 아이콘"
+            />
+          </div>
+          <div class="slide">
+            <div class="slide-button">
+              <button id="1" class="button-opacity"></button>
+              <button id="2"></button>
+              <button id="3"></button>
+            </div>
+            <div class="slide-container">
+              <div class="inner">
+                <img
+                  class="mockup-total"
+                  src="img/portfolio/total-mockup.png"
+                  alt="iMac mock up"
+                />
+              </div>
+              <div class="inner">
+                <img
+                  class="mockup-iphone"
+                  src="img/portfolio/phone-mockup.png"
+                  alt="iphone mock up"
+                />
+              </div>
+              <div class="inner">
+                <img
+                  class="mockup-imac"
+                  src="img/portfolio/imac-mockup.png"
+                  alt="iphone mock up"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
@@ -326,59 +486,10 @@
             </div>
           </div>
           <div class="right">
-            <p class="desc-part desc1">오늘 날짜 업데이트</p>
-            <p class="desc-part desc2">
-              메인화면을 최대한 깔끔하게 하기 위해<br />
-              hover시 삭제 아이콘이 보이도록 구현
-            </p>
-            <p class="desc-part desc3">
-              todolist와 체크 유무를 localstorage에 저장하여<br />
-              새로고침해도 데이터가 그대로 유지 되도록 구현
-            </p>
-            <p class="desc-part desc4">
-              input창을 숨겨놓았다가 add 버튼을<br />
-              누르면 나오게끔 하여동적인 요소를 추가
-            </p>
-          </div>
-        </section>
-      </div>
-
-      <!-- netflix -->
-      <div class="work-container netflix box3">
-        <section class="title-mockup">
-          <div class="title-area">
-            <h2 class="title">Netflix</h2>
-          </div>
-
-          <div class="slide">
-            <div class="slide-container">
-              <div class="inner">
-                <img
-                  class="mockup-first"
-                  src="img/netflix-mockup.png"
-                  alt="넷플릭스 목업"
-                />
-              </div>
-            </div>
-          </div>
-          <a class="work-detail">> 작업물 자세히보기</a>
-          <div class="modal--window">
-            <div class="modal--body">
-              <button class="exit-btn">
-                <span class="material-icons">close</span>
-              </button>
-              <div class="modal--content">
-                <!-- <picture>
-                  <source srcset="./img/netflix-1200.webp" />
-                </picture> -->
-                <img src="./img/netflix-1200.webp" alt="" />
-                <video
-                  class="netflix-video"
-                  controls
-                  src="img/netflix-video.mov"
-                ></video>
-              </div>
-            </div>
+            <p class="desc-part desc1"></p>
+            <p class="desc-part desc2"></p>
+            <p class="desc-part desc3"></p>
+            <p class="desc-part desc4"></p>
           </div>
         </section>
       </div>

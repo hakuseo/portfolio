@@ -11,8 +11,10 @@
   box-shadow: 0px 2px 14px -1px rgba(92, 124, 250, 0.28);
 }
 
-.timer .title-mockup .slide-button .button-opacity {
-  opacity: 0.7;
+.timer .title-mockup .github:hover {
+  filter: invert(59%) sepia(65%) saturate(5961%) hue-rotate(214deg)
+    brightness(103%) contrast(96%);
+  transition: 300ms ease-in-out;
 }
 
 /* 3. 두번째 페이지 왼쪽 섹션 */
@@ -101,7 +103,7 @@
 
 .timer .right .desc-part .icon .timer-setting {
   width: 100px;
-  height: 32px;
+  height: 28px;
 }
 
 .timer .explain .right .desc-part .icon:nth-child(2) span {
@@ -227,7 +229,7 @@
     }
 
     .timer .explain .right .desc-part .icon {
-      margin: 2px 0;
+      margin: 4px 0;
     }
   }
 }

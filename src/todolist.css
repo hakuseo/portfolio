@@ -12,8 +12,10 @@
   box-shadow: 0px 2px 14px -1px rgba(102, 71, 199, 0.28);
 }
 
-.todolist .title-mockup .slide-button .button-opacity {
-  opacity: 0.7;
+.todolist .title-mockup .github:hover {
+  filter: invert(40%) sepia(73%) saturate(702%) hue-rotate(217deg)
+    brightness(94%) contrast(106%);
+  transition: 300ms ease-in-out;
 }
 
 /* 3. 두번째 페이지 왼쪽 섹션 */
@@ -102,6 +104,15 @@
 
 .todolist .explain .right .desc-part {
   margin: 3.5em 0;
+}
+
+.todolist .explain .right .desc-part p b {
+  display: block;
+  font-weight: 600;
+}
+.todolist .explain .right .desc-part img {
+  display: block;
+  width: 200px;
 }
 
 @media (max-width: 1024px) {

@@ -1,0 +1,66 @@
+.portfolio {
+  background-color: rgba(32, 201, 151, 0.3);
+}
+
+.portfolio .title-mockup .title {
+  color: #20c997;
+}
+
+.portfolio .title-mockup .slide .slide-container .inner .mockup-total {
+  width: 72%;
+  max-width: 420px;
+  margin-left: 160px;
+}
+
+.portfolio .title-mockup .slide .slide-container .inner .mockup-imac {
+  width: 68%;
+  max-width: 420px;
+  margin-top: 20px;
+  margin-right: 80px;
+}
+
+.portfolio .title-mockup .slide .slide-container .inner .mockup-iphone {
+  width: 82%;
+  max-width: 480px;
+  margin-right: 50px;
+}
+
+@media (max-width: 768px) {
+  .portfolio .title-mockup .slide .slide-container .inner .mockup-total {
+    width: 80%;
+    max-width: 400px;
+    margin-left: 100px;
+  }
+
+  .portfolio .title-mockup .slide .slide-container .inner .mockup-iphone {
+    width: 88%;
+    max-width: 480px;
+    margin-right: 40px;
+  }
+
+  .portfolio .title-mockup .slide .slide-container .inner .mockup-imac {
+    width: 78%;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-right: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio .title-mockup .slide .slide-container .inner .mockup-total {
+    width: 80%;
+    margin-left: 60px;
+  }
+
+  .portfolio .title-mockup .slide .slide-container .inner .mockup-iphone {
+    width: 88%;
+    margin-right: 30px;
+  }
+
+  .portfolio .title-mockup .slide .slide-container .inner .mockup-imac {
+    width: 82%;
+    max-width: 270px;
+    margin-top: 10px;
+    margin-right: 60px;
+  }
+}
