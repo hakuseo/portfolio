@@ -1,8 +1,8 @@
 // timer, todolist hover here 화면 띄우기
 const timer = document.querySelector('.timer');
-const hover = timer.querySelector('.hover');
+const hover = timer.querySelector('.hover-here');
 const light = timer.querySelector('.light');
-const todolistHover = document.querySelector('.todolist-hover');
+const todolistHover = document.querySelector('.todolist-hover-here');
 const todoBasic = document.querySelector('.todo-basic');
 
 window.addEventListener('scroll', checkPosition);

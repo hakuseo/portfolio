@@ -3,32 +3,31 @@
   background-color: rgba(132, 94, 247, 0.08);
 }
 
-.todolist .title-mockup .title-area .title {
+/* 목업 슬라이드 타이틀 */
+.todolist .mockup-slide .title-area .title {
   letter-spacing: -0.02em;
   color: #845ef7;
 }
 
+/* 목업 슬라이드쇼 창 */
 .todolist .slide {
   box-shadow: 0px 2px 14px -1px rgba(102, 71, 199, 0.28);
 }
 
-.todolist .title-mockup .github:hover {
+/* 깃허브 이동 버튼 */
+.todolist .mockup-slide .github:hover {
   filter: invert(40%) sepia(73%) saturate(702%) hue-rotate(217deg)
     brightness(94%) contrast(106%);
   transition: 300ms ease-in-out;
 }
 
-/* 3. 두번째 페이지 왼쪽 섹션 */
+/* 두번째 페이지(작업설명) 왼쪽 섹션 */
 .todolist .explain .left {
   margin-right: 80px;
 }
 
-.todolist .explain .left .todo-basic:hover {
-  background-color: #f2f3f7;
-  background-image: url('../img/todolist/lists-hover.svg');
-}
-
-.todolist .explain .left .todolist-hover {
+/* hover here 창 */
+.todolist .explain .left .todolist-hover-here {
   width: 420px;
   height: 554px;
   border-radius: 20px;
@@ -54,6 +53,12 @@
   color: #fff;
   padding-bottom: 20px;
   box-sizing: border-box;
+}
+
+/* 왼쪽섹션 호버 시 나오는 화면 */
+.todolist .explain .left .todo-basic:hover {
+  background-color: #f2f3f7;
+  background-image: url('../img/todolist/lists-hover.svg');
 }
 
 .todolist .explain .left .todo-basic {
@@ -93,26 +98,74 @@
   margin-left: -12px;
 }
 
+/* 두번째 페이지(작업설명) 오른쪽 섹션 */
 .todolist .explain .right {
   height: 70%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
   font-size: 14px;
 }
 
-.todolist .explain .right .desc-part {
-  margin: 3.5em 0;
+.todolist .explain .right .todo-desc-part {
+  margin: 2.6em 0;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.todolist .explain .right .desc-part p b {
-  display: block;
+.todolist .explain .right .todo-desc-part b {
   font-weight: 600;
 }
-.todolist .explain .right .desc-part img {
-  display: block;
-  width: 200px;
+
+.todolist .explain .right .desc2 {
+  position: relative;
+}
+
+.todolist .explain .right .desc2 .warning-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.todolist .explain .right .desc2 .warning-title .warning {
+  width: 420px;
+  height: 554px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -188px;
+  right: 327px;
+  transition: 500ms ease-in-out;
+  visibility: hidden;
+}
+
+.todolist .explain .right .desc2 .warning-title .warning .something-wrong {
+  width: 240px;
+}
+
+.todolist .explain .right .desc2 .warning-title .material-icons {
+  font-size: 20px;
+  margin-right: 2px;
+  color: #845ef7;
+  cursor: pointer;
+}
+
+.todolist
+  .explain
+  .right
+  .desc2
+  .warning-title
+  .material-icons:hover
+  ~ .warning {
+  opacity: 1;
+  transition: 500ms ease-in-out;
+  visibility: visible;
 }
 
 @media (max-width: 1024px) {
@@ -121,6 +174,15 @@
     height: 526px;
   }
 
+  .todolist .explain .left .todolist-hover {
+    width: 400px;
+    height: 526px;
+  }
+
+  .todolist .explain .left .todolist-hover-here {
+    width: 400px;
+    height: 526px;
+  }
   .todolist .explain .left {
     margin-right: 40px;
   }
@@ -140,10 +202,23 @@
     margin-top: 214px;
     margin-left: -13px;
   }
+
+  .todolist
+    .explain
+    .right
+    .desc2
+    .warning-title
+    .material-icons:hover
+    ~ .warning {
+    width: 400px;
+    height: 526px;
+    top: -174px;
+    right: 288px;
+  }
 }
 
 @media (max-width: 768px) {
-  .todolist .title-mockup .title-area .title {
+  .todolist .mockup-slide .title-area .title {
     font-size: 70px;
   }
 
@@ -181,18 +256,46 @@
     height: 396px;
   }
 
+  .todolist .explain .left .todolist-hover-here {
+    width: 300px;
+    height: 396px;
+  }
+
+  .todolist .explain .left .todolist-hoverme::before {
+    font-size: 26px;
+  }
   .todolist .explain .right {
     width: 268px;
     align-items: flex-start;
   }
 
-  .todolist .explain .right .desc-part {
+  .todolist .explain .right .todo-desc-part {
     margin: 1.6em 0;
+    align-items: flex-start;
     text-align: left;
   }
 
-  .todolist .explain .right .desc-part .icon img {
-    margin-right: 6px;
+  .todolist .explain .right .desc2 .warning-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .todolist .explain .right .desc2 .warning-title .warning .something-wrong {
+    width: 200px;
+  }
+
+  .todolist
+    .explain
+    .right
+    .desc2
+    .warning-title
+    .material-icons:hover
+    ~ .warning {
+    width: 300px;
+    height: 396px;
+    top: -124px;
+    right: 183px;
   }
 }
 
@@ -200,6 +303,7 @@
 @media (max-width: 480px) {
   .todolist .explain {
     flex-direction: column;
+    height: auto !important;
   }
 
   .todolist .explain .left {
@@ -207,14 +311,23 @@
   }
 
   .todolist .explain .left .todo-basic {
-    width: 280px;
-    height: 376px;
+    width: 240px;
+    height: 326px;
+    border-radius: 14px;
+  }
+
+  .todolist .explain .left .todolist-hover-here {
+    width: 240px;
+    height: 326px;
+  }
+  .todolist .explain .left .todolist-hoverme::before {
+    font-size: 22px;
   }
 
   .todolist .explain .left .todo-basic .todolist-lists {
     width: 72%;
-    left: 39px;
-    top: 88px;
+    left: 33px;
+    top: 74px;
   }
 
   .todolist .explain .left .todo-basic .todolist-list {
@@ -222,8 +335,8 @@
   }
 
   .todolist .explain .left .todo-basic .todolist-lists .input {
-    margin-top: 155px;
-    margin-left: -10px;
+    margin-top: 134px;
+    margin-left: -8px;
   }
 
   .todolist .explain .left .todolist-hover {
@@ -234,18 +347,38 @@
   }
 
   .todolist .explain .right {
-    height: 40%;
+    height: 48%;
     display: flex;
-    align-items: center;
+    width: 248px;
+    margin: 20px 0;
+    margin-left: 10px;
+    font-size: 13px;
+    /* align-items: center; */
+    text-align: right;
   }
 
-  .todolist .explain .right .desc-part {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: none;
-    margin: 0.8em 0;
-    text-align: center;
+  .todolist .explain .right .todo-desc-part {
+    margin: 0.6em 0;
+  }
+
+  .todolist .explain .right .desc2 .warning-title .warning {
+    border-radius: 14px;
+  }
+
+  .todolist .explain .right .desc2 .warning-title .warning .something-wrong {
+    width: 180px;
+  }
+
+  .todolist
+    .explain
+    .right
+    .desc2
+    .warning-title
+    .material-icons:hover
+    ~ .warning {
+    width: 240px;
+    height: 326px;
+    top: -428px;
+    right: -88px;
   }
 }

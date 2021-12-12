@@ -1,8 +1,5 @@
 .netflix {
   position: relative;
-}
-
-.netflix .title-mockup {
   background-color: rgba(255, 107, 107, 0.15);
 }
 
@@ -10,9 +7,13 @@
   box-shadow: 0px 2px 14px -1px rgba(255, 107, 107, 0.28);
 }
 
-.netflix .title-mockup .title-area .title {
+.netflix .mockup-slide .title-area .title {
   color: #ff6b6b;
   margin-left: 0 !important;
+}
+
+.netflix .netflix-mockup-first {
+  width: 80%;
 }
 
 .netflix .work-detail {

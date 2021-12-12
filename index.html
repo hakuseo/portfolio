@@ -180,7 +180,7 @@
       <!-- 4. timer -->
 
       <div class="work-container timer box1">
-        <section class="title-mockup">
+        <section class="mockup-slide">
           <div class="title-area">
             <h2 class="title">Timer</h2>
             <img
@@ -236,7 +236,7 @@
 
         <section class="explain">
           <div class="left">
-            <div class="hover"></div>
+            <div class="hover-here"></div>
             <div class="light"></div>
           </div>
           <div class="right">
@@ -272,7 +272,7 @@
 
       <!-- 5. todolist -->
       <div class="work-container todolist box2">
-        <section class="title-mockup">
+        <section class="mockup-slide">
           <div class="title-area">
             <h2 class="title">Todolist</h2>
             <img
@@ -329,7 +329,7 @@
         <!-- 두번째 창 -->
         <section class="explain">
           <div class="left">
-            <div class="todolist-hover"></div>
+            <div class="todolist-hover-here"></div>
             <div class="todo-basic">
               <div class="todolist-lists">
                 <img
@@ -350,31 +350,45 @@
               </div>
             </div>
           </div>
+
+          <!-- explain 오른쪽 설명파트 -->
           <div class="right">
-            <div class="desc-part">
-              <p class="desc1">
-                <b>삭제 아이콘</b>
+            <div class="todo-desc-part desc1">
+              <b>삭제 아이콘</b>
+              <p>
                 메인화면을 최대한 깔끔하게 하기 위해<br />
                 hover시 삭제 아이콘이 보이도록 구현
               </p>
             </div>
-            <div class="desc-part">
-              <img
-                src="./img/todolist/something-wrong.png"
-                alt="빈칸 시 오류창"
-              />
-              <p class="desc2">add input창 빈칸 제출 시 경고창</p>
+            <div class="todo-desc-part desc2">
+              <div class="warning-title">
+                <span class="material-icons"> error_outline </span>
+                <b>경고창</b>
+                <div class="warning">
+                  <img
+                    class="something-wrong"
+                    src="./img/todolist/something-wrong.png"
+                    alt="경고창"
+                  />
+                </div>
+              </div>
+
+              <p>input창 빈칸 제출 시 경고창</p>
             </div>
-            <div class="desc-part">
-              <p class="desc3">
-                todolist와 체크 유무를 localstorage에 저장하여<br />
-                새로고침해도 데이터가 그대로 유지 되도록 구현
+
+            <div class="todo-desc-part desc3">
+              <b>데이터 저장</b>
+              <p>
+                투두리스트,체크 유무를 localstorage에<br />
+                저장하여 데이터가 그대로 유지 되도록 구현
               </p>
             </div>
-            <div class="desc-part">
-              <p class="desc4">
-                input창을 숨겨놓았다가 add 버튼을<br />
-                누르면 나오게끔 하여동적인 요소를 추가
+
+            <div class="todo-desc-part desc4">
+              <b>Input</b>
+              <p>
+                add버튼 클릭시 input창이 나타나게 하여<br />
+                깔끔하면서도 동적인 요소를 추가
               </p>
             </div>
           </div>
@@ -383,7 +397,7 @@
 
       <!-- 6. netflix -->
       <div class="work-container netflix box3">
-        <section class="title-mockup">
+        <section class="mockup-slide">
           <div class="title-area">
             <h2 class="title">Netflix</h2>
           </div>
@@ -392,7 +406,7 @@
             <div class="slide-container">
               <div class="inner">
                 <img
-                  class="mockup-first"
+                  class="netflix-mockup-first"
                   src="img/netflix-mockup.png"
                   alt="넷플릭스 목업"
                 />
@@ -420,7 +434,7 @@
 
       <!-- 7. portfolio -->
       <div class="work-container portfolio box2">
-        <section class="title-mockup">
+        <section class="mockup-slide">
           <div class="title-area">
             <h2 class="title">Portfolio</h2>
             <img
@@ -462,7 +476,7 @@
         </section>
 
         <!-- 두번째 창 -->
-        <section class="explain">
+        <!-- <section class="explain">
           <div class="left">
             <div class="todolist-hover"></div>
             <div class="todo-basic">
@@ -491,7 +505,7 @@
             <p class="desc-part desc3"></p>
             <p class="desc-part desc4"></p>
           </div>
-        </section>
+        </section> -->
       </div>
     </div>
     <button class="projects-btn">My projects</button>
