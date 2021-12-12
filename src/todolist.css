@@ -378,7 +378,6 @@
     ~ .warning {
     width: 240px;
     height: 326px;
-    top: -428px;
-    right: -88px;
+    top: 0;
   }
 }
