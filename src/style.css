@@ -398,4 +398,14 @@ button {
   .projects-btn {
     left: -28px;
   }
+
+  .about-me .right .career-list .list .list-title {
+    font-size: 13px;
+    line-height: 1.5em;
+  }
+
+  .about-me .right .career-list .list .list-desc {
+    font-size: 12px;
+    line-height: 1.5em;
+  }
 }
