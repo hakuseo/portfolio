@@ -118,6 +118,10 @@
   font-weight: 600;
 }
 
+.todolist .explain .right .todo-desc-part p {
+  text-align: right;
+}
+
 .todolist .explain .right .desc2 {
   position: relative;
 }
@@ -203,13 +207,7 @@
     margin-left: -13px;
   }
 
-  .todolist
-    .explain
-    .right
-    .desc2
-    .warning-title
-    .material-icons:hover
-    ~ .warning {
+  .todolist .explain .right .desc2 .warning-title .warning {
     width: 400px;
     height: 526px;
     top: -174px;
@@ -264,8 +262,9 @@
   .todolist .explain .left .todolist-hoverme::before {
     font-size: 26px;
   }
+
   .todolist .explain .right {
-    width: 268px;
+    min-width: 248px;
     align-items: flex-start;
   }
 
@@ -275,27 +274,25 @@
     text-align: left;
   }
 
+  .todolist .explain .right .todo-desc-part p {
+    text-align: left;
+  }
+
   .todolist .explain .right .desc2 .warning-title {
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
 
-  .todolist .explain .right .desc2 .warning-title .warning .something-wrong {
-    width: 200px;
-  }
-
-  .todolist
-    .explain
-    .right
-    .desc2
-    .warning-title
-    .material-icons:hover
-    ~ .warning {
+  .todolist .explain .right .desc2 .warning-title .warning {
     width: 300px;
     height: 396px;
-    top: -124px;
+    top: -123px;
     right: 183px;
+  }
+
+  .todolist .explain .right .desc2 .warning-title .warning .something-wrong {
+    width: 200px;
   }
 }
 
@@ -319,7 +316,9 @@
   .todolist .explain .left .todolist-hover-here {
     width: 240px;
     height: 326px;
+    border-radius: 14px;
   }
+
   .todolist .explain .left .todolist-hoverme::before {
     font-size: 22px;
   }
@@ -363,21 +362,13 @@
 
   .todolist .explain .right .desc2 .warning-title .warning {
     border-radius: 14px;
+    width: 240px;
+    height: 326px;
+    top: -428px;
+    right: -87px;
   }
 
   .todolist .explain .right .desc2 .warning-title .warning .something-wrong {
     width: 180px;
-  }
-
-  .todolist
-    .explain
-    .right
-    .desc2
-    .warning-title
-    .material-icons:hover
-    ~ .warning {
-    width: 240px;
-    height: 326px;
-    top: 0;
   }
 }
