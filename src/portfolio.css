@@ -64,3 +64,18 @@
     margin-right: 60px;
   }
 }
+
+@media (max-height: 480px) and (orientation: landscape) {
+  .portfolio .mockup-slide .slide .slide-container .inner .mockup-total {
+    width: 66%;
+  }
+
+  .portfolio .mockup-slide .slide .slide-container .inner .mockup-iphone {
+    width: 74%;
+  }
+
+  .portfolio .mockup-slide .slide .slide-container .inner .mockup-imac {
+    width: 64%;
+    margin-right: 50px;
+  }
+}

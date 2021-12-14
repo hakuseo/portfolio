@@ -12,6 +12,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 40px 0;
+  box-sizing: border-box;
 }
 
 .work-container .mockup-slide .title-area {
@@ -138,7 +140,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 30px;
+  padding: 40px 30px;
   box-sizing: border-box;
 }
 /* 4. 두번째 페이지 왼쪽 섹션 */
@@ -154,6 +156,11 @@
   text-align: right;
 }
 
+@media (max-width: 1024px) {
+  .work-container .mockup-slide .slide {
+    height: 64%;
+  }
+}
 @media (max-width: 768px) {
   .work-container .mockup-slide .title-area .title {
     font-size: 60px;
@@ -225,5 +232,20 @@
 
   .work-container .explain .right .desc-part {
     text-align: center;
+  }
+}
+
+@media (max-height: 480px) and (orientation: landscape) {
+  .work-container .mockup-slide {
+    height: auto;
+  }
+
+  .work-container .mockup-slide .slide {
+    width: 62vw;
+    height: 280px;
+    border-radius: 30px;
+  }
+  .work-container .explain {
+    height: auto;
   }
 }

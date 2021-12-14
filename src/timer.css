@@ -251,3 +251,15 @@
     }
   }
 }
+
+@media (max-height: 480px) and (orientation: landscape) {
+  .timer .explain .left .light {
+    width: 460px;
+    height: 380px;
+  }
+
+  .timer .explain .left .hover-here {
+    width: 460px;
+    height: 380px;
+  }
+}
