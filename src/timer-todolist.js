@@ -36,7 +36,6 @@ function checkPosition() {
 }
 
 // timer, todolist 목업 슬라이드쇼
-// const slideContainer = document.querySelectorAll('.slide-container');
 const slideBtn = document.querySelectorAll('.slide-button');
 const array = ['translateX(0%)', 'translateX(-100%)', 'translateX(-200%)'];
 
@@ -44,8 +43,6 @@ slideBtn.forEach((button) =>
   button.addEventListener('click', (e) => {
     const targetEl = button.nextElementSibling;
     if (e.target.tagName === 'BUTTON') {
-      console.log(e.target);
-
       for (let i = 0; i < button.children.length; i++) {
         if (e.target === e.target.parentNode.children[i]) {
           targetEl.style.transform = array[i];
@@ -93,4 +90,15 @@ exitBtn.addEventListener('click', () => {
   modalWindow.style.visibility = 'hidden';
   body.style.overflow = 'auto';
   body.style.touchAction = 'pan-y';
+});
+
+modalWindow.addEventListener('click', (e) => {
+  if (e.target === modalWindow) {
+    modalBody.style.visibility = 'hidden';
+    modalWindow.style.visibility = 'hidden';
+    body.style.overflow = 'auto';
+    body.style.touchAction = 'pan-y';
+  } else {
+    return false;
+  }
 });
