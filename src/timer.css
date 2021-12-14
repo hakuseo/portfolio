@@ -133,6 +133,10 @@
     width: 600px;
     height: 500px;
   }
+
+  .timer .explain .left .hover-here {
+    height: 480px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -154,6 +158,10 @@
     height: 420px;
     top: auto;
     left: auto;
+  }
+
+  .timer .explain .left .hover-here {
+    height: 420px;
   }
 
   .timer .explain .right {
@@ -214,6 +222,14 @@
       height: 300px;
       top: auto;
       left: auto;
+    }
+    .timer .explain .left .hover-here {
+      height: 290px;
+    }
+
+    .timer .explain .left .hover-me::before {
+      font-size: 24px;
+      padding-bottom: 10px;
     }
 
     .timer .explain .right {
