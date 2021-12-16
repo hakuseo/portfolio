@@ -52,3 +52,17 @@ function workCheckPosition() {
     modalWindow.style.visibility = 'hidden';
   });
 }
+
+const memoji = document.querySelector('.memoji');
+console.log(memoji.getAttribute('src'));
+memoji.addEventListener('mouseover', () => {
+  setTimeout(() => {
+    memoji.setAttribute('src', 'img/memoji2.svg');
+    setTimeout(() => {
+      memoji.setAttribute('src', 'img/memoji3.svg');
+      setTimeout(() => {
+        memoji.setAttribute('src', 'img/memoji.svg');
+      }, 1500);
+    }, 1500);
+  }, 1500);
+});
