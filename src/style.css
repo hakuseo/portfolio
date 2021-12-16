@@ -136,7 +136,8 @@ button {
 }
 
 .about-me .left .top .memoji {
-  width: 160px;
+  width: 140px;
+  height: 188px;
 }
 
 .about-me .left .top .name {
@@ -303,6 +304,7 @@ button {
 
   .about-me .left .top .memoji {
     width: 140px;
+    height: 180px;
   }
 
   .about-me .left .top .name {
@@ -381,6 +383,7 @@ button {
 
   .about-me .left .top .memoji {
     width: 110px;
+    height: 150px;
   }
 
   .about-me .right .career-list .list .list-title {
