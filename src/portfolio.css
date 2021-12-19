@@ -25,6 +25,21 @@
   margin-right: 50px;
 }
 
+.portfolio .explain {
+  position: relative;
+}
+
+.portfolio .explain .test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio .explain .test > img {
+  width: 300px;
+  height: 300px;
+}
+
 @media (max-width: 768px) {
   .portfolio .mockup-slide .slide .slide-container .inner .mockup-total {
     width: 80%;
