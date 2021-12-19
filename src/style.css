@@ -251,6 +251,53 @@ button {
   line-height: 1.6em;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  /* background-color: aquamarine; */
+}
+
+footer .footer--container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  padding: 0 20px;
+}
+
+footer .contact {
+  display: flex;
+  align-items: center;
+}
+
+footer .contact .contact--mail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .footer-github img {
+  width: 22px;
+  margin-right: 16px;
+}
+
+footer .email--icon {
+  font-size: 26px;
+}
+
+footer .contact--mail:hover,
+footer .footer-github:hover {
+  filter: invert(57%) sepia(64%) saturate(508%) hue-rotate(111deg)
+    brightness(100%) contrast(89%);
+}
+
+footer .copyright {
+  font-size: 14px;
+}
+/* 1024px */
 @media (max-width: 1024px) {
   .projects-btn {
     left: -30px;
@@ -356,7 +403,7 @@ button {
   }
 
   .about-me .right .career-list .list .list-desc {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5em;
   }
 }
@@ -387,12 +434,12 @@ button {
   }
 
   .about-me .right .career-list .list .list-title {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.5em;
   }
 
   .about-me .right .career-list .list .list-desc {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5em;
   }
 }
