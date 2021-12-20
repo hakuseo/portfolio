@@ -63,6 +63,17 @@ slideBtn.forEach((button) =>
   }),
 );
 
+const error = document.querySelector('.error');
+const warningWindow = document.querySelector('.warning--window');
+
+error.addEventListener('mouseover', () => {
+  warningWindow.classList.add('show');
+});
+error.addEventListener('mouseout', () => {
+  warningWindow.classList.remove('show');
+});
+
+// netflix 작업물 자세히보기 버튼
 const workDetailBtn = document.querySelector('.work-detail');
 const modalBody = document.querySelector('.modal--body');
 const exitBtn = document.querySelector('.exit-btn');
