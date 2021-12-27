@@ -27,17 +27,71 @@
 
 .portfolio .explain {
   position: relative;
+  width: 100%;
+  height: 100vh;
+  justify-content: flex-start;
 }
 
-.portfolio .explain .test {
+.portfolio .square-container {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.portfolio-explain {
+  display: flex;
+}
+
+.portfolio-explain .size-container {
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 820px;
+  height: 540px;
+  overflow: hidden;
+  margin-left: 40px;
+  /* background-color: red; */
 }
 
-.portfolio .explain .test > img {
-  width: 300px;
-  height: 300px;
+.portfolio-explain .web {
+  width: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* animation: identifier ease-in-out 4600ms; */
+}
+
+@keyframes identifier {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -630px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.portfolio-explain .phone {
+  display: flex;
+  width: 200px;
+  position: absolute;
+  top: -906px;
+  right: 0;
+  /* animation: identifier2 ease-in-out 5600ms; */
+  margin-left: 30px;
+}
+
+@keyframes identifier2 {
+  0% {
+    top: -906px;
+  }
+  50% {
+    top: 0;
+  }
+  100% {
+    top: -906px;
+  }
 }
 
 @media (max-width: 768px) {

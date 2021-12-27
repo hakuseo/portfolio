@@ -118,7 +118,7 @@ button {
   left: 0;
   z-index: -10;
   opacity: 0;
-  transition: 2.5s;
+  transition: 3s;
 }
 
 .about-me .left {
@@ -127,6 +127,7 @@ button {
   justify-content: space-between;
   align-items: center;
   height: 76%;
+  margin-left: 80px;
 }
 
 .about-me .left .top {
@@ -204,6 +205,7 @@ button {
   height: 78%;
   color: #484848;
   font-size: 24px;
+  margin-right: 80px;
 }
 
 .about-me .right .title {
@@ -251,6 +253,7 @@ button {
   line-height: 1.6em;
 }
 
+/* footer */
 footer {
   display: flex;
   align-items: center;
@@ -299,6 +302,14 @@ footer .copyright {
 }
 /* 1024px */
 @media (max-width: 1024px) {
+  .about-me .left {
+    margin-left: 0;
+  }
+
+  .about-me .right {
+    margin-right: 0;
+  }
+
   .projects-btn {
     left: -30px;
     padding: 8px 10px;
