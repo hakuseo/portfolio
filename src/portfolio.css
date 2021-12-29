@@ -29,69 +29,86 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  justify-content: flex-start;
 }
 
-.portfolio .square-container {
-  display: flex;
-  /* justify-content: center; */
-}
+.portfolio .explain .left {
+  flex-direction: column;
+  overflow-y: hidden;
+  padding-top: 30px;
+  height: 520px;
 
-.portfolio-explain {
-  display: flex;
-}
-
-.portfolio-explain .size-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 820px;
-  height: 540px;
-  overflow: hidden;
-  margin-left: 40px;
   /* background-color: red; */
 }
 
-.portfolio-explain .web {
-  width: 600px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* animation: identifier ease-in-out 4600ms; */
+.portfolio .explain .left .left--box {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  height: 800px;
+  /* transform: translateY(-580px); */
+}
+
+.box2 {
+}
+
+.box2 > video {
+  width: 500px;
+  margin: 80px 0;
+  border-radius: 16px;
+}
+
+.portfolio .portfolio-explain .tablet {
+  height: 500px;
 }
 
 @keyframes identifier {
   0% {
-    top: 0;
-  }
-  50% {
-    top: -630px;
   }
   100% {
-    top: 0;
+    transform: translateY(-580px);
   }
 }
 
-.portfolio-explain .phone {
+.portfolio .portfolio-explain .phone {
   display: flex;
-  width: 200px;
-  position: absolute;
-  top: -906px;
-  right: 0;
-  /* animation: identifier2 ease-in-out 5600ms; */
-  margin-left: 30px;
+  width: 230px;
+  height: fit-content;
+  margin-left: 24px;
 }
 
-@keyframes identifier2 {
+/* @keyframes identifier2 {
   0% {
-    top: -906px;
-  }
-  50% {
-    top: 0;
+    transform: translateY(-742px);
   }
   100% {
-    top: -906px;
+    transform: translateY(0);
   }
+} */
+
+.portfolio .portfolio-explain .responsive-explain {
+  width: 240px;
+  margin-left: 20px;
+}
+
+.portfolio .portfolio-explain .desc {
+  margin: 4em 0;
+  text-align: right;
+}
+
+.explain-bold,
+.explain-p {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.explain-bold {
+  font-weight: 600;
+}
+
+.explain-p {
+}
+
+@media (max-width: 1024px) {
 }
 
 @media (max-width: 768px) {
@@ -112,6 +129,10 @@
     max-width: 400px;
     margin-top: 10px;
     margin-right: 90px;
+  }
+
+  .portfolio .explain {
+    flex-direction: column;
   }
 }
 

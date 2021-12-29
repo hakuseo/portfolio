@@ -300,6 +300,7 @@ footer .footer-github:hover {
 footer .copyright {
   font-size: 14px;
 }
+
 /* 1024px */
 @media (max-width: 1024px) {
   .about-me .left {

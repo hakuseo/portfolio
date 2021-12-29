@@ -69,6 +69,7 @@ const warningWindow = document.querySelector('.warning--window');
 error.addEventListener('mouseover', () => {
   warningWindow.classList.add('show');
 });
+
 error.addEventListener('mouseout', () => {
   warningWindow.classList.remove('show');
 });
@@ -111,5 +112,25 @@ modalWindow.addEventListener('click', (e) => {
     body.style.touchAction = 'pan-y';
   } else {
     return false;
+  }
+});
+
+// 포트폴리오 페이지 애니메이션 적용
+const portfolio = document.querySelector('.portfolio');
+const portfolioExplain = document.querySelector('.portfolio-explain');
+const portfolioLeft = portfolioExplain.querySelector('.left');
+const leftBox = document.querySelectorAll('.left--box');
+const slideVideo = document.querySelector('.slide-video');
+
+slideVideo.muted = true;
+
+window.addEventListener('scroll', () => {
+  let portfolioExplainTop = portfolioExplain.getBoundingClientRect().top;
+  let innerHeight = window.innerHeight;
+  if (portfolioExplainTop - innerHeight < -100) {
+    leftBox.forEach((item) => {
+      item.style.animation = 'identifier ease-in-out 3000ms forwards';
+      slideVideo.play();
+    });
   }
 });

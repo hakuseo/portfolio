@@ -65,20 +65,3 @@ memoji.addEventListener('mouseover', () => {
     }, 1500);
   }, 1500);
 });
-
-const portfolio = document.querySelector('.portfolio');
-const portfolioExplain = document.querySelector('.portfolio-explain');
-const web = document.querySelector('.web');
-const phone = document.querySelector('.phone');
-
-window.addEventListener('scroll', () => {
-  let portfolioExplainTop = portfolioExplain.getBoundingClientRect().top;
-  console.log(portfolioExplainTop);
-  let innerHeight = window.innerHeight;
-  console.log(innerHeight);
-  console.log(portfolioExplainTop - innerHeight);
-  if (portfolioExplainTop - innerHeight < -100) {
-    web.style.animation = 'identifier ease-in-out 4600ms';
-    phone.style.animation = 'identifier2 ease-in-out 5400ms';
-  }
-});
