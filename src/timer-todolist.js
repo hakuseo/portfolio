@@ -123,14 +123,18 @@ const leftBox = document.querySelectorAll('.left--box');
 const slideVideo = document.querySelector('.slide-video');
 
 slideVideo.muted = true;
+let flag = false;
 
 window.addEventListener('scroll', () => {
   let portfolioExplainTop = portfolioExplain.getBoundingClientRect().top;
   let innerHeight = window.innerHeight;
-  if (portfolioExplainTop - innerHeight < -100) {
+  if (portfolioExplainTop - innerHeight < -100 && !flag) {
     leftBox.forEach((item) => {
-      item.style.animation = 'identifier ease-in-out 3000ms forwards';
-      slideVideo.play();
+      flag = true;
+      item.style.animation = 'identifier ease-in-out 2000ms 2400ms forwards';
+      setTimeout(() => {
+        slideVideo.play();
+      }, 3500);
     });
   }
 });
