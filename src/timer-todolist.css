@@ -159,6 +159,18 @@
   font-size: 14px;
   line-height: 1.5em;
   text-align: right;
+  margin: 20px 0;
+}
+
+.work-container .explain .right .bold {
+  font-weight: 600;
+  margin-bottom: 2px;
+  display: block;
+  font-size: 14px;
+}
+
+.work-container .explain .right .desc-part p {
+  font-size: 13px;
 }
 
 @media (max-width: 1024px) {
@@ -167,10 +179,12 @@
     height: 66%;
   }
 }
+
 @media (max-width: 768px) {
   .work-container .mockup-slide .title-area .title {
     font-size: 60px;
   }
+
   .work-container .mockup-slide .slide {
     position: relative;
     width: 76vw;
@@ -195,6 +209,14 @@
   .work-container .explain .right .desc-part {
     font-size: 13px;
     text-align: left;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .work-container .explain .right .bold {
+    width: 100px;
+    font-size: 13px;
+    margin-top: 4px;
   }
 }
 
@@ -241,7 +263,7 @@
   }
 
   .work-container .explain .right .desc-part {
-    text-align: center;
+    margin-bottom: 10px;
   }
 }
 
