@@ -36,8 +36,6 @@
   overflow-y: hidden;
   padding-top: 30px;
   height: 520px;
-
-  /* background-color: red; */
 }
 
 .portfolio .explain .left .left--box {
@@ -132,12 +130,7 @@
   }
 
   .portfolio .explain .left {
-    height: 486px;
-  }
-
-  .portfolio .explain .right {
-    /* display: flex;
-    justify-content: space-between; */
+    height: 446px;
   }
 
   .portfolio .explain .right .desc-part {
@@ -174,7 +167,7 @@
   }
 
   .portfolio .explain .left {
-    height: 342px;
+    height: 340px;
   }
 
   .portfolio .portfolio-explain .tablet {
@@ -183,8 +176,8 @@
   }
 
   .portfolio .portfolio-explain .phone {
-    margin-left: -4px;
     width: 150px;
+    margin-left: -4px;
   }
 
   .portfolio .explain .right .desc-part .bold {
