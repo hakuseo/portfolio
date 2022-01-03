@@ -152,29 +152,29 @@
 .todolist .explain .right .desc2 .warning-title .material-icons {
   font-size: 20px;
   margin-right: 2px;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   color: #845ef7;
   cursor: pointer;
 }
 
 @media (max-width: 1024px) {
   .todolist .explain .left .todo-basic {
-    width: 400px;
-    height: 526px;
+    width: 380px;
+    height: 512px;
   }
 
   .todolist .explain .left .todolist-hover-here {
-    width: 400px;
-    height: 526px;
+    width: 380px;
+    height: 512px;
   }
   .todolist .explain .left {
     margin-right: 40px;
   }
 
   .todolist .explain .left .todo-basic .todolist-lists {
-    width: 71%;
-    left: 58px;
-    top: 124px;
+    width: 73%;
+    left: 52px;
+    top: 119px;
   }
 
   .todolist .explain .left .todo-basic .todolist-list {
@@ -182,14 +182,14 @@
   }
 
   .todolist .explain .left .todo-basic .todolist-lists .input {
-    width: 109%;
-    margin-top: 214px;
-    margin-left: -13px;
+    width: 108%;
+    margin-top: 209px;
+    margin-left: -12px;
   }
 
   .todolist .explain .left .warning--window {
-    width: 400px;
-    height: 526px;
+    width: 380px;
+    height: 512px;
   }
 }
 
@@ -237,7 +237,7 @@
   }
 
   .todolist .explain .left .warning--window {
-    width: 300px;
+    width: 290px;
     height: 396px;
   }
 
@@ -252,6 +252,11 @@
 
   .todolist .explain .right .desc2 .warning-title {
     justify-content: flex-start;
+  }
+
+  .todolist .explain .right .desc2 .warning-title .material-icons {
+    margin-top: 2px;
+    margin-bottom: 0;
   }
 }
 
@@ -283,9 +288,9 @@
   }
 
   .todolist .explain .left .todo-basic .todolist-lists {
-    width: 72%;
-    left: 33px;
-    top: 74px;
+    width: 74%;
+    left: 31px;
+    top: 75px;
   }
 
   .todolist .explain .left .todo-basic .todolist-list {
@@ -293,8 +298,9 @@
   }
 
   .todolist .explain .left .todo-basic .todolist-lists .input {
-    margin-top: 134px;
-    margin-left: -8px;
+    width: 108%;
+    margin-top: 132px;
+    margin-left: -7px;
   }
 
   .todolist .explain .left .warning--window {
@@ -319,6 +325,6 @@
 
   .container .todolist .explain .right .desc-part {
     margin: 0;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
   }
 }
