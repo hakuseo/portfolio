@@ -85,6 +85,7 @@
 
   .portfolio .portfolio-explain .tablet {
     width: 330px;
+    margin-left: 48px;
   }
 
   .portfolio .portfolio-explain .phone {
@@ -130,7 +131,7 @@
   }
 
   .portfolio .explain .left {
-    height: 446px;
+    height: 488px;
   }
 
   .portfolio .explain .right .desc-part {
@@ -178,6 +179,7 @@
   .portfolio .portfolio-explain .phone {
     width: 150px;
     margin-left: -4px;
+    height: auto;
   }
 
   .portfolio .explain .right .desc-part .bold {
