@@ -261,32 +261,42 @@
           <!-- timer 두번째 페이지 오른쪽 영역 -->
           <div class="right">
             <!-- timer 두번째 페이지 오른쪽 영역 첫번째 파트 -->
+
             <div class="desc-part desc1">
-              <div class="icon">
-                <img class="switch" src="./img/icon/switch.svg" alt="" />
-                <span>Light mode / Dark mode</span>
-              </div>
-              <div class="icon">
-                <img class="reset" src="./img/icon/reset.svg" alt="" />
-                <span>Reset button</span>
-              </div>
-              <div class="icon">
-                <img
-                  class="timer-setting"
-                  src="./img/icon/timer-setting.svg"
-                  alt=""
-                />
-                <span>Timer setting value</span>
+              <b class="bold">네비게이션 바</b>
+              <div class="desc-icon-box">
+                <div class="desc-icon">
+                  <img class="icon switch" src="./img/icon/switch.svg" alt="" />
+                  <span>라이트 / 다크모드</span>
+                </div>
+                <div class="desc-icon">
+                  <img class="icon reset" src="./img/icon/reset.svg" alt="" />
+                  <span>리셋 버튼</span>
+                </div>
+                <div class="desc-icon">
+                  <img
+                    class="icon timer-setting"
+                    src="./img/icon/timer-setting.svg"
+                    alt=""
+                  />
+                  <span>타이머 세팅</span>
+                </div>
               </div>
             </div>
-            <p class="desc-part desc2">
-              타이머의 시간을 실시간으로 저장하여<br />
-              새로고침하거나 재부팅했을 때 시간유지
-            </p>
-            <p class="desc-part desc3">
-              Start / Pause button<br />
-              Space bar로 컨트롤 가능
-            </p>
+            <div class="desc-part desc2">
+              <b class="bold">타이머</b>
+              <p>
+                타이머 시간을 실시간으로<br />
+                저장하여 새로고침 시 시간유지
+              </p>
+            </div>
+            <div class="desc-part desc3">
+              <b class="bold">실행, 멈춤 버튼</b>
+              <p>
+                Start / Pause button을<br />
+                스페이스 바로 컨트롤 가능
+              </p>
+            </div>
           </div>
         </section>
       </div>
@@ -387,31 +397,31 @@
 
           <!-- todolist explain 오른쪽 설명파트 -->
           <div class="right">
-            <div class="todo-desc-part desc1">
-              <b>삭제 아이콘</b>
+            <div class="desc-part desc1">
+              <b class="bold">삭제 아이콘</b>
               <p>
                 메인화면을 최대한 깔끔하게 하기 위해<br />
                 hover시 삭제 아이콘이 보이도록 구현
               </p>
             </div>
-            <div class="todo-desc-part desc2">
+            <div class="desc-part desc2">
               <div class="warning-title">
                 <span class="material-icons error"> error_outline </span>
-                <b>경고창</b>
+                <b class="bold">경고창</b>
               </div>
               <p>input창 빈칸 제출 시 경고창</p>
             </div>
 
-            <div class="todo-desc-part desc3">
-              <b>데이터 저장</b>
+            <div class="desc-part desc3">
+              <b class="bold">데이터 저장</b>
               <p>
-                투두리스트,체크 유무를 localstorage에<br />
+                투두리스트와 체크여부를 localstorage에<br />
                 저장하여 데이터가 그대로 유지 되도록 구현
               </p>
             </div>
 
-            <div class="todo-desc-part desc4">
-              <b>Input</b>
+            <div class="desc-part desc4">
+              <b class="bold">Input</b>
               <p>
                 add버튼 클릭시 input창이 나타나게 하여<br />
                 깔끔하면서도 동적인 요소를 추가
@@ -505,31 +515,39 @@
         <section class="explain portfolio-explain">
           <div class="left">
             <div class="left--box box1">
-              <img class="tablet" src="./img/responsive-tablet2.png" alt="" />
-              <img class="phone" src="./img/responsive-phone1.png" alt="" />
+              <img
+                class="tablet"
+                src="./img/responsive-tablet.png"
+                alt="포트폴리오 태블릿 목업"
+              />
+              <img
+                class="phone"
+                src="./img/responsive-phone.png"
+                alt="포트폴리오 아이폰 목업"
+              />
             </div>
             <div class="left--box box2">
               <video class="slide-video" src="./img/slide-video.mp4"></video>
             </div>
           </div>
-          <div class="responsive-explain">
-            <div class="desc">
-              <b class="explain-bold">반응형 웹</b>
-              <p class="explain-p">
+          <div class="right">
+            <div class="desc-part">
+              <b class="bold">반응형 웹</b>
+              <p>
                 웹, 태블릿, 스마트폰 화면에 맞춰 <br />
                 조정 될 수 있도록 제작
               </p>
             </div>
-            <div class="desc">
-              <b class="explain-bold">슬라이드 쇼</b>
-              <p class="explain-p">
+            <div class="desc-part">
+              <b class="bold">슬라이드 쇼</b>
+              <p>
                 목업 이미지들을 깔끔하게 <br />
                 보여주기 위해 슬라이드 쇼로 구현
               </p>
             </div>
-            <div class="desc">
-              <b class="explain-bold">애니메이션</b>
-              <p class="explain-p">
+            <div class="desc-part">
+              <b class="bold">애니메이션</b>
+              <p>
                 긴 웹페이지가 지루하지 않도록 <br />
                 곳곳에 애니메이션 추가
               </p>
