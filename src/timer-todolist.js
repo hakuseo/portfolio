@@ -131,7 +131,7 @@ window.addEventListener('scroll', () => {
   if (portfolioExplainTop - innerHeight < -100 && !flag) {
     leftBox.forEach((item) => {
       flag = true;
-      item.style.animation = 'identifier ease-in-out 2000ms 2400ms forwards';
+      item.style.animation = 'slide-top ease-in-out 2000ms 2400ms forwards';
       setTimeout(() => {
         slideVideo.play();
       }, 3500);
