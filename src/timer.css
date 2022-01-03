@@ -69,42 +69,32 @@
   box-sizing: border-box;
 }
 
-.todolist .explain .right {
-  height: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  font-size: 14px;
-}
-
 .timer .explain .right .desc-part {
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 8em 0;
+  padding: 30px 0;
 }
 
-.timer .explain .right .desc-part .icon {
+.timer .explain .right .desc-part .desc-icon {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin: 5px;
+  margin: 4px 0;
 }
 
-.timer .right .desc-part .icon .switch {
-  width: 42px;
-  height: 22px;
+.timer .explain .right .desc-part .desc-icon .icon {
+  margin-right: 6px;
 }
 
-.timer .right .desc-part .icon .reset {
-  width: 16px;
-  height: 16px;
-  margin-left: 3px;
+.timer .right .desc-part .desc-icon .switch {
+  width: 38px;
 }
 
-.timer .right .desc-part .icon .timer-setting {
-  width: 100px;
-  height: 28px;
+.timer .right .desc-part .desc-icon .reset {
+  width: 14px;
+  margin-left: 2px;
+}
+
+.timer .right .desc-part .desc-icon .timer-setting {
+  width: 90px;
 }
 
 .timer .explain .right .desc-part .icon:nth-child(2) span {
@@ -112,11 +102,12 @@
 }
 
 .timer .explain .right .desc-part .icon img {
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .timer .explain .right .desc-part .icon .switch {
   border-radius: 14px;
+  margin-top: 3px;
 }
 
 @media (max-width: 1024px) {
@@ -125,8 +116,8 @@
   }
 
   .timer .explain .left .light {
-    width: 580px;
-    height: 480px;
+    width: 540px;
+    height: 460px;
   }
 
   .timer .explain .left .hover {
@@ -165,90 +156,63 @@
   }
 
   .timer .explain .right {
-    height: auto;
-    align-items: flex-start;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      'desc1 desc2'
-      'desc1 desc3';
-    margin-top: 20px;
-  }
-
-  .timer .explain .right .desc1 {
-    grid-area: desc1;
-    height: 130px;
-  }
-
-  .timer .explain .right .desc2 {
-    grid-area: desc2;
-  }
-
-  .timer .explain .right .desc3 {
-    grid-area: desc3;
+    display: flex;
+    margin-top: 10px;
+    width: 500px;
+    justify-content: space-between;
   }
 
   .timer .explain .right .desc-part {
-    margin: 0;
-    text-align: left;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 6px;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px 0;
+  }
+
+  .timer .explain .right .desc-part .desc-icon {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timer .explain .left .light {
+    background-size: 94%;
+    width: 340px;
+    height: 280px;
+    max-height: 300px;
   }
 
-  .timer .explain .right .desc-part .icon {
-    margin: 8px 0;
+  .timer .explain .left .hover {
+    width: 84vw;
+    height: 300px;
+    top: auto;
+    left: auto;
   }
 
-  .timer .explain .right .desc-part .icon img {
-    margin-right: 6px;
+  .timer .explain .left .hover-here {
+    height: 280px;
   }
 
-  @media (max-width: 480px) {
-    .timer .explain .left .light {
-      background-size: 94%;
-      width: 84vw;
-      height: 290px;
-      max-height: 300px;
-    }
+  .timer .explain .left .hover-me::before {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
 
-    .timer .explain .left .hover {
-      width: 84vw;
-      height: 300px;
-      top: auto;
-      left: auto;
-    }
-    .timer .explain .left .hover-here {
-      height: 290px;
-    }
+  .timer .explain .right {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: auto;
+  }
 
-    .timer .explain .left .hover-me::before {
-      font-size: 24px;
-      padding-bottom: 10px;
-    }
-
-    .timer .explain .right {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    .timer .explain .right .desc-part {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      box-shadow: none;
-    }
-
-    .timer .explain .right .desc-part .icon {
-      margin: 4px 0;
-    }
+  .timer .explain .right .desc-part {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* text-align: center; */
+    box-shadow: none;
   }
 }
 
