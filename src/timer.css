@@ -211,7 +211,6 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* text-align: center; */
     box-shadow: none;
   }
 }
