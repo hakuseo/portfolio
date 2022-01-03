@@ -364,6 +364,7 @@ footer .copyright {
   .about-me .left .top .memoji {
     width: 140px;
     height: 180px;
+    transition: 500ms ease-in-out;
   }
 
   .about-me .left .top .name {
