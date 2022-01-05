@@ -128,16 +128,15 @@
 
   .portfolio .explain {
     flex-direction: column;
-    /* justify-content: flex-start; */
   }
 
   .portfolio .explain .left {
-    height: 488px;
+    height: 438px;
     padding-top: 0;
   }
 
   .portfolio .explain .left .left--box {
-    margin-top: 50px;
+    margin-top: 0;
   }
 
   .portfolio .explain .right .desc-part {
@@ -152,6 +151,14 @@
 
   .portfolio .explain .right .desc-part p {
     display: inline-block;
+  }
+
+  @keyframes slide-top {
+    0% {
+    }
+    100% {
+      transform: translateY(-500px);
+    }
   }
 }
 
@@ -174,7 +181,7 @@
   }
 
   .portfolio .explain .left {
-    height: 340px;
+    height: 280px;
   }
 
   .portfolio .portfolio-explain .tablet {
@@ -192,7 +199,7 @@
     width: 90px;
   }
 
-  .box2 > video {
+  .portfolio .box2 > video {
     width: 310px;
   }
 
@@ -200,7 +207,7 @@
     0% {
     }
     100% {
-      transform: translateY(-400px);
+      transform: translateY(-350px);
     }
   }
 }
