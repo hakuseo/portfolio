@@ -128,10 +128,16 @@
 
   .portfolio .explain {
     flex-direction: column;
+    /* justify-content: flex-start; */
   }
 
   .portfolio .explain .left {
     height: 488px;
+    padding-top: 0;
+  }
+
+  .portfolio .explain .left .left--box {
+    margin-top: 50px;
   }
 
   .portfolio .explain .right .desc-part {
@@ -172,14 +178,14 @@
   }
 
   .portfolio .portfolio-explain .tablet {
-    width: 214px;
+    width: 204px;
     margin-left: 39px;
   }
 
   .portfolio .portfolio-explain .phone {
     height: auto;
     margin-left: -4px;
-    width: 150px;
+    width: 140px;
   }
 
   .portfolio .explain .right .desc-part .bold {
@@ -187,14 +193,14 @@
   }
 
   .box2 > video {
-    width: 320px;
+    width: 310px;
   }
 
   @keyframes slide-top {
     0% {
     }
     100% {
-      transform: translateY(-415px);
+      transform: translateY(-400px);
     }
   }
 }
