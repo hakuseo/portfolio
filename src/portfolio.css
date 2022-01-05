@@ -177,9 +177,9 @@
   }
 
   .portfolio .portfolio-explain .phone {
-    height: 230px;
+    height: auto;
     margin-left: -4px;
-    width: fit-content;
+    width: 150px;
   }
 
   .portfolio .explain .right .desc-part .bold {
