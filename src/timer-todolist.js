@@ -134,6 +134,7 @@ window.addEventListener('scroll', () => {
       item.style.animation = 'slide-top ease-in-out 2000ms 2400ms forwards';
       setTimeout(() => {
         slideVideo.play();
+        slideVideo.setAttribute('playsinline', true);
       }, 3500);
     });
   }
