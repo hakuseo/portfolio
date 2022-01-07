@@ -49,7 +49,7 @@
 .left--box > video {
   width: 500px;
   margin-top: 80px;
-  margin-left: -56px;
+  margin-right: 50px;
   border-radius: 16px;
 }
 
@@ -100,7 +100,8 @@
 
   .left--box > video {
     width: 460px;
-    margin-left: -22px;
+    margin-right: 22px;
+    margin-top: 82px;
   }
 
   @keyframes slide-top {
@@ -147,6 +148,12 @@
     margin-left: 0;
   }
 
+  .left--box > video {
+    width: 500px;
+    margin-top: 68px;
+    margin-right: 0;
+  }
+
   .portfolio .explain .right .desc-part {
     display: flex;
     padding: 0;
@@ -163,10 +170,6 @@
 
   .portfolio .explain .left .box1 {
     margin-left: 50px;
-  }
-
-  .box2 > video {
-    margin-left: 0;
   }
 
   .portfolio .explain .right {
@@ -222,8 +225,9 @@
     width: 90px;
   }
 
-  .portfolio .box2 > video {
+  .left--box > video {
     width: 310px;
+    margin-top: 83px;
   }
 
   @keyframes slide-top {
