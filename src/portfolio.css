@@ -46,18 +46,11 @@
   margin-left: -10px;
 }
 
-.box2 > video {
+.left--box > video {
   width: 500px;
   margin-top: 80px;
   margin-left: -56px;
   border-radius: 16px;
-}
-
-.box3 > video {
-  width: 500px;
-  margin-top: 100px;
-  border-radius: 16px;
-  transform: translateY(-586px);
 }
 
 .portfolio .explain .tablet {
@@ -98,7 +91,6 @@
 
   .portfolio .portfolio-explain .tablet {
     width: 330px;
-    /* margin-left: 48px; */
   }
 
   .portfolio .portfolio-explain .phone {
@@ -106,7 +98,7 @@
     width: 210px;
   }
 
-  .box2 > video {
+  .left--box > video {
     width: 460px;
     margin-left: -22px;
   }
@@ -152,6 +144,7 @@
   .portfolio .explain .left .left--box {
     margin-top: 0;
     margin-right: 0;
+    margin-left: 0;
   }
 
   .portfolio .explain .right .desc-part {

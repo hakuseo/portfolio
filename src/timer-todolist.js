@@ -135,7 +135,7 @@ window.addEventListener('scroll', () => {
       setTimeout(() => {
         slideVideo.play();
         slideVideo.setAttribute('playsinline', true);
-      }, 3500);
+      }, 3000);
     });
   }
 });
