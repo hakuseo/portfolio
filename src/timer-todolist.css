@@ -24,7 +24,7 @@
 }
 
 .work-container .mockup-slide .title-area .title {
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 700;
   font-family: 'futura-pt', sans-serif;
   margin-left: 30px;
@@ -73,8 +73,8 @@
 
 .work-container .mockup-slide .slide {
   overflow: hidden;
-  width: 760px;
-  max-width: 700px;
+  width: 640px;
+  max-width: 640px;
   height: 72%;
   max-height: 510px;
   background: linear-gradient(
@@ -175,8 +175,8 @@
 
 @media (max-width: 1024px) {
   .work-container .mockup-slide .slide {
-    width: 660px;
-    height: 66%;
+    width: 600px;
+    height: 68%;
   }
 }
 
