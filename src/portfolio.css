@@ -1,8 +1,16 @@
 .portfolio {
-  background-color: rgba(32, 201, 151, 0.3);
+  background-color: rgba(32, 201, 151, 0.2);
 }
 
 .portfolio .mockup-slide .title {
+  color: #20c997;
+}
+
+.portfolio .mockup-slide .title-area .work {
+  background-color: #20c997;
+}
+
+.portfolio .mockup-slide .title-area .program {
   color: #20c997;
 }
 

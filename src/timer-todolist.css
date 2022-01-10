@@ -1,10 +1,10 @@
-.work-container {
+.page-container {
   font-family: 'Noto Sans KR', sans-serif;
   width: 100%;
 }
 
 /* 1. work 첫번째 페이지 */
-.work-container .mockup-slide {
+.page-container .mockup-slide {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -16,28 +16,56 @@
   box-sizing: border-box;
 }
 
-.work-container .mockup-slide .title-area {
-  display: flex;
+.page-container .mockup-slide .title-area {
   margin-bottom: 20px;
-  justify-content: center;
-  align-items: center;
 }
 
-.work-container .mockup-slide .title-area .title {
+.page-container .mockup-slide .title-area .title-box {
+  display: flex;
+}
+
+.page-container .mockup-slide .title-area .title {
   font-size: 70px;
   font-weight: 700;
   font-family: 'futura-pt', sans-serif;
   margin-left: 30px;
 }
 
-.work-container .mockup-slide .title-area .title-icon {
+.page-container .mockup-slide .title-area .title-icon {
   display: inline-block;
   width: 26px;
   margin-left: 10px;
   margin-top: 26px;
 }
 
-.work-container .mockup-slide .slide-button {
+.page-container .mockup-slide .title-area .work-program {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 28px;
+}
+
+.page-container .mockup-slide .title-area .work {
+  color: #ffffff;
+  opacity: 0.5;
+  padding: 6px 8px 7px 8px;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.page-container .mockup-slide .title-area .program {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 8px;
+  font-family: 'futura-pt', sans-serif;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+.page-container .mockup-slide .slide-button {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -46,7 +74,7 @@
   z-index: 1000;
 }
 
-.work-container .mockup-slide .slide-button button {
+.page-container .mockup-slide .slide-button button {
   all: unset;
   padding: 6px;
   display: flex;
@@ -56,7 +84,7 @@
   cursor: pointer;
 }
 
-.work-container .mockup-slide .slide-button button::after {
+.page-container .mockup-slide .slide-button button::after {
   content: '';
   background-color: rgb(0, 0, 0);
 
@@ -67,11 +95,11 @@
   border-radius: 50%;
 }
 
-.work-container .mockup-slide .slide-button .button-opacity {
+.page-container .mockup-slide .slide-button .button-opacity {
   opacity: 0.7;
 }
 
-.work-container .mockup-slide .slide {
+.page-container .mockup-slide .slide {
   overflow: hidden;
   width: 640px;
   max-width: 640px;
@@ -88,7 +116,7 @@
   border-radius: 50px;
 }
 
-.work-container .mockup-slide .slide .slide-container {
+.page-container .mockup-slide .slide .slide-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -99,22 +127,22 @@
   transition: transform 500ms ease-in-out;
 }
 
-.work-container .mockup-slide .slide .slide-container .inner {
+.page-container .mockup-slide .slide .slide-container .inner {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.work-container .mockup-slide .slide .slide-container .inner .mockup-first {
+.page-container .mockup-slide .slide .slide-container .inner .mockup-first {
   margin: 6%;
   width: 42%;
 }
 
-.work-container .mockup-slide .slide .slide-container .inner .mockup-second {
+.page-container .mockup-slide .slide .slide-container .inner .mockup-second {
   width: 48%;
 }
 
-.work-container .mockup-slide .slide .slide-container .inner .imac {
+.page-container .mockup-slide .slide .slide-container .inner .imac {
   width: 56%;
   margin: 6%;
 }
@@ -139,7 +167,7 @@
 }
 
 /* 2. work 두번째 페이지 */
-.work-container .explain {
+.page-container .explain {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -149,71 +177,71 @@
   box-sizing: border-box;
 }
 /* 4. 두번째 페이지 왼쪽 섹션 */
-.work-container .explain .left {
+.page-container .explain .left {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.work-container .explain .right .desc-part {
+.page-container .explain .right .desc-part {
   font-size: 14px;
   line-height: 1.5em;
   text-align: right;
   margin: 20px 0;
 }
 
-.work-container .explain .right .bold {
+.page-container .explain .right .bold {
   font-weight: 600;
   margin-bottom: 2px;
   display: block;
   font-size: 14px;
 }
 
-.work-container .explain .right .desc-part p {
+.page-container .explain .right .desc-part p {
   font-size: 13px;
 }
 
 @media (max-width: 1024px) {
-  .work-container .mockup-slide .slide {
+  .page-container .mockup-slide .slide {
     width: 600px;
     height: 68%;
   }
 }
 
 @media (max-width: 768px) {
-  .work-container .mockup-slide .title-area .title {
+  .page-container .mockup-slide .title-area .title {
     font-size: 60px;
   }
 
-  .work-container .mockup-slide .slide {
+  .page-container .mockup-slide .slide {
     position: relative;
     width: 76vw;
     max-width: 700px;
     max-height: 420px;
   }
 
-  .work-container .mockup-slide .slide .slide-container .inner .mockup-first {
+  .page-container .mockup-slide .slide .slide-container .inner .mockup-first {
     width: 48%;
   }
 
-  .work-container .mockup-slide .slide .slide-container .inner .mockup-second {
+  .page-container .mockup-slide .slide .slide-container .inner .mockup-second {
     width: 54%;
   }
 
-  .work-container .mockup-slide .title-area .title-icon {
+  .page-container .mockup-slide .title-area .title-icon {
     width: 22px;
     margin-top: 20px;
     margin-left: 6px;
   }
 
-  .work-container .explain .right .desc-part {
+  .page-container .explain .right .desc-part {
     font-size: 13px;
     text-align: left;
     margin: 10px 0;
     padding: 0;
   }
 
-  .work-container .explain .right .bold {
+  .page-container .explain .right .bold {
     width: 100px;
     font-size: 13px;
     margin-top: 2px;
@@ -221,63 +249,72 @@
 }
 
 @media (max-width: 480px) {
-  .work-container .mockup-slide .title-area {
-    margin-bottom: 8px;
+  .page-container .mockup-slide .title-area {
+    margin-bottom: 20px;
   }
 
-  .work-container .mockup-slide .title-area .title {
+  .page-container .mockup-slide .title-area .title {
     font-size: 50px;
     margin-left: 10px;
   }
 
-  .work-container .mockup-slide .title-area .title-icon {
+  .page-container .mockup-slide .title-area .title-icon {
     width: 20px;
     margin-top: 20px;
     margin-left: 4px;
   }
 
-  .work-container .mockup-slide .slide {
+  .page-container .mockup-slide .title-area .work-program {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .page-container .mockup-slide .title-area .work {
+    padding: 4px 6px 5px 6px;
+  }
+
+  .page-container .mockup-slide .slide {
     max-height: 280px;
     border-radius: 30px;
   }
 
-  .work-container .mockup-slide .slide-button button {
+  .page-container .mockup-slide .slide-button button {
     margin-right: -8px;
   }
 
-  .work-container .mockup-slide .slide-button button::after {
+  .page-container .mockup-slide .slide-button button::after {
     width: 9px;
     height: 9px;
   }
 
-  .work-container .mockup-slide .slide .slide-container .inner .mockup-first {
+  .page-container .mockup-slide .slide .slide-container .inner .mockup-first {
     width: 54%;
   }
 
-  .work-container .mockup-slide .slide .slide-container .inner .mockup-second {
+  .page-container .mockup-slide .slide .slide-container .inner .mockup-second {
     width: 58%;
   }
 
-  .work-container .mockup-slide .slide .slide-container .inner .imac {
+  .page-container .mockup-slide .slide .slide-container .inner .imac {
     width: 60%;
   }
 
-  .work-container .explain .right .desc-part {
+  .page-container .explain .right .desc-part {
     margin-bottom: 10px;
   }
 }
 
 @media (max-height: 480px) and (orientation: landscape) {
-  .work-container .mockup-slide {
+  .page-container .mockup-slide {
     height: auto;
   }
 
-  .work-container .mockup-slide .slide {
+  .page-container .mockup-slide .slide {
     width: 62vw;
     height: 280px;
     border-radius: 30px;
   }
-  .work-container .explain {
+  .page-container .explain {
     height: auto;
   }
 }

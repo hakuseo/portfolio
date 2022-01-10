@@ -137,8 +137,8 @@ button {
 }
 
 .about-me .left .top .memoji {
-  width: 140px;
-  height: 188px;
+  width: 120px;
+  height: 180px;
 }
 
 .about-me .left .top .name {
@@ -228,7 +228,7 @@ button {
   border-radius: 15px;
   margin-bottom: 20px;
   font-family: var(--font-noto);
-  padding: 30px 40px;
+  padding: 26px 28px;
   box-sizing: border-box;
 }
 
@@ -249,7 +249,7 @@ button {
 }
 
 .about-me .right .career-list .list .list-desc {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6em;
 }
 
@@ -362,7 +362,7 @@ footer .copyright {
   }
 
   .about-me .left .top .memoji {
-    width: 140px;
+    width: 120px;
     height: 180px;
     transition: 500ms ease-in-out;
   }

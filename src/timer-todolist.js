@@ -75,13 +75,13 @@ error.addEventListener('mouseout', () => {
 });
 
 // netflix 작업물 자세히보기 버튼
-const workDetailBtn = document.querySelector('.work-detail');
+const netflixDetailBtn = document.querySelector('.netflix-detail');
 const modalBody = document.querySelector('.modal--body');
 const exitBtn = document.querySelector('.exit-btn');
 const modalWindow = document.querySelector('.modal--window');
 const body = document.querySelector('body');
 
-workDetailBtn.addEventListener('click', () => {
+netflixDetailBtn.addEventListener('click', () => {
   modalBody.style.visibility = 'visible';
   modalWindow.style.visibility = 'visible';
   body.style.overflow = 'hidden';

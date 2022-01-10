@@ -7,6 +7,15 @@
   color: #5c7cfa;
 }
 
+.container .timer .mockup-slide .title-area .work {
+  background-color: #5c7cfa;
+  opacity: 0.5;
+}
+
+.container .timer .mockup-slide .title-area .program {
+  color: #5c7cfa;
+}
+
 .timer .slide {
   box-shadow: 0px 2px 14px -1px rgba(92, 124, 250, 0.28);
 }

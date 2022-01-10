@@ -9,14 +9,27 @@
 
 .netflix .mockup-slide .title-area .title {
   color: #ff6b6b;
-  margin-left: 0 !important;
+}
+
+.netflix .mockup-slide .title-area .work {
+  background-color: #ff6b6b;
+}
+
+.netflix .mockup-slide .title-area .program {
+  color: #ff6b6b;
+}
+
+.netflix .mockup-slide .title-area .netflix-icon {
+  width: 22px;
+  margin-top: 22px;
+  margin-left: 10px;
 }
 
 .netflix .netflix-mockup-first {
   width: 76%;
 }
 
-.netflix .work-detail {
+.netflix .netflix-detail {
   padding: 8px 12px;
   border-radius: 6px;
   box-sizing: border-box;
@@ -26,7 +39,7 @@
   cursor: pointer;
 }
 
-.netflix .work-detail:hover {
+.netflix .netflix-detail:hover {
   color: #ff6b6b;
 }
 
@@ -95,4 +108,18 @@
 
 .netflix .title-mockup .slide .slide-container .inner > img {
   width: 86% !important;
+}
+
+@media (max-width: 768px) {
+  .netflix .mockup-slide .title-area .netflix-icon {
+    width: 16px;
+    margin-left: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .netflix .mockup-slide .title-area .netflix-icon {
+    width: 14px;
+    margin-top: 16px;
+    margin-left: 6px;
+  }
 }
