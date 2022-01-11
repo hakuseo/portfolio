@@ -35,7 +35,7 @@ function checkPosition() {
   }
 }
 
-// timer, todolist 목업 슬라이드쇼
+// timer, todolist 목업 슬라이드
 const slideBtn = document.querySelectorAll('.slide-button');
 const array = ['translateX(0%)', 'translateX(-100%)', 'translateX(-200%)'];
 
@@ -63,6 +63,7 @@ slideBtn.forEach((button) =>
   }),
 );
 
+// todolist 경고창 아이콘 마우스 오버 시 나오는 창
 const error = document.querySelector('.error');
 const warningWindow = document.querySelector('.warning--window');
 
@@ -128,7 +129,7 @@ let flag = false;
 window.addEventListener('scroll', () => {
   let portfolioExplainTop = portfolioExplain.getBoundingClientRect().top;
   let innerHeight = window.innerHeight;
-  if (portfolioExplainTop - innerHeight < -100 && !flag) {
+  if (portfolioExplainTop - innerHeight < -50 && !flag) {
     leftBox.forEach((item) => {
       flag = true;
       item.style.animation = 'slide-top ease-in-out 2000ms 2400ms forwards';

@@ -22,6 +22,7 @@
 
 .page-container .mockup-slide .title-area .title-box {
   display: flex;
+  justify-content: center;
 }
 
 .page-container .mockup-slide .title-area .title {
