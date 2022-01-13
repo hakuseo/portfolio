@@ -1,5 +1,5 @@
 // 1. aboutme 페이지 백그라운드 이벤트
-const aboutMe = document.querySelector('.about-me');
+const about = document.querySelector('.about');
 const background = document.querySelector('.background');
 
 window.addEventListener('scroll', checkPosition);
@@ -8,16 +8,16 @@ window.addEventListener('resize', checkPosition);
 
 function checkPosition() {
   let innerHeight = window.innerHeight;
-  let aboutMeTop = aboutMe.getBoundingClientRect().top;
+  let aboutTop = about.getBoundingClientRect().top;
 
-  if (innerHeight > aboutMeTop + 300) {
+  if (innerHeight > aboutTop + 300) {
     background.style.opacity = '1';
   }
 }
 
 // 2. projects 버튼 클릭 시 해당 페이지로 이동
-const projectsContainer = document.querySelector('.projects-container');
-const btnArr = projectsContainer.getElementsByTagName('button');
+const projects = document.querySelector('.projects');
+const btnArr = projects.getElementsByTagName('button');
 for (let i = 0; i < btnArr.length; i++) {
   btnArr[i].addEventListener('click', function (e) {
     e.preventDefault();
@@ -45,7 +45,7 @@ function workCheckPosition() {
 
   projectsBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    projectsContainer.scrollIntoView(true);
+    projects.scrollIntoView(true);
     body.style.overflow = 'auto';
     body.style.touchAction = 'pan-y';
     modalBody.style.visibility = 'hidden';
@@ -53,7 +53,7 @@ function workCheckPosition() {
   });
 }
 
-const memoji = document.querySelector('.memoji');
+const memoji = document.querySelector('.about__memoji');
 memoji.addEventListener('mouseover', () => {
   setTimeout(() => {
     memoji.setAttribute('src', 'img/memoji2.svg');

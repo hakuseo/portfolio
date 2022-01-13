@@ -2,7 +2,7 @@ body {
   font-family: futura-pt, sans-serif;
 }
 
-.projects-container {
+.projects {
   height: 100vh;
   margin: auto;
   display: flex;
@@ -13,7 +13,7 @@ body {
   box-sizing: border-box;
 }
 
-.projects-container .title {
+.projects .projects__title {
   margin-bottom: 20px;
   font-size: 28px;
   font-weight: bold;
@@ -21,14 +21,14 @@ body {
   width: 920px;
 }
 
-.projects {
+.projects-list {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.projects .project {
+.projects-list .project-list__button {
   width: 220px;
   height: 220px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -39,64 +39,58 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition-property: transform, box-shaodw;
   transition: 500ms ease-in-out;
   background-color: transparent;
   border: none;
-  font-family: futura-pt, sans-serif;
+  font-family: 'futura-pt', sans-serif;
 }
 
-.project img {
+.project-list__button .projects-list__icon {
   width: 30px;
   height: 30px;
 }
 
-.project .text {
+.project-list__button .projects-list__text {
   text-transform: uppercase;
 }
 
-.project .project-title {
+.project-list__button .projects-list__title {
   font-size: 20px;
   font-weight: bold;
   text-align: left;
 }
 
-.project .project-tools {
+.project-list__button .projects-list__tools {
   font-size: 14px;
   font-weight: 400;
   margin-top: 5px;
 }
 
-.projects .project:nth-child(1) {
+.projects-list .projects-list__item:nth-child(1) .project-list__button {
   color: #5c7cfa;
 }
-.projects .project:nth-child(2) {
+.projects-list .projects-list__item:nth-child(2) .project-list__button {
   color: #845ef7;
 }
-.projects .project:nth-child(3) {
+.projects-list .projects-list__item:nth-child(3) .project-list__button {
   color: #ff6b6b;
 }
-.projects .project:nth-child(4) {
+.projects-list .projects-list__item:nth-child(4) .project-list__button {
   color: #20c997;
 }
 
-.projects .project:hover {
+.projects-list .projects-list__item .project-list__button:hover {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
 }
 
-.line {
-  width: 280px;
-  height: 1px;
-}
-
 @media (max-width: 1024px) {
-  .projects-container .title {
+  .projects .projects__title {
     width: 730px;
     font-size: 24px;
   }
 
-  .projects .project {
+  .projects-list .project-list__button {
     width: 180px;
     height: 180px;
     padding: 22px;
@@ -104,60 +98,60 @@ body {
     border-radius: 24px;
   }
 
-  .project .project-title {
-    font-size: 18px;
+  .project-list__button .projects-list__title {
+    font-size: 17px;
   }
 
-  .project .project-tools {
+  .project-list__button .projects-list__tools {
     font-size: 13px;
     margin-top: 3px;
   }
 
-  .project img {
+  .project-list__button .projects-list__icon {
     width: 25px;
     height: 25px;
   }
 }
 
 @media (max-width: 768px) {
-  .projects-container .title {
+  .projects .projects__title {
     width: 380px;
   }
 
-  .projects {
+  .projects-list {
     width: 580px;
   }
 
-  .projects .project {
+  .projects-list .project-list__button {
     width: 190px;
     height: 190px;
     padding: 24px;
     margin: 8px;
   }
 
-  .projects .project:hover {
+  .projects-list .projects-list__item .project-list__button:hover {
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-6px);
   }
 
-  .project img {
+  .project-list__button .projects-list__icon {
     width: 26px;
     height: 26px;
   }
 }
 
 @media (max-width: 480px) {
-  .projects-container .title {
+  .projects .projects__title {
     width: 300px;
     font-size: 22px;
     margin-bottom: 12px;
   }
 
-  .projects {
+  .projects-list {
     width: 380px;
   }
 
-  .projects .project {
+  .projects-list .project-list__button {
     width: 150px;
     height: 150px;
     padding: 18px;
@@ -166,28 +160,28 @@ body {
     border-radius: 20px;
   }
 
-  .project img {
+  .project-list__button .projects-list__icon {
     width: 22px;
     height: 22px;
   }
 
-  .project .project-title {
+  .project-list__button .projects-list__title {
     font-size: 16px;
   }
 
-  .project .project-tools {
+  .project-list__button .projects-list__tools {
     margin-top: 2px;
     font-size: 11px;
   }
 
-  .projects .project:hover {
+  .projects-list .projects-list__item .project-list__button:hover {
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
     transform: none;
   }
 }
 
 @media (max-height: 480px) and (orientation: landscape) {
-  .projects-container {
+  .projects {
     height: auto;
   }
 }

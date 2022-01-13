@@ -1,10 +1,10 @@
-.page-container {
+.work-section {
   font-family: 'Noto Sans KR', sans-serif;
   width: 100%;
 }
 
 /* 1. work 첫번째 페이지 */
-.page-container .mockup-slide {
+.work-section .mockup-slide {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -16,30 +16,30 @@
   box-sizing: border-box;
 }
 
-.page-container .mockup-slide .title-area {
+.work-section .mockup-slide .title-area {
   margin-bottom: 20px;
 }
 
-.page-container .mockup-slide .title-area .title-box {
+.work-section .mockup-slide .title-area .title-box {
   display: flex;
   justify-content: center;
 }
 
-.page-container .mockup-slide .title-area .title {
+.work-section .mockup-slide .title-area .title {
   font-size: 70px;
   font-weight: 700;
   font-family: 'futura-pt', sans-serif;
   margin-left: 30px;
 }
 
-.page-container .mockup-slide .title-area .title-icon {
+.work-section .mockup-slide .title-area .title-icon {
   display: inline-block;
   width: 26px;
   margin-left: 10px;
   margin-top: 26px;
 }
 
-.page-container .mockup-slide .title-area .work-program {
+.work-section .mockup-slide .title-area .work-program {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@
   margin-left: 28px;
 }
 
-.page-container .mockup-slide .title-area .work {
+.work-section .mockup-slide .title-area .work {
   color: #ffffff;
   opacity: 0.5;
   padding: 6px 8px 7px 8px;
@@ -57,7 +57,7 @@
   box-sizing: border-box;
 }
 
-.page-container .mockup-slide .title-area .program {
+.work-section .mockup-slide .title-area .program {
   display: inline-block;
   font-size: 14px;
   margin-left: 8px;
@@ -66,7 +66,7 @@
   opacity: 0.7;
 }
 
-.page-container .mockup-slide .slide-button {
+.work-section .mockup-slide .slide-button {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -75,7 +75,7 @@
   z-index: 1000;
 }
 
-.page-container .mockup-slide .slide-button button {
+.work-section .mockup-slide .slide-button button {
   all: unset;
   padding: 6px;
   display: flex;
@@ -85,10 +85,9 @@
   cursor: pointer;
 }
 
-.page-container .mockup-slide .slide-button button::after {
+.work-section .mockup-slide .slide-button button::after {
   content: '';
   background-color: rgb(0, 0, 0);
-
   width: 10px;
   height: 10px;
   display: inline-block;
@@ -96,12 +95,12 @@
   border-radius: 50%;
 }
 
-.page-container .mockup-slide .slide-button .button-opacity {
+.work-section .mockup-slide .slide-button .button-opacity {
   opacity: 0.7;
 }
 
-.page-container .mockup-slide .slide {
-  overflow: hidden;
+.work-section .mockup-slide .slide {
+  overflow: scroll;
   width: 640px;
   max-width: 640px;
   height: 72%;
@@ -117,7 +116,7 @@
   border-radius: 50px;
 }
 
-.page-container .mockup-slide .slide .slide-container {
+.work-section .mockup-slide .slide .slide-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -127,23 +126,22 @@
   align-items: center;
   transition: transform 500ms ease-in-out;
 }
-
-.page-container .mockup-slide .slide .slide-container .inner {
+.work-section .mockup-slide .slide .slide-container .inner {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.page-container .mockup-slide .slide .slide-container .inner .mockup-first {
+.work-section .mockup-slide .slide .slide-container .inner .mockup-first {
   margin: 6%;
   width: 42%;
 }
 
-.page-container .mockup-slide .slide .slide-container .inner .mockup-second {
+.work-section .mockup-slide .slide .slide-container .inner .mockup-second {
   width: 48%;
 }
 
-.page-container .mockup-slide .slide .slide-container .inner .imac {
+.work-section .mockup-slide .slide .slide-container .inner .imac {
   width: 56%;
   margin: 6%;
 }
@@ -168,7 +166,7 @@
 }
 
 /* 2. work 두번째 페이지 */
-.page-container .explain {
+.work-section .explain {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -178,71 +176,71 @@
   box-sizing: border-box;
 }
 /* 4. 두번째 페이지 왼쪽 섹션 */
-.page-container .explain .left {
+.work-section .explain .left {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.page-container .explain .right .desc-part {
+.work-section .explain .right .desc-part {
   font-size: 14px;
   line-height: 1.5em;
   text-align: right;
   margin: 20px 0;
 }
 
-.page-container .explain .right .bold {
+.work-section .explain .right .bold {
   font-weight: 600;
   margin-bottom: 2px;
   display: block;
   font-size: 14px;
 }
 
-.page-container .explain .right .desc-part p {
+.work-section .explain .right .desc-part p {
   font-size: 13px;
 }
 
 @media (max-width: 1024px) {
-  .page-container .mockup-slide .slide {
+  .work-section .mockup-slide .slide {
     width: 600px;
     height: 68%;
   }
 }
 
 @media (max-width: 768px) {
-  .page-container .mockup-slide .title-area .title {
+  .work-section .mockup-slide .title-area .title {
     font-size: 60px;
   }
 
-  .page-container .mockup-slide .slide {
+  .work-section .mockup-slide .slide {
     position: relative;
     width: 76vw;
     max-width: 700px;
     max-height: 420px;
   }
 
-  .page-container .mockup-slide .slide .slide-container .inner .mockup-first {
+  .work-section .mockup-slide .slide .slide-container .inner .mockup-first {
     width: 48%;
   }
 
-  .page-container .mockup-slide .slide .slide-container .inner .mockup-second {
+  .work-section .mockup-slide .slide .slide-container .inner .mockup-second {
     width: 54%;
   }
 
-  .page-container .mockup-slide .title-area .title-icon {
+  .work-section .mockup-slide .title-area .title-icon {
     width: 22px;
     margin-top: 20px;
     margin-left: 6px;
   }
 
-  .page-container .explain .right .desc-part {
+  .work-section .explain .right .desc-part {
     font-size: 13px;
     text-align: left;
     margin: 10px 0;
     padding: 0;
   }
 
-  .page-container .explain .right .bold {
+  .work-section .explain .right .bold {
     width: 100px;
     font-size: 13px;
     margin-top: 2px;
@@ -250,72 +248,72 @@
 }
 
 @media (max-width: 480px) {
-  .page-container .mockup-slide .title-area {
+  .work-section .mockup-slide .title-area {
     margin-bottom: 20px;
   }
 
-  .page-container .mockup-slide .title-area .title {
+  .work-section .mockup-slide .title-area .title {
     font-size: 50px;
     margin-left: 10px;
   }
 
-  .page-container .mockup-slide .title-area .title-icon {
+  .work-section .mockup-slide .title-area .title-icon {
     width: 20px;
     margin-top: 20px;
     margin-left: 4px;
   }
 
-  .page-container .mockup-slide .title-area .work-program {
+  .work-section .mockup-slide .title-area .work-program {
     margin-left: 10px;
     font-size: 12px;
   }
 
-  .page-container .mockup-slide .title-area .work {
+  .work-section .mockup-slide .title-area .work {
     padding: 4px 6px 5px 6px;
   }
 
-  .page-container .mockup-slide .slide {
+  .work-section .mockup-slide .slide {
     max-height: 280px;
     border-radius: 30px;
   }
 
-  .page-container .mockup-slide .slide-button button {
+  .work-section .mockup-slide .slide-button button {
     margin-right: -8px;
   }
 
-  .page-container .mockup-slide .slide-button button::after {
+  .work-section .mockup-slide .slide-button button::after {
     width: 9px;
     height: 9px;
   }
 
-  .page-container .mockup-slide .slide .slide-container .inner .mockup-first {
+  .work-section .mockup-slide .slide .slide-container .inner .mockup-first {
     width: 54%;
   }
 
-  .page-container .mockup-slide .slide .slide-container .inner .mockup-second {
+  .work-section .mockup-slide .slide .slide-container .inner .mockup-second {
     width: 58%;
   }
 
-  .page-container .mockup-slide .slide .slide-container .inner .imac {
+  .work-section .mockup-slide .slide .slide-container .inner .imac {
     width: 60%;
   }
 
-  .page-container .explain .right .desc-part {
+  .work-section .explain .right .desc-part {
     margin-bottom: 10px;
   }
 }
 
 @media (max-height: 480px) and (orientation: landscape) {
-  .page-container .mockup-slide {
+  .work-section .mockup-slide {
     height: auto;
   }
 
-  .page-container .mockup-slide .slide {
+  .work-section .mockup-slide .slide {
     width: 62vw;
     height: 280px;
     border-radius: 30px;
   }
-  .page-container .explain {
+  .work-section .explain {
     height: auto;
   }
 }

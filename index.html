@@ -68,154 +68,156 @@
     <!-- 전체 컨테이너 -->
     <div class="container">
       <!-- 1. 랜딩페이지 -->
-      <div class="landing-page">
-        <!-- 왼쪽 텍스트섹션 -->
-        <section class="main-text">
-          <h1 class="title">WELCOME HERE</h1>
-          <h2 class="sub-title">
-            I'm <span class="name">Hyunjoo Seo</span>. Web&nbsp;publisher.
+      <section class="landing">
+        <div class="landing__text">
+          <h1 class="landing__title">WELCOME HERE</h1>
+          <h2 class="landing__subtitle">
+            I'm <span class="landing__name">Hyunjoo Seo</span>. Web&nbsp;publisher.
           </h2>
-        </section>
-        <!-- 오른쪽 손인사 이모티콘 섹션 -->
-        <section>
+        </div>
+
+        <div class="landing__icon">
           <img
             class="waving-hand"
             src="img/waving-hand.png"
-            alt="waving-hand"
+            alt="손인사 이모티콘"
           />
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!-- 2. about me -->
-      <div class="about-me">
+      <section class="about">
         <!-- 그라데이션 배경 -->
         <div class="background"></div>
-        <!-- 왼쪽 섹션 -->
-        <section class="left">
-          <!-- 왼쪽 위 섹션 -->
-          <div class="top">
-            <img class="memoji" src="img/memoji.svg" alt="memoji" />
-            <div class="name">서현주 <span class="nickname">@Haku</span></div>
-            <div class="desc">
-              안녕하세요. 다양한 경험을 해온 다채로운
-              <br />
-              신입 웹 퍼블리셔 서현주입니다.
+          <div class="about__profile">
+            <div class="about__top">
+              <img class="about__memoji" src="img/memoji.svg" alt="미모지" />
+              <div class="about__name">서현주 <span class="about__nickname">@Haku</span></div>
+              <div class="about__desc">
+                안녕하세요. 다양한 경험을 해온 다채로운
+                <br />
+                신입 웹 퍼블리셔 서현주입니다.
+              </div>
+            </div>
+            <div class="about__bottom">
+              <div class="about__info">
+                <a class="about__mail" href="mailto:hakuseo@gmail.com">
+                  hakuseo@gmail.com</a>
+                <button class="about__resume">Resume</button>
+              </div>
             </div>
           </div>
-          <!-- 왼쪽 아래 섹션 -->
-          <div class="bottom">
-            <div class="info">
-              <a class="mail" href="mailto:hakuseo@gmail.com"
-                >hakuseo@gmail.com</a
-              >
-              <button class="info-btn">Resume</button>
-            </div>
+          <!-- 오른쪽 섹션 -->
+          <div class="about-career">
+            <!-- 오른쪽 섹션 타이틀 -->
+            <h2 class="about-career__title">What I Did</h2>
+            <!-- 경력 목록들 -->
+            <ul class="career-list">
+              <li class="career-list__item">
+                <h3 class="career-list__name">
+                  🌮 온더보더 멕시칸 레스토랑 : 바텐더, 서버
+                </h3>
+                <p class="about-career__desc">
+                  패밀리 레스토랑에서의 단체생활, 협동업무에 대해 많이 배울 수
+                  있는 시간이었고, 체계적인 시스템과 고강도의 업무를 경험해보는
+                  시간이었습니다.
+                </p>
+              </li>
+              <li class="career-list__item">
+                <h3 class="career-list__name">
+                  ☕️ 그라노 드 카페 : 바리스타 매니저, 로스터
+                </h3>
+                <p class="about-career__desc">
+                  바리스타로 일하면서 재고관리와 카페 전반적인 시스템을 관리하고
+                  고객들과 의사소통을 자주하며 고객의 니즈를 파악하는 일을
+                  하였습니다. 로스터로서는 고객과, 거래처에 기호에 맞는 커피를
+                  제조하고 납품하는 일을 하였습니다.
+                </p>
+              </li>
+              <li class="career-list__item">
+                <h3 class="career-list__name">
+                  👩🏻‍💻 아이올리 : 웹디자인 파트타임, 외주업무
+                </h3>
+                <p class="about-career__desc">
+                  아이올리 패션회사에서 웹디자인 파트로 아르바이트를 하였고, 그
+                  인연이 지금까지 닿아 웹 상세페이지 외주업무를 지금까지 해오고 
+                  있습니다.
+                </p>
+              </li>
+              <li class="career-list__item">
+                <h3 class="career-list__name">
+                  💍 악세사리 쇼핑몰 운영
+                </h3>
+                <p class="about-career__desc">
+                  외주를 병행하면서 제가 좋아하는 취미를 조금 더 넒혀서 창업을
+                  하게 되었습니다. 직접 발품을 팔아 부자재를 구매하고 고객관리,
+                  홈페이지 관리, 배송 그리고 패키징 디자인까지 혼자 운영했던
+                  소규모 쇼핑몰이었기때문에 더욱 경험치가 많이 쌓인 일이었습니다.
+                </p>
+              </li>
+              <li class="career-list__item">
+                <h3 class="career-list__name">
+                  📹 유튜브와 블로그에 기록하는 취미
+                </h3>
+                <p class="about-career__desc">
+                  저는 사진을 찍거나 동영상을 찍고 기록하는 것을 매우 좋아합니다.
+                  그래서 SNS(블로그, 인스타그램이나 유튜브)에 제가 찍은 사진과
+                  동영상을 기록하는 취미를 가지고 있고, 그런 사진들과 영상들을
+                  편집하기 위한 수단으로 파이널컷이나 포토샵을 사용합니다.
+                </p>
+              </li>
+            </ul>
           </div>
-        </section>
-        <!-- 오른쪽 섹션 -->
-        <section class="right">
-          <!-- 오른쪽 섹션 타이틀 -->
-          <h2 class="title">What I Did</h2>
-          <!-- 경력 목록들 -->
-          <ul class="career-list">
-            <li class="list">
-              <div class="list-title">
-                🌮 온더보더 멕시칸레스토랑 : 바텐더, 서버
-              </div>
-              <p class="list-desc">
-                패밀리 레스토랑에서의 단체생활, 협동업무에 대해 많이 배울 수
-                있는 시간이었고, 체계적인 시스템과 고강도의 업무를 경험해보는
-                시간이었습니다.
-              </p>
-            </li>
-            <li class="list">
-              <div class="list-title">
-                ☕️ 그라노드카페 : 바리스타 매니저, 로스터
-              </div>
-              <p class="list-desc">
-                바리스타로 일하면서 재고관리와 카페 전반적인 시스템을 관리하고
-                고객들과 의사소통을 자주하며 고객의 니즈를 파악하는 일을
-                하였습니다. 로스터로서는 고객과, 거래처에 기호에 맞는 커피를
-                제조하고 납품하는 일을 하였습니다.
-              </p>
-            </li>
-            <li class="list">
-              <div class="list-title">
-                👩🏻‍💻 아이올리 : 웹디자인 파트타임, 외주업무
-              </div>
-              <p class="list-desc">
-                아이올리 패션회사에서 웹디자인 파트로 아르바이트를 하였고, 그
-                인연이 지금까지 닿아 웹 상세페이지 외주업무를 계속 하고
-                있습니다.
-              </p>
-            </li>
-            <li class="list">
-              <div class="list-title">💍 악세사리 쇼핑몰 운영</div>
-              <p class="list-desc">
-                외주를 병행하면서 제가 좋아하는 취미를 조금 더 넒혀서 창업을
-                하게 되었습니다. 직접 발품을 팔아 부자재를 구매하고 고객관리,
-                홈페이지 관리, 배송 그리고 패키징 디자인까지 혼자 운영했던
-                소규모 쇼핑몰이었기때문에 더욱 경험치가 많이 쌓인 일이었습니다.
-              </p>
-            </li>
-            <li class="list">
-              <div class="list-title">📹 유튜브와 블로그에 기록하는 취미</div>
-              <p class="list-desc">
-                저는 사진을 찍거나 동영상을 찍고 기록하는 것을 매우 좋아합니다.
-                그래서 SNS(블로그, 인스타그램이나 유튜브)에 제가 찍은 사진과
-                동영상을 기록하는 취미를 가지고 있고, 그런 사진들과 영상들을
-                편집하기 위한 수단으로 파이널컷이나 포토샵을 사용합니다.
-              </p>
-            </li>
-          </ul>
-        </section>
-      </div>
+      </section>
 
       <!-- 3. projects -->
-      <div class="projects-container">
-        <!-- projects 타이틀 -->
-        <div class="title">My Projects</div>
+      <section class="projects">
+        <div class="projects__title">My Projects</div>
         <!-- projects 버튼들 -->
-        <div class="projects">
-          <!-- projects / timer -->
-          <button class="project">
-            <img src="./img/icon/timer.svg" alt="" />
-            <div class="text">
-              <div class="project-title">TIMER</div>
-              <div class="project-tools">HTML, CSS, Java script</div>
-            </div>
-          </button>
-          <!-- projects / todolist -->
-          <button class="project">
-            <img src="./img/icon/todolist.svg" alt="" />
-            <div class="text">
-              <div class="project-title">TODOLIST</div>
-              <div class="project-tools">HTML, CSS, Java script</div>
-            </div>
-          </button>
-          <!-- projects / netflix -->
-          <button class="project">
-            <img src="./img/icon/netflix.svg" alt="" />
-            <div class="text">
-              <div class="project-title">NETFLIX</div>
-              <div class="project-tools">PHOTOSHOP, adobe XD</div>
-            </div>
-          </button>
-          <!-- projects / portfolio -->
-          <button class="project">
-            <img class="portfolio-icon" src="./img/icon/portfolio.svg" alt="" />
-            <div class="text">
-              <div class="project-title">PORTFOLIO</div>
-              <div class="project-tools">HTML, CSS, JS, Figma</div>
-            </div>
-          </button>
-        </div>
-      </div>
+        <ul class="projects-list">
+          <li class="projects-list__item">
+            <button class="project-list__button">
+              <img class="projects-list__icon" src="./img/icon/timer.svg" alt="" />
+              <div class="projects-list__text">
+                <div class="projects-list__title">TIMER</div>
+                <div class="projects-list__tools">HTML, CSS, Java script</div>
+              </div>
+            </button>
+          </li>
+          <li class="projects-list__item">
+            <button class="project-list__button">
+              <img class="projects-list__icon" src="./img/icon/todolist.svg" alt="" />
+              <div class="text">
+                <div class="projects-list__title">TODOLIST</div>
+                <div class="projects-list__tools">HTML, CSS, Java script</div>
+              </div>
+            </button>
+          </li>
+          <li class="projects-list__item">
+            <button class="project-list__button">
+              <img class="projects-list__icon" src="./img/icon/netflix.svg" alt="" />
+              <div class="text">
+                <div class="projects-list__title">NETFLIX</div>
+                <div class="projects-list__tools">PHOTOSHOP, adobe XD</div>
+              </div>
+            </button>
+          </li>
+          <li class="projects-list__item">
+            <button class="project-list__button">
+              <img class="projects-list__icon" class="portfolio-icon" src="./img/icon/portfolio.svg" alt="" />
+              <div class="text">
+                <div class="projects-list__title">PORTFOLIO</div>
+                <div class="projects-list__tools">HTML, CSS, JS, Figma</div>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </section>
 
       <!-- 4. timer -->
-      <div class="page-container timer box1">
+      <section class="work-section timer box1">
         <!-- timer 첫번째 페이지 -->
-        <section class="mockup-slide">
+        <article class="mockup-slide">
           <!-- timer 첫번째 페이지 타이틀 영역 -->
           <div class="title-area">
             <!-- 타이틀 이름, 아이콘 -->
@@ -279,10 +281,10 @@
             />
             <span class="github-page">Github page</span>
           </a>
-        </section>
+        </article>
 
         <!-- timer 두번째 페이지 -->
-        <section class="explain">
+        <article class="explain">
           <!-- timer 두번째 페이지 왼쪽 영역 -->
           <div class="left">
             <!-- timer 두번째 페이지 왼쪽 영역 스크롤 내리면 hover here! 뜨는 구간 -->
@@ -329,13 +331,13 @@
               </p>
             </div>
           </div>
-        </section>
-      </div>
+        </article>
+      </section>
 
       <!-- 5. todolist -->
-      <div class="page-container todolist box2">
+      <section class="work-section todolist box2">
         <!-- todolist 첫번째 페이지 -->
-        <section class="mockup-slide">
+        <div class="mockup-slide">
           <!-- todolist 첫번째 페이지 타이틀 영역 -->
           <div class="title-area">
             <div class="title-box">
@@ -395,11 +397,11 @@
             />
             <span class="github-page">Github page</span>
           </a>
-        </section>
+        </div>
 
         <!-- 두번째 창 -->
         <!-- todolist 두번째 페이지 왼쪽 영역 -->
-        <section class="explain">
+        <div class="explain">
           <div class="left">
             <!-- todolist 두번째 페이지 왼쪽 영역 스크롤 내리면 hover here! 뜨는 구간 -->
             <div class="todolist-hover-here"></div>
@@ -465,12 +467,12 @@
               </p>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!-- 6. netflix -->
-      <div class="page-container netflix box3">
-        <section class="mockup-slide">
+      <section class="work-section netflix box3">
+        <div class="mockup-slide">
           <div class="title-area">
             <div class="title-box">
               <h2 class="title">Netflix</h2>
@@ -514,12 +516,12 @@
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!-- 7. portfolio -->
-      <div class="page-container portfolio box4">
-        <section class="mockup-slide">
+      <section class="work-section portfolio box4">
+        <div class="mockup-slide">
           <div class="title-area">
             <div class="title-box">
               <h2 class="title">Portfolio</h2>
@@ -564,10 +566,10 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <!-- 두번째 창 -->
-        <section class="explain portfolio-explain">
+        <div class="explain portfolio-explain">
           <div class="left">
             <div class="left--box box1">
               <img
@@ -613,8 +615,8 @@
               </p>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+        <!-- footer -->
       <footer>
         <div class="footer--container">
           <div class="contact">
@@ -628,7 +630,6 @@
               <span class="material-icons-outlined email--icon">email</span>
             </a>
           </div>
-
           <div class="copyright">© 2021 All right reserved</div>
         </div>
       </footer>
