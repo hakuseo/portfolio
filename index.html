@@ -57,11 +57,11 @@
     <link rel="stylesheet" href="src/timer.css" />
     <link rel="stylesheet" href="src/todolist.css" />
     <link rel="stylesheet" href="src/netflix.css" />
-    <link rel="stylesheet" href="src/timer-todolist.css" />
+    <link rel="stylesheet" href="src/project-page.css" />
     <link rel="stylesheet" href="src/portfolio.css" />
     <!-- 자바스크립트 -->
     <script src="./src/main.js" defer></script>
-    <script src="./src/timer-todolist.js" defer></script>
+    <script src="./src/project-page.js" defer></script>
     <title>portfolio</title>
   </head>
   <body>
@@ -75,7 +75,6 @@
             I'm <span class="landing__name">Hyunjoo Seo</span>. Web&nbsp;publisher.
           </h2>
         </div>
-
         <div class="landing__icon">
           <img
             class="waving-hand"
@@ -107,11 +106,8 @@
               </div>
             </div>
           </div>
-          <!-- 오른쪽 섹션 -->
           <div class="about-career">
-            <!-- 오른쪽 섹션 타이틀 -->
             <h2 class="about-career__title">What I Did</h2>
-            <!-- 경력 목록들 -->
             <ul class="career-list">
               <li class="career-list__item">
                 <h3 class="career-list__name">
@@ -173,7 +169,6 @@
       <!-- 3. projects -->
       <section class="projects">
         <div class="projects__title">My Projects</div>
-        <!-- projects 버튼들 -->
         <ul class="projects-list">
           <li class="projects-list__item">
             <button class="project-list__button">
@@ -216,12 +211,9 @@
 
       <!-- 4. timer -->
       <section class="work-section timer box1">
-        <!-- timer 첫번째 페이지 -->
-        <article class="mockup-slide">
-          <!-- timer 첫번째 페이지 타이틀 영역 -->
-          <div class="title-area">
-            <!-- 타이틀 이름, 아이콘 -->
-            <div class="title-box">
+        <article class="slide-page">
+          <div class="slide-page__title">
+            <div class="slide-page__title-icon">
               <h2 class="title">Timer</h2>
               <img
                 class="title-icon"
@@ -229,21 +221,17 @@
                 alt="타이머 아이콘"
               />
             </div>
-            <!-- 작업내용, 프로그램 -->
             <div class="work-program">
               <p class="work">디자인, 개발</p>
               <span class="program">HTML, CSS, JS</span>
             </div>
           </div>
-          <!-- timer 첫번째 페이지 슬라이드 영역 -->
           <div class="slide">
-            <!-- timer 첫번째 페이지 슬라이드 버튼 -->
             <div class="slide-button">
               <button id="1" class="button-opacity"></button>
               <button id="2"></button>
               <button id="3"></button>
             </div>
-            <!-- timer 첫번째 페이지 슬라이드에 들어가는 세가지 목업 -->
             <div class="slide-container">
               <div class="inner">
                 <img
@@ -268,7 +256,6 @@
               </div>
             </div>
           </div>
-          <!-- timer 첫번째 페이지 깃허브 페이지 -->
           <a
             class="github"
             href="https://hakuseo.github.io/timer/"
@@ -282,19 +269,14 @@
             <span class="github-page">Github page</span>
           </a>
         </article>
-
-        <!-- timer 두번째 페이지 -->
         <article class="explain">
-          <!-- timer 두번째 페이지 왼쪽 영역 -->
           <div class="left">
-            <!-- timer 두번째 페이지 왼쪽 영역 스크롤 내리면 hover here! 뜨는 구간 -->
+            <!-- timer : hover here ! -->
             <div class="hover-here"></div>
-            <!-- timer 두번째 페이지 왼쪽 영역 라이트모드 이미지(hover시 css에서 dark mode로 전환됨) -->
+            <!-- timer : hover시 라이트모드 -> 다크모드 -->
             <div class="light"></div>
           </div>
-          <!-- timer 두번째 페이지 오른쪽 영역 -->
           <div class="right">
-            <!-- timer 두번째 페이지 오른쪽 영역 첫번째 파트 -->
             <div class="desc-part desc1">
               <b class="bold">네비게이션 바</b>
               <div class="desc-icon-box">
@@ -333,13 +315,10 @@
           </div>
         </article>
       </section>
-
       <!-- 5. todolist -->
       <section class="work-section todolist box2">
-        <!-- todolist 첫번째 페이지 -->
-        <div class="mockup-slide">
-          <!-- todolist 첫번째 페이지 타이틀 영역 -->
-          <div class="title-area">
+        <article class="slide-page">
+          <div class="slide-page__title">
             <div class="title-box">
               <h2 class="title">Todolist</h2>
               <img
@@ -353,7 +332,6 @@
               <span class="program">HTML, CSS, JS</span>
             </div>
           </div>
-          <!-- timer 첫번째 페이지 슬라이드 영역 -->
           <div class="slide">
             <div class="slide-button">
               <button id="1" class="button-opacity"></button>
@@ -384,7 +362,6 @@
               </div>
             </div>
           </div>
-          <!-- timer 첫번째 페이지 깃허브 영역 -->
           <a
             class="github"
             href="https://hakuseo.github.io/todolist/"
@@ -397,15 +374,12 @@
             />
             <span class="github-page">Github page</span>
           </a>
-        </div>
-
-        <!-- 두번째 창 -->
-        <!-- todolist 두번째 페이지 왼쪽 영역 -->
-        <div class="explain">
+        </article>
+        <article class="explain">
           <div class="left">
-            <!-- todolist 두번째 페이지 왼쪽 영역 스크롤 내리면 hover here! 뜨는 구간 -->
+            <!-- todolist : hover here! -->
             <div class="todolist-hover-here"></div>
-            <!-- todolist 경고창 아이콘 마우스 오버 시 뜨는 something wrong 화면 -->
+            <!-- todolist : 경고창 (something wrong) -->
             <div class="warning--window">
               <img
                 class="something-wrong"
@@ -433,8 +407,6 @@
               </div>
             </div>
           </div>
-
-          <!-- todolist explain 오른쪽 설명파트 -->
           <div class="right">
             <div class="desc-part desc1">
               <b class="bold">삭제 아이콘</b>
@@ -450,7 +422,6 @@
               </div>
               <p>input창 빈칸 제출 시 경고창</p>
             </div>
-
             <div class="desc-part desc3">
               <b class="bold">데이터 저장</b>
               <p>
@@ -458,7 +429,6 @@
                 저장하여 데이터가 그대로 유지 되도록 구현
               </p>
             </div>
-
             <div class="desc-part desc4">
               <b class="bold">Input</b>
               <p>
@@ -467,13 +437,13 @@
               </p>
             </div>
           </div>
-        </div>
+        </article>
       </section>
 
       <!-- 6. netflix -->
       <section class="work-section netflix box3">
-        <div class="mockup-slide">
-          <div class="title-area">
+        <article class="slide-page">
+          <div class="slide-page__title">
             <div class="title-box">
               <h2 class="title">Netflix</h2>
               <img
@@ -487,7 +457,6 @@
               <span class="program">Photoshop, Adobe XD</span>
             </div>
           </div>
-
           <div class="slide">
             <div class="slide-container">
               <div class="inner">
@@ -516,13 +485,13 @@
               </div>
             </div>
           </div>
-        </div>
+        </article>
       </section>
 
       <!-- 7. portfolio -->
       <section class="work-section portfolio box4">
-        <div class="mockup-slide">
-          <div class="title-area">
+        <article class="slide-page">
+          <div class="slide-page__title">
             <div class="title-box">
               <h2 class="title">Portfolio</h2>
               <img
@@ -566,10 +535,8 @@
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- 두번째 창 -->
-        <div class="explain portfolio-explain">
+        </article>
+        <article class="explain portfolio-explain">
           <div class="left">
             <div class="left--box box1">
               <img
@@ -615,7 +582,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </article>
         <!-- footer -->
       <footer>
         <div class="footer--container">

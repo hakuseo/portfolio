@@ -3,16 +3,16 @@
   background-color: rgba(92, 124, 250, 0.1);
 }
 
-.timer .mockup-slide .title-area .title {
+.timer .slide-page .slide-page__title .title {
   color: #5c7cfa;
 }
 
-.container .timer .mockup-slide .title-area .work {
+.container .timer .slide-page .slide-page__title .work {
   background-color: #5c7cfa;
   opacity: 0.5;
 }
 
-.container .timer .mockup-slide .title-area .program {
+.container .timer .slide-page .slide-page__title .program {
   color: #5c7cfa;
 }
 
@@ -20,7 +20,7 @@
   box-shadow: 0px 2px 14px -1px rgba(92, 124, 250, 0.28);
 }
 
-.timer .mockup-slide .github:hover {
+.timer .slide-page .github:hover {
   filter: invert(59%) sepia(65%) saturate(5961%) hue-rotate(214deg)
     brightness(103%) contrast(96%);
   transition: 300ms ease-in-out;

@@ -2,32 +2,32 @@
   background-color: rgba(32, 201, 151, 0.2);
 }
 
-.portfolio .mockup-slide .title {
+.portfolio .slide-page .title {
   color: #20c997;
 }
 
-.portfolio .mockup-slide .title-area .work {
+.portfolio .slide-page .slide-page__title .work {
   background-color: #20c997;
 }
 
-.portfolio .mockup-slide .title-area .program {
+.portfolio .slide-page .slide-page__title .program {
   color: #20c997;
 }
 
-.portfolio .mockup-slide .slide .slide-container .inner .mockup-total {
+.portfolio .slide-page .slide .slide-container .inner .mockup-total {
   width: 72%;
   max-width: 420px;
   margin-left: 150px;
 }
 
-.portfolio .mockup-slide .slide .slide-container .inner .mockup-imac {
+.portfolio .slide-page .slide .slide-container .inner .mockup-imac {
   width: 68%;
   max-width: 420px;
   margin-top: 20px;
   margin-right: 80px;
 }
 
-.portfolio .mockup-slide .slide .slide-container .inner .mockup-iphone {
+.portfolio .slide-page .slide .slide-container .inner .mockup-iphone {
   width: 82%;
   max-width: 480px;
   margin-right: 50px;
@@ -122,19 +122,19 @@
 }
 
 @media (max-width: 768px) {
-  .portfolio .mockup-slide .slide .slide-container .inner .mockup-total {
+  .portfolio .slide-page .slide .slide-container .inner .mockup-total {
     width: 80%;
     max-width: 400px;
     margin-left: 100px;
   }
 
-  .portfolio .mockup-slide .slide .slide-container .inner .mockup-iphone {
+  .portfolio .slide-page .slide .slide-container .inner .mockup-iphone {
     width: 88%;
     max-width: 480px;
     margin-right: 40px;
   }
 
-  .portfolio .mockup-slide .slide .slide-container .inner .mockup-imac {
+  .portfolio .slide-page .slide .slide-container .inner .mockup-imac {
     width: 78%;
     max-width: 400px;
     margin-top: 10px;
@@ -194,17 +194,17 @@
 }
 
 @media (max-width: 480px) {
-  .portfolio .mockup-slide .slide .slide-container .inner .mockup-total {
+  .portfolio .slide-page .slide .slide-container .inner .mockup-total {
     width: 80%;
     margin-left: 60px;
   }
 
-  .portfolio .mockup-slide .slide .slide-container .inner .mockup-iphone {
+  .portfolio .slide-page .slide .slide-container .inner .mockup-iphone {
     width: 88%;
     margin-right: 30px;
   }
 
-  .portfolio .mockup-slide .slide .slide-container .inner .mockup-imac {
+  .portfolio .slide-page .slide .slide-container .inner .mockup-imac {
     width: 82%;
     max-width: 270px;
     margin-top: 10px;
@@ -248,15 +248,15 @@
 }
 
 @media (max-height: 480px) and (orientation: landscape) {
-  .portfolio .mockup-slide .slide .slide-container .inner .mockup-total {
+  .portfolio .slide-page .slide .slide-container .inner .mockup-total {
     width: 66%;
   }
 
-  .portfolio .mockup-slide .slide .slide-container .inner .mockup-iphone {
+  .portfolio .slide-page .slide .slide-container .inner .mockup-iphone {
     width: 74%;
   }
 
-  .portfolio .mockup-slide .slide .slide-container .inner .mockup-imac {
+  .portfolio .slide-page .slide .slide-container .inner .mockup-imac {
     width: 64%;
     margin-right: 50px;
   }
