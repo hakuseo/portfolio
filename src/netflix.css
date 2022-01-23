@@ -3,23 +3,23 @@
   background-color: rgba(255, 107, 107, 0.15);
 }
 
-.netflix .slide {
+.netflix .slide-box {
   box-shadow: 0px 2px 14px -1px rgba(255, 107, 107, 0.28);
 }
 
-.netflix .slide-page .slide-page__title .title {
+.netflix .slide .slide__title .title {
   color: #ff6b6b;
 }
 
-.netflix .slide-page .slide-page__title .work {
+.netflix .slide .slide__title .work {
   background-color: #ff6b6b;
 }
 
-.netflix .slide-page .slide-page__title .program {
+.netflix .slide .slide__title .program {
   color: #ff6b6b;
 }
 
-.netflix .slide-page .slide-page__title .netflix-icon {
+.netflix .slide .slide__title .netflix-icon {
   width: 22px;
   margin-top: 22px;
   margin-left: 10px;
@@ -111,13 +111,13 @@
 }
 
 @media (max-width: 768px) {
-  .netflix .slide-page .slide-page__title .netflix-icon {
+  .netflix .slide .slide__title .netflix-icon {
     width: 16px;
     margin-left: 8px;
   }
 }
 @media (max-width: 480px) {
-  .netflix .slide-page .slide-page__title .netflix-icon {
+  .netflix .slide .slide__title .netflix-icon {
     width: 14px;
     margin-top: 16px;
     margin-left: 6px;

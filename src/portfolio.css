@@ -2,32 +2,36 @@
   background-color: rgba(32, 201, 151, 0.2);
 }
 
-.portfolio .slide-page .title {
+.portfolio .slide .title {
   color: #20c997;
 }
 
-.portfolio .slide-page .slide-page__title .work {
+.portfolio .slide .slide__title .work {
   background-color: #20c997;
 }
 
-.portfolio .slide-page .slide-page__title .program {
-  color: #20c997;
+.portfolio .slide .slide__title .program {
+  color: rgb(32, 203, 152);
 }
 
-.portfolio .slide-page .slide .slide-container .inner .mockup-total {
+.portfolio .slide-box {
+  box-shadow: 0px 2px 14px -1px rgba(32, 203, 152, 0.28);
+}
+
+.portfolio .slide .slide-box .slide-container .inner .mockup-total {
   width: 72%;
   max-width: 420px;
   margin-left: 150px;
 }
 
-.portfolio .slide-page .slide .slide-container .inner .mockup-imac {
+.portfolio .slide .slide-box .slide-container .inner .mockup-imac {
   width: 68%;
   max-width: 420px;
   margin-top: 20px;
   margin-right: 80px;
 }
 
-.portfolio .slide-page .slide .slide-container .inner .mockup-iphone {
+.portfolio .slide .slide-box .slide-container .inner .mockup-iphone {
   width: 82%;
   max-width: 480px;
   margin-right: 50px;
@@ -122,19 +126,19 @@
 }
 
 @media (max-width: 768px) {
-  .portfolio .slide-page .slide .slide-container .inner .mockup-total {
+  .portfolio .slide .slide-box .slide-container .inner .mockup-total {
     width: 80%;
     max-width: 400px;
     margin-left: 100px;
   }
 
-  .portfolio .slide-page .slide .slide-container .inner .mockup-iphone {
+  .portfolio .slide .slide-box .slide-container .inner .mockup-iphone {
     width: 88%;
     max-width: 480px;
     margin-right: 40px;
   }
 
-  .portfolio .slide-page .slide .slide-container .inner .mockup-imac {
+  .portfolio .slide .slide-box .slide-container .inner .mockup-imac {
     width: 78%;
     max-width: 400px;
     margin-top: 10px;
@@ -194,17 +198,17 @@
 }
 
 @media (max-width: 480px) {
-  .portfolio .slide-page .slide .slide-container .inner .mockup-total {
+  .portfolio .slide .slide-box .slide-container .inner .mockup-total {
     width: 80%;
     margin-left: 60px;
   }
 
-  .portfolio .slide-page .slide .slide-container .inner .mockup-iphone {
+  .portfolio .slide .slide-box .slide-container .inner .mockup-iphone {
     width: 88%;
     margin-right: 30px;
   }
 
-  .portfolio .slide-page .slide .slide-container .inner .mockup-imac {
+  .portfolio .slide .slide-box .slide-container .inner .mockup-imac {
     width: 82%;
     max-width: 270px;
     margin-top: 10px;
@@ -248,15 +252,15 @@
 }
 
 @media (max-height: 480px) and (orientation: landscape) {
-  .portfolio .slide-page .slide .slide-container .inner .mockup-total {
+  .portfolio .slide .slide-box .slide-container .inner .mockup-total {
     width: 66%;
   }
 
-  .portfolio .slide-page .slide .slide-container .inner .mockup-iphone {
+  .portfolio .slide .slide-box .slide-container .inner .mockup-iphone {
     width: 74%;
   }
 
-  .portfolio .slide-page .slide .slide-container .inner .mockup-imac {
+  .portfolio .slide .slide-box .slide-container .inner .mockup-imac {
     width: 64%;
     margin-right: 50px;
   }

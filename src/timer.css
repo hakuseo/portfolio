@@ -3,24 +3,24 @@
   background-color: rgba(92, 124, 250, 0.1);
 }
 
-.timer .slide-page .slide-page__title .title {
+.timer .slide .slide__title .title {
   color: #5c7cfa;
 }
 
-.container .timer .slide-page .slide-page__title .work {
+.container .timer .slide .slide__title .work {
   background-color: #5c7cfa;
   opacity: 0.5;
 }
 
-.container .timer .slide-page .slide-page__title .program {
+.container .timer .slide .slide__title .program {
   color: #5c7cfa;
 }
 
-.timer .slide {
+.timer .slide-box {
   box-shadow: 0px 2px 14px -1px rgba(92, 124, 250, 0.28);
 }
 
-.timer .slide-page .github:hover {
+.timer .slide .github:hover {
   filter: invert(59%) sepia(65%) saturate(5961%) hue-rotate(214deg)
     brightness(103%) contrast(96%);
   transition: 300ms ease-in-out;

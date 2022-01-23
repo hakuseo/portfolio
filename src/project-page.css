@@ -4,7 +4,7 @@
 }
 
 /* 1. work 첫번째 페이지 */
-.work-section .slide-page {
+.work-section .slide {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -16,30 +16,31 @@
   box-sizing: border-box;
 }
 
-.work-section .slide-page .slide-page__title {
+.work-section .slide .slide__title {
   margin-bottom: 20px;
 }
 
-.work-section .slide-page .slide-page__title .title-box {
+.work-section .slide .slide__title .title-box {
   display: flex;
   justify-content: center;
 }
 
-.work-section .slide-page .slide-page__title .title {
+.work-section .slide .slide__title .title {
   font-size: 70px;
   font-weight: 700;
   font-family: 'futura-pt', sans-serif;
   margin-left: 30px;
+  display: inline-block;
 }
 
-.work-section .slide-page .slide-page__title .title-icon {
+.work-section .slide .slide__title .title-icon {
   display: inline-block;
   width: 26px;
   margin-left: 10px;
   margin-top: 26px;
 }
 
-.work-section .slide-page .slide-page__title .work-program {
+.work-section .slide .slide__title .work-program {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +48,7 @@
   margin-left: 28px;
 }
 
-.work-section .slide-page .slide-page__title .work {
+.work-section .slide .slide__title .work {
   color: #ffffff;
   opacity: 0.5;
   padding: 6px 8px 7px 8px;
@@ -57,7 +58,7 @@
   box-sizing: border-box;
 }
 
-.work-section .slide-page .slide-page__title .program {
+.work-section .slide .slide__title .program {
   display: inline-block;
   font-size: 14px;
   margin-left: 8px;
@@ -66,7 +67,7 @@
   opacity: 0.7;
 }
 
-.work-section .slide-page .slide-button {
+.work-section .slide .slide-button {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -75,7 +76,7 @@
   z-index: 1000;
 }
 
-.work-section .slide-page .slide-button button {
+.work-section .slide .slide-button button {
   all: unset;
   padding: 6px;
   display: flex;
@@ -85,7 +86,7 @@
   cursor: pointer;
 }
 
-.work-section .slide-page .slide-button button::after {
+.work-section .slide .slide-button button::after {
   content: '';
   background-color: rgb(0, 0, 0);
   width: 10px;
@@ -95,11 +96,11 @@
   border-radius: 50%;
 }
 
-.work-section .slide-page .slide-button .button-opacity {
+.work-section .slide .slide-button .button-opacity {
   opacity: 0.7;
 }
 
-.work-section .slide-page .slide {
+.work-section .slide .slide-box {
   overflow: scroll;
   width: 640px;
   max-width: 640px;
@@ -116,7 +117,7 @@
   border-radius: 50px;
 }
 
-.work-section .slide-page .slide .slide-container {
+.work-section .slide .slide-box .slide-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -126,22 +127,22 @@
   align-items: center;
   transition: transform 500ms ease-in-out;
 }
-.work-section .slide-page .slide .slide-container .inner {
+.work-section .slide .slide-box .slide-container .inner {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.work-section .slide-page .slide .slide-container .inner .mockup-first {
+.work-section .slide .slide-box .slide-container .inner .mockup-first {
   margin: 6%;
   width: 42%;
 }
 
-.work-section .slide-page .slide .slide-container .inner .mockup-second {
+.work-section .slide .slide-box .slide-container .inner .mockup-second {
   width: 48%;
 }
 
-.work-section .slide-page .slide .slide-container .inner .imac {
+.work-section .slide .slide-box .slide-container .inner .imac {
   width: 56%;
   margin: 6%;
 }
@@ -201,33 +202,33 @@
 }
 
 @media (max-width: 1024px) {
-  .work-section .slide-page .slide {
+  .work-section .slide .slide-box {
     width: 600px;
     height: 68%;
   }
 }
 
 @media (max-width: 768px) {
-  .work-section .slide-page .slide-page__title .title {
+  .work-section .slide .slide__title .title {
     font-size: 60px;
   }
 
-  .work-section .slide-page .slide {
+  .work-section .slide .slide-box {
     position: relative;
     width: 76vw;
     max-width: 700px;
     max-height: 420px;
   }
 
-  .work-section .slide-page .slide .slide-container .inner .mockup-first {
+  .work-section .slide .slide-box .slide-container .inner .mockup-first {
     width: 48%;
   }
 
-  .work-section .slide-page .slide .slide-container .inner .mockup-second {
+  .work-section .slide .slide-box .slide-container .inner .mockup-second {
     width: 54%;
   }
 
-  .work-section .slide-page .slide-page__title .title-icon {
+  .work-section .slide .slide__title .title-icon {
     width: 22px;
     margin-top: 20px;
     margin-left: 6px;
@@ -248,53 +249,53 @@
 }
 
 @media (max-width: 480px) {
-  .work-section .slide-page .slide-page__title {
+  .work-section .slide .slide__title {
     margin-bottom: 20px;
   }
 
-  .work-section .slide-page .slide-page__title .title {
+  .work-section .slide .slide__title .title {
     font-size: 50px;
     margin-left: 10px;
   }
 
-  .work-section .slide-page .slide-page__title .title-icon {
+  .work-section .slide .slide__title .title-icon {
     width: 20px;
     margin-top: 20px;
     margin-left: 4px;
   }
 
-  .work-section .slide-page .slide-page__title .work-program {
+  .work-section .slide .slide__title .work-program {
     margin-left: 10px;
     font-size: 12px;
   }
 
-  .work-section .slide-page .slide-page__title .work {
+  .work-section .slide .slide__title .work {
     padding: 4px 6px 5px 6px;
   }
 
-  .work-section .slide-page .slide {
+  .work-section .slide .slide-box {
     max-height: 280px;
     border-radius: 30px;
   }
 
-  .work-section .slide-page .slide-button button {
+  .work-section .slide .slide-button button {
     margin-right: -8px;
   }
 
-  .work-section .slide-page .slide-button button::after {
+  .work-section .slide .slide-button button::after {
     width: 9px;
     height: 9px;
   }
 
-  .work-section .slide-page .slide .slide-container .inner .mockup-first {
+  .work-section .slide .slide-box .slide-container .inner .mockup-first {
     width: 54%;
   }
 
-  .work-section .slide-page .slide .slide-container .inner .mockup-second {
+  .work-section .slide .slide-box .slide-container .inner .mockup-second {
     width: 58%;
   }
 
-  .work-section .slide-page .slide .slide-container .inner .imac {
+  .work-section .slide .slide-box .slide-container .inner .imac {
     width: 60%;
   }
 
@@ -304,11 +305,11 @@
 }
 
 @media (max-height: 480px) and (orientation: landscape) {
-  .work-section .slide-page {
+  .work-section .slide {
     height: auto;
   }
 
-  .work-section .slide-page .slide {
+  .work-section .slide .slide-box {
     width: 62vw;
     height: 280px;
     border-radius: 30px;

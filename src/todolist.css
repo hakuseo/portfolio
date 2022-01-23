@@ -4,26 +4,26 @@
 }
 
 /* 목업 슬라이드 타이틀 */
-.todolist .slide-page .slide-page__title .title {
+.todolist .slide .slide__title .title {
   letter-spacing: -0.02em;
   color: #845ef7;
 }
 
-.todolist .slide-page .slide-page__title .work {
+.todolist .slide .slide__title .work {
   background-color: #845ef7;
 }
 
-.todolist .slide-page .slide-page__title .program {
+.todolist .slide .slide__title .program {
   color: #845ef7;
 }
 
 /* 목업 슬라이드쇼 창 */
-.todolist .slide {
+.todolist .slide-box {
   box-shadow: 0px 2px 14px -1px rgba(102, 71, 199, 0.28);
 }
 
 /* 깃허브 이동 버튼 */
-.todolist .slide-page .github:hover {
+.todolist .slide .github:hover {
   filter: invert(40%) sepia(73%) saturate(702%) hue-rotate(217deg)
     brightness(94%) contrast(106%);
   transition: 300ms ease-in-out;
@@ -202,7 +202,7 @@
 }
 
 @media (max-width: 768px) {
-  .todolist .slide-page .slide-page__title .title {
+  .todolist .slide .slide__title .title {
     font-size: 70px;
   }
 
