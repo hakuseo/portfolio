@@ -7,19 +7,19 @@
   box-shadow: 0px 2px 14px -1px rgba(255, 107, 107, 0.28);
 }
 
-.netflix .slide .slide__title .title {
+.netflix .slide .slide__info .slide__title {
   color: #ff6b6b;
 }
 
-.netflix .slide .slide__title .work {
+.netflix .slide .slide__info .slide__work {
   background-color: #ff6b6b;
 }
 
-.netflix .slide .slide__title .program {
+.netflix .slide .slide__info .slide__tool {
   color: #ff6b6b;
 }
 
-.netflix .slide .slide__title .netflix-icon {
+.netflix .slide .slide__info .netflix-icon {
   width: 22px;
   margin-top: 22px;
   margin-left: 10px;
@@ -29,7 +29,7 @@
   width: 76%;
 }
 
-.netflix .netflix-detail {
+.netflix .detail {
   padding: 8px 12px;
   border-radius: 6px;
   box-sizing: border-box;
@@ -37,9 +37,10 @@
   margin-top: 20px;
   text-decoration: underline;
   cursor: pointer;
+  transition: color 400ms;
 }
 
-.netflix .netflix-detail:hover {
+.netflix .detail:hover {
   color: #ff6b6b;
 }
 
@@ -106,18 +107,18 @@
   margin-bottom: 30px;
 }
 
-.netflix .title-mockup .slide .slide-container .inner > img {
+.netflix .title-mockup .slide .slide-box__list .slide-box__item > img {
   width: 86% !important;
 }
 
 @media (max-width: 768px) {
-  .netflix .slide .slide__title .netflix-icon {
+  .netflix .slide .slide__info .netflix-icon {
     width: 16px;
     margin-left: 8px;
   }
 }
 @media (max-width: 480px) {
-  .netflix .slide .slide__title .netflix-icon {
+  .netflix .slide .slide__info .netflix-icon {
     width: 14px;
     margin-top: 16px;
     margin-left: 6px;

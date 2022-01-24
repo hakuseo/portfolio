@@ -16,16 +16,16 @@
   box-sizing: border-box;
 }
 
-.work-section .slide .slide__title {
+.work-section .slide .slide__info {
   margin-bottom: 20px;
 }
 
-.work-section .slide .slide__title .title-box {
+.work-section .slide .slide__info .title-box {
   display: flex;
   justify-content: center;
 }
 
-.work-section .slide .slide__title .title {
+.work-section .slide .slide__info .slide__title {
   font-size: 70px;
   font-weight: 700;
   font-family: 'futura-pt', sans-serif;
@@ -33,14 +33,14 @@
   display: inline-block;
 }
 
-.work-section .slide .slide__title .title-icon {
+.work-section .slide .slide__info .slide__icon {
   display: inline-block;
   width: 26px;
   margin-left: 10px;
   margin-top: 26px;
 }
 
-.work-section .slide .slide__title .work-program {
+.work-section .slide .slide__info .slide__work-tool {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,7 +48,7 @@
   margin-left: 28px;
 }
 
-.work-section .slide .slide__title .work {
+.work-section .slide .slide__info .slide__work {
   color: #ffffff;
   opacity: 0.5;
   padding: 6px 8px 7px 8px;
@@ -58,7 +58,7 @@
   box-sizing: border-box;
 }
 
-.work-section .slide .slide__title .program {
+.work-section .slide .slide__info .slide__tool {
   display: inline-block;
   font-size: 14px;
   margin-left: 8px;
@@ -67,7 +67,7 @@
   opacity: 0.7;
 }
 
-.work-section .slide .slide-button {
+.work-section .slide .slide-box__button {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -76,7 +76,7 @@
   z-index: 1000;
 }
 
-.work-section .slide .slide-button button {
+.work-section .slide .slide-box__button button {
   all: unset;
   padding: 6px;
   display: flex;
@@ -86,7 +86,7 @@
   cursor: pointer;
 }
 
-.work-section .slide .slide-button button::after {
+.work-section .slide .slide-box__button button::after {
   content: '';
   background-color: rgb(0, 0, 0);
   width: 10px;
@@ -96,7 +96,7 @@
   border-radius: 50%;
 }
 
-.work-section .slide .slide-button .button-opacity {
+.work-section .slide .slide-box__button .button-opacity {
   opacity: 0.7;
 }
 
@@ -117,7 +117,7 @@
   border-radius: 50px;
 }
 
-.work-section .slide .slide-box .slide-container {
+.work-section .slide .slide-box .slide-box__list {
   width: 100%;
   height: 100%;
   display: flex;
@@ -127,22 +127,22 @@
   align-items: center;
   transition: transform 500ms ease-in-out;
 }
-.work-section .slide .slide-box .slide-container .inner {
+.work-section .slide .slide-box .slide-box__list .slide-box__item {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.work-section .slide .slide-box .slide-container .inner .mockup-first {
+.work-section .slide .slide-box .slide-box__list .slide-box__item .mockup1 {
   margin: 6%;
   width: 42%;
 }
 
-.work-section .slide .slide-box .slide-container .inner .mockup-second {
+.work-section .slide .slide-box .slide-box__list .slide-box__item .mockup2 {
   width: 48%;
 }
 
-.work-section .slide .slide-box .slide-container .inner .imac {
+.work-section .slide .slide-box .slide-box__list .slide-box__item .mockup3 {
   width: 56%;
   margin: 6%;
 }
@@ -177,27 +177,27 @@
   box-sizing: border-box;
 }
 /* 4. 두번째 페이지 왼쪽 섹션 */
-.work-section .explain .left {
+.work-section .explain .explain__left {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.work-section .explain .right .desc-part {
+.work-section .explain .explain__right .explain__desc {
   font-size: 14px;
   line-height: 1.5em;
   text-align: right;
   margin: 20px 0;
 }
 
-.work-section .explain .right .bold {
+.work-section .explain .explain__right .explain__title {
   font-weight: 600;
   margin-bottom: 2px;
   display: block;
   font-size: 14px;
 }
 
-.work-section .explain .right .desc-part p {
+.work-section .explain .explain__right .explain__desc p {
   font-size: 13px;
 }
 
@@ -209,7 +209,7 @@
 }
 
 @media (max-width: 768px) {
-  .work-section .slide .slide__title .title {
+  .work-section .slide .slide__info .slide__title {
     font-size: 60px;
   }
 
@@ -220,28 +220,28 @@
     max-height: 420px;
   }
 
-  .work-section .slide .slide-box .slide-container .inner .mockup-first {
+  .work-section .slide .slide-box .slide-box__list .slide-box__item .mockup1 {
     width: 48%;
   }
 
-  .work-section .slide .slide-box .slide-container .inner .mockup-second {
+  .work-section .slide .slide-box .slide-box__list .slide-box__item .mockup2 {
     width: 54%;
   }
 
-  .work-section .slide .slide__title .title-icon {
+  .work-section .slide .slide__info .slide__icon {
     width: 22px;
     margin-top: 20px;
     margin-left: 6px;
   }
 
-  .work-section .explain .right .desc-part {
+  .work-section .explain .explain__right .explain__desc {
     font-size: 13px;
     text-align: left;
     margin: 10px 0;
     padding: 0;
   }
 
-  .work-section .explain .right .bold {
+  .work-section .explain .explain__right .explain__title {
     width: 100px;
     font-size: 13px;
     margin-top: 2px;
@@ -249,27 +249,27 @@
 }
 
 @media (max-width: 480px) {
-  .work-section .slide .slide__title {
+  .work-section .slide .slide__info {
     margin-bottom: 20px;
   }
 
-  .work-section .slide .slide__title .title {
+  .work-section .slide .slide__info .slide__title {
     font-size: 50px;
     margin-left: 10px;
   }
 
-  .work-section .slide .slide__title .title-icon {
+  .work-section .slide .slide__info .slide__icon {
     width: 20px;
     margin-top: 20px;
     margin-left: 4px;
   }
 
-  .work-section .slide .slide__title .work-program {
+  .work-section .slide .slide__info .slide__work-tool {
     margin-left: 10px;
     font-size: 12px;
   }
 
-  .work-section .slide .slide__title .work {
+  .work-section .slide .slide__info .slide__work {
     padding: 4px 6px 5px 6px;
   }
 
@@ -278,28 +278,28 @@
     border-radius: 30px;
   }
 
-  .work-section .slide .slide-button button {
+  .work-section .slide .slide-box__button button {
     margin-right: -8px;
   }
 
-  .work-section .slide .slide-button button::after {
+  .work-section .slide .slide-box__button button::after {
     width: 9px;
     height: 9px;
   }
 
-  .work-section .slide .slide-box .slide-container .inner .mockup-first {
+  .work-section .slide .slide-box .slide-box__list .slide-box__item .mockup1 {
     width: 54%;
   }
 
-  .work-section .slide .slide-box .slide-container .inner .mockup-second {
+  .work-section .slide .slide-box .slide-box__list .slide-box__item .mockup2 {
     width: 58%;
   }
 
-  .work-section .slide .slide-box .slide-container .inner .imac {
+  .work-section .slide .slide-box .slide-box__list .slide-box__item .mockup3 {
     width: 60%;
   }
 
-  .work-section .explain .right .desc-part {
+  .work-section .explain .explain__right .explain__desc {
     margin-bottom: 10px;
   }
 }

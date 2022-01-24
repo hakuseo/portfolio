@@ -2,15 +2,15 @@
   background-color: rgba(32, 201, 151, 0.2);
 }
 
-.portfolio .slide .title {
+.portfolio .slide .slide__title {
   color: #20c997;
 }
 
-.portfolio .slide .slide__title .work {
+.portfolio .slide .slide__info .slide__work {
   background-color: #20c997;
 }
 
-.portfolio .slide .slide__title .program {
+.portfolio .slide .slide__info .slide__tool {
   color: rgb(32, 203, 152);
 }
 
@@ -18,20 +18,20 @@
   box-shadow: 0px 2px 14px -1px rgba(32, 203, 152, 0.28);
 }
 
-.portfolio .slide .slide-box .slide-container .inner .mockup-total {
+.portfolio .slide .slide-box .slide-box__list .slide-box__item .mockup-total {
   width: 72%;
   max-width: 420px;
   margin-left: 150px;
 }
 
-.portfolio .slide .slide-box .slide-container .inner .mockup-imac {
+.portfolio .slide .slide-box .slide-box__list .slide-box__item .mockup-imac {
   width: 68%;
   max-width: 420px;
   margin-top: 20px;
   margin-right: 80px;
 }
 
-.portfolio .slide .slide-box .slide-container .inner .mockup-iphone {
+.portfolio .slide .slide-box .slide-box__list .slide-box__item .mockup-iphone {
   width: 82%;
   max-width: 480px;
   margin-right: 50px;
@@ -43,14 +43,14 @@
   height: 100vh;
 }
 
-.portfolio .explain .left {
+.portfolio .explain .explain__left {
   flex-direction: column;
   overflow-y: hidden;
   padding-top: 30px;
   height: 520px;
 }
 
-.portfolio .explain .left .left--box {
+.portfolio .explain .explain__left .left--box {
   display: flex;
   align-items: center;
   margin-top: 36px;
@@ -88,16 +88,16 @@
   margin-left: 20px;
 }
 
-.portfolio .explain .right {
+.portfolio .explain .explain__right {
   margin-right: 16px;
 }
 
-.portfolio .explain .right .desc-part {
+.portfolio .explain .explain__right .explain__desc {
   padding: 30px 0;
 }
 
 @media (max-width: 1024px) {
-  .portfolio .explain .left .left--box {
+  .portfolio .explain .explain__left .left--box {
     margin-top: 50px;
   }
 
@@ -126,19 +126,24 @@
 }
 
 @media (max-width: 768px) {
-  .portfolio .slide .slide-box .slide-container .inner .mockup-total {
+  .portfolio .slide .slide-box .slide-box__list .slide-box__item .mockup-total {
     width: 80%;
     max-width: 400px;
     margin-left: 100px;
   }
 
-  .portfolio .slide .slide-box .slide-container .inner .mockup-iphone {
+  .portfolio
+    .slide
+    .slide-box
+    .slide-box__list
+    .slide-box__item
+    .mockup-iphone {
     width: 88%;
     max-width: 480px;
     margin-right: 40px;
   }
 
-  .portfolio .slide .slide-box .slide-container .inner .mockup-imac {
+  .portfolio .slide .slide-box .slide-box__list .slide-box__item .mockup-imac {
     width: 78%;
     max-width: 400px;
     margin-top: 10px;
@@ -149,12 +154,12 @@
     flex-direction: column;
   }
 
-  .portfolio .explain .left {
+  .portfolio .explain .explain__left {
     height: 435px;
     padding-top: 0;
   }
 
-  .portfolio .explain .left .left--box {
+  .portfolio .explain .explain__left .left--box {
     margin-top: 0;
     margin-right: 0;
     margin-left: 0;
@@ -166,25 +171,25 @@
     margin-right: 0;
   }
 
-  .portfolio .explain .right .desc-part {
+  .portfolio .explain .explain__right .explain__desc {
     display: flex;
     padding: 0;
   }
 
-  .portfolio .explain .right .desc-part .bold {
+  .portfolio .explain .explain__right .explain__desc .explain__title {
     margin: 0;
     display: inline-block;
   }
 
-  .portfolio .explain .right .desc-part p {
+  .portfolio .explain .explain__right .explain__desc p {
     display: inline-block;
   }
 
-  .portfolio .explain .left .box1 {
+  .portfolio .explain .explain__left .box1 {
     margin-left: 50px;
   }
 
-  .portfolio .explain .right {
+  .portfolio .explain .explain__right {
     margin-right: 0;
   }
 
@@ -198,28 +203,33 @@
 }
 
 @media (max-width: 480px) {
-  .portfolio .slide .slide-box .slide-container .inner .mockup-total {
+  .portfolio .slide .slide-box .slide-box__list .slide-box__item .mockup-total {
     width: 80%;
     margin-left: 60px;
   }
 
-  .portfolio .slide .slide-box .slide-container .inner .mockup-iphone {
+  .portfolio
+    .slide
+    .slide-box
+    .slide-box__list
+    .slide-box__item
+    .mockup-iphone {
     width: 88%;
     margin-right: 30px;
   }
 
-  .portfolio .slide .slide-box .slide-container .inner .mockup-imac {
+  .portfolio .slide .slide-box .slide-box__list .slide-box__item .mockup-imac {
     width: 82%;
     max-width: 270px;
     margin-top: 10px;
     margin-right: 60px;
   }
 
-  .portfolio .explain .left {
+  .portfolio .explain .explain__left {
     height: 280px;
   }
 
-  .portfolio .explain .left .box1 {
+  .portfolio .explain .explain__left .box1 {
     margin-left: 36px;
   }
 
@@ -233,7 +243,7 @@
     width: 140px;
   }
 
-  .portfolio .explain .right .desc-part .bold {
+  .portfolio .explain .explain__right .explain__desc .explain__title {
     width: 90px;
   }
 
@@ -252,15 +262,20 @@
 }
 
 @media (max-height: 480px) and (orientation: landscape) {
-  .portfolio .slide .slide-box .slide-container .inner .mockup-total {
+  .portfolio .slide .slide-box .slide-box__list .slide-box__item .mockup-total {
     width: 66%;
   }
 
-  .portfolio .slide .slide-box .slide-container .inner .mockup-iphone {
+  .portfolio
+    .slide
+    .slide-box
+    .slide-box__list
+    .slide-box__item
+    .mockup-iphone {
     width: 74%;
   }
 
-  .portfolio .slide .slide-box .slide-container .inner .mockup-imac {
+  .portfolio .slide .slide-box .slide-box__list .slide-box__item .mockup-imac {
     width: 64%;
     margin-right: 50px;
   }
