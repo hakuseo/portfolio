@@ -3,7 +3,7 @@ const timer = document.querySelector('.timer');
 const hover = timer.querySelector('.hover-here');
 const light = timer.querySelector('.light');
 const todolistHover = document.querySelector('.todolist-hover-here');
-const todoBasic = document.querySelector('.todo-basic');
+const todoBasic = document.querySelector('.todo-main');
 
 window.addEventListener('scroll', checkPosition);
 window.addEventListener('load', checkPosition);
@@ -36,7 +36,7 @@ function checkPosition() {
 }
 
 // timer, todolist 목업 슬라이드
-const slideBtn = document.querySelectorAll('.slide-button');
+const slideBtn = document.querySelectorAll('.slide-box__button');
 const array = ['translateX(0%)', 'translateX(-100%)', 'translateX(-200%)'];
 
 slideBtn.forEach((button) =>
@@ -76,7 +76,7 @@ error.addEventListener('mouseout', () => {
 });
 
 // netflix 작업물 자세히보기 버튼
-const netflixDetailBtn = document.querySelector('.netflix-detail');
+const netflixDetailBtn = document.querySelector('.detail');
 const modalBody = document.querySelector('.modal--body');
 const exitBtn = document.querySelector('.exit-btn');
 const modalWindow = document.querySelector('.modal--window');
@@ -129,7 +129,7 @@ let flag = false;
 window.addEventListener('scroll', () => {
   let portfolioExplainTop = portfolioExplain.getBoundingClientRect().top;
   let innerHeight = window.innerHeight;
-  if (portfolioExplainTop - innerHeight < -50 && !flag) {
+  if (portfolioExplainTop - innerHeight < -450 && !flag) {
     leftBox.forEach((item) => {
       flag = true;
       item.style.animation = 'slide-top ease-in-out 2000ms 2400ms forwards';
