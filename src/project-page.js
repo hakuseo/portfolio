@@ -77,14 +77,14 @@ error.addEventListener('mouseout', () => {
 
 // netflix 작업물 자세히보기 버튼
 const netflixDetailBtn = document.querySelector('.detail');
-const modalBody = document.querySelector('.modal--body');
+const modalBody = document.querySelector('.modal__body');
 const exitBtn = document.querySelector('.exit-btn');
-const modalWindow = document.querySelector('.modal--window');
+const modal = document.querySelector('.modal');
 const body = document.querySelector('body');
 
 netflixDetailBtn.addEventListener('click', () => {
   modalBody.style.visibility = 'visible';
-  modalWindow.style.visibility = 'visible';
+  modal.style.visibility = 'visible';
   body.style.overflow = 'hidden';
   body.style.touchAction = 'none';
 });
@@ -92,7 +92,7 @@ netflixDetailBtn.addEventListener('click', () => {
 window.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     modalBody.style.visibility = 'hidden';
-    modalWindow.style.visibility = 'hidden';
+    modal.style.visibility = 'hidden';
     body.style.overflow = 'auto';
     body.style.touchAction = 'pan-y';
   }
@@ -100,15 +100,15 @@ window.addEventListener('keydown', (e) => {
 
 exitBtn.addEventListener('click', () => {
   modalBody.style.visibility = 'hidden';
-  modalWindow.style.visibility = 'hidden';
+  modal.style.visibility = 'hidden';
   body.style.overflow = 'auto';
   body.style.touchAction = 'pan-y';
 });
 
-modalWindow.addEventListener('click', (e) => {
-  if (e.target === modalWindow) {
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
     modalBody.style.visibility = 'hidden';
-    modalWindow.style.visibility = 'hidden';
+    modal.style.visibility = 'hidden';
     body.style.overflow = 'auto';
     body.style.touchAction = 'pan-y';
   } else {
