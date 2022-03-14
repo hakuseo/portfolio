@@ -43,9 +43,12 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- 어도비 폰트 -->
-    <link rel="stylesheet" href="https://use.typekit.net/vdg7ess.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/tyo3ieg.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS 리셋 링크 -->
     <link
       rel="stylesheet"
@@ -59,9 +62,10 @@
     <link rel="stylesheet" href="src/netflix.css" />
     <link rel="stylesheet" href="src/project-page.css" />
     <link rel="stylesheet" href="src/portfolio.css" />
+    <link rel="stylesheet" href="src/momentum.css" />
     <!-- 자바스크립트 -->
-    <script src="./src/main.js" defer></script>
-    <script src="./src/project-page.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/project-page.js" defer></script>
     <title>portfolio</title>
   </head>
   <body>
@@ -72,7 +76,8 @@
         <div class="landing__text">
           <h1 class="landing__title">WELCOME HERE</h1>
           <h2 class="landing__subtitle">
-            I'm <span class="landing__name">Hyunjoo Seo</span>. Web&nbsp;publisher.
+            I'm <span class="landing__name">Hyunjoo Seo</span>.
+            Web&nbsp;publisher.
           </h2>
         </div>
         <div class="landing__icon">
@@ -88,82 +93,89 @@
       <section class="about">
         <!-- 그라데이션 배경 -->
         <div class="background"></div>
-          <div class="about__profile">
-            <div class="about__top">
-              <img class="about__memoji" src="img/memoji.svg" alt="미모지" />
-              <div class="about__name">서현주 <span class="about__nickname">@Haku</span></div>
-              <div class="about__desc">
-                안녕하세요. 다양한 경험을 해온 다채로운
-                <br />
-                신입 웹 퍼블리셔 서현주입니다.
-              </div>
+        <div class="about__profile">
+          <div class="about__top">
+            <img class="about__memoji" src="img/memoji.svg" alt="미모지" />
+            <div class="about__me">
+              <span class="about__name">서현주</span>
+              <span class="about__nickname">@Haku</span>
             </div>
-            <div class="about__bottom">
-              <div class="about__info">
-                <a class="about__mail" href="mailto:hakuseo@gmail.com">
-                  hakuseo@gmail.com</a>
-                <a class="about__resume" href="https://olive-terrier-819.notion.site/462aa0a45c784fc69639837fd663dfcb" target="_blank">Resume</a>
-              </div>
+            <div class="about__desc">
+              안녕하세요. 다양한 경험을 해온 다채로운
+              <br />
+              신입 웹 퍼블리셔 서현주입니다.
             </div>
           </div>
-          <div class="about-career">
-            <h2 class="about-career__title">What I Did</h2>
-            <ul class="career-list">
-              <li class="career-list__item">
-                <h3 class="career-list__name">
-                  🌮 온더보더 멕시칸 레스토랑 : 바텐더, 서버
-                </h3>
-                <p class="about-career__desc">
-                  패밀리 레스토랑에서의 단체생활, 협동업무에 대해 많이 배울 수
-                  있는 시간이었고, 체계적인 시스템과 고강도의 업무를 경험해보는
-                  시간이었습니다.
-                </p>
-              </li>
-              <li class="career-list__item">
-                <h3 class="career-list__name">
-                  ☕️ 그라노 드 카페 : 바리스타 매니저, 로스터
-                </h3>
-                <p class="about-career__desc">
-                  바리스타로 일하면서 재고관리와 카페 전반적인 시스템을 관리하고
-                  고객들과 의사소통을 자주하며 고객의 니즈를 파악하는 일을
-                  하였습니다. 로스터로서는 고객과, 거래처에 기호에 맞는 커피를
-                  제조하고 납품하는 일을 하였습니다.
-                </p>
-              </li>
-              <li class="career-list__item">
-                <h3 class="career-list__name">
-                  👩🏻‍💻 아이올리 : 웹디자인 파트타임, 외주업무
-                </h3>
-                <p class="about-career__desc">
-                  아이올리 패션회사에서 웹디자인 파트로 아르바이트를 하였고, 그
-                  인연이 지금까지 닿아 웹 상세페이지 외주업무를 지금까지 해오고 
-                  있습니다.
-                </p>
-              </li>
-              <li class="career-list__item">
-                <h3 class="career-list__name">
-                  💍 악세사리 쇼핑몰 운영
-                </h3>
-                <p class="about-career__desc">
-                  외주를 병행하면서 제가 좋아하는 취미를 조금 더 넒혀서 창업을
-                  하게 되었습니다. 직접 발품을 팔아 부자재를 구매하고 고객관리,
-                  홈페이지 관리, 배송 그리고 패키징 디자인까지 혼자 운영했던
-                  소규모 쇼핑몰이었기때문에 더욱 경험치가 많이 쌓인 일이었습니다.
-                </p>
-              </li>
-              <li class="career-list__item">
-                <h3 class="career-list__name">
-                  📹 유튜브와 블로그에 기록하는 취미
-                </h3>
-                <p class="about-career__desc">
-                  저는 사진을 찍거나 동영상을 찍고 기록하는 것을 매우 좋아합니다.
-                  그래서 SNS(블로그, 인스타그램이나 유튜브)에 제가 찍은 사진과
-                  동영상을 기록하는 취미를 가지고 있고, 그런 사진들과 영상들을
-                  편집하기 위한 수단으로 파이널컷이나 포토샵을 사용합니다.
-                </p>
-              </li>
-            </ul>
+          <div class="about__bottom">
+            <div class="about__info">
+              <a class="about__mail" href="mailto:hakuseo@gmail.com">
+                hakuseo@gmail.com</a
+              >
+              <a
+                class="about__resume"
+                href="https://olive-terrier-819.notion.site/462aa0a45c784fc69639837fd663dfcb"
+                target="_blank"
+                >Resume</a
+              >
+            </div>
           </div>
+        </div>
+        <div class="about-career">
+          <h2 class="about-career__title">What I Did</h2>
+          <ul class="career-list">
+            <li class="career-list__item">
+              <h3 class="career-list__name">
+                🌮 온더보더 멕시칸 레스토랑 : 바텐더, 서버
+              </h3>
+              <p class="about-career__desc">
+                패밀리 레스토랑에서의 단체생활, 협동업무에 대해 많이 배울 수
+                있는 시간이었고, 체계적인 시스템과 고강도의 업무를 경험해보는
+                시간이었습니다.
+              </p>
+            </li>
+            <li class="career-list__item">
+              <h3 class="career-list__name">
+                ☕️ 그라노 드 카페 : 바리스타 매니저, 로스터
+              </h3>
+              <p class="about-career__desc">
+                바리스타로 일하면서 재고관리와 카페 전반적인 시스템을 관리하고
+                고객들과 의사소통을 자주하며 고객의 니즈를 파악하는 일을
+                하였습니다. 로스터로서는 고객과, 거래처에 기호에 맞는 커피를
+                제조하고 납품하는 일을 하였습니다.
+              </p>
+            </li>
+            <li class="career-list__item">
+              <h3 class="career-list__name">
+                👩🏻‍💻 아이올리 : 웹디자인 파트타임, 외주업무
+              </h3>
+              <p class="about-career__desc">
+                아이올리 패션회사에서 웹디자인 파트로 아르바이트를 하였고, 그
+                인연이 지금까지 닿아 웹 상세페이지 외주업무를 지금까지 해오고
+                있습니다.
+              </p>
+            </li>
+            <li class="career-list__item">
+              <h3 class="career-list__name">💍 악세사리 쇼핑몰 운영</h3>
+              <p class="about-career__desc">
+                외주를 병행하면서 제가 좋아하는 취미를 조금 더 넒혀서 창업을
+                하게 되었습니다. 직접 발품을 팔아 부자재를 구매하고 고객관리,
+                홈페이지 관리, 배송 그리고 패키징 디자인까지 혼자 운영했던
+                소규모 쇼핑몰이었기때문에 더욱 경험치가 많이 쌓인 일이었습니다.
+              </p>
+            </li>
+            <li class="career-list__item">
+              <h3 class="career-list__name">
+                📹 유튜브와 블로그에 기록하는 취미
+              </h3>
+              <p class="about-career__desc">
+                저는 사진을 찍거나 동영상을 찍고 기록하는 것을 매우 좋아합니다.
+                그래서 SNS(블로그, 인스타그램이나 유튜브)에 제가 찍은 사진과
+                동영상을 기록하는 취미를 가지고 있고, 그런 사진들과 영상들을
+                편집하기 위한 수단으로 파이널컷이나 포토샵을 사용합니다.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- 3. projects -->
@@ -172,7 +184,11 @@
         <ul class="projects-list">
           <li class="projects-list__item">
             <button class="project-list__button">
-              <img class="projects-list__icon" src="./img/icon/timer.svg" alt="" />
+              <img
+                class="projects-list__icon"
+                src="./img/icon/timer.svg"
+                alt=""
+              />
               <div class="projects-list__text">
                 <div class="projects-list__title">TIMER</div>
                 <div class="projects-list__tools">HTML, CSS, Java script</div>
@@ -181,7 +197,11 @@
           </li>
           <li class="projects-list__item">
             <button class="project-list__button">
-              <img class="projects-list__icon" src="./img/icon/todolist.svg" alt="" />
+              <img
+                class="projects-list__icon"
+                src="./img/icon/todolist.svg"
+                alt=""
+              />
               <div class="text">
                 <div class="projects-list__title">TODOLIST</div>
                 <div class="projects-list__tools">HTML, CSS, Java script</div>
@@ -190,7 +210,11 @@
           </li>
           <li class="projects-list__item">
             <button class="project-list__button">
-              <img class="projects-list__icon" src="./img/icon/netflix.svg" alt="" />
+              <img
+                class="projects-list__icon"
+                src="./img/icon/netflix.svg"
+                alt=""
+              />
               <div class="text">
                 <div class="projects-list__title">NETFLIX</div>
                 <div class="projects-list__tools">PHOTOSHOP, adobe XD</div>
@@ -199,7 +223,12 @@
           </li>
           <li class="projects-list__item">
             <button class="project-list__button">
-              <img class="projects-list__icon" class="portfolio-icon" src="./img/icon/portfolio.svg" alt="" />
+              <img
+                class="projects-list__icon"
+                class="portfolio-icon"
+                src="./img/icon/portfolio.svg"
+                alt=""
+              />
               <div class="text">
                 <div class="projects-list__title">PORTFOLIO</div>
                 <div class="projects-list__tools">HTML, CSS, JS, Figma</div>
@@ -213,12 +242,12 @@
       <section class="work-section timer box1">
         <article class="slide">
           <div class="slide__info">
-              <h2 class="slide__title">Timer</h2>
-              <img
-                class="slide__icon"
-                src="img/icon/timer.svg"
-                alt="타이머 아이콘"
-              />
+            <h2 class="slide__title">Timer</h2>
+            <img
+              class="slide__icon"
+              src="img/icon/timer.svg"
+              alt="타이머 아이콘"
+            />
             <div class="slide__work-tool">
               <p class="slide__work">디자인, 개발</p>
               <span class="slide__tool">HTML, CSS, JS</span>
@@ -317,12 +346,12 @@
       <section class="work-section todolist box2">
         <article class="slide">
           <div class="slide__info">
-              <h2 class="slide__title">Todolist</h2>
-              <img
-                class="slide__icon"
-                src="img/icon/todolist.svg"
-                alt="투두리스트 아이콘"
-              />
+            <h2 class="slide__title">Todolist</h2>
+            <img
+              class="slide__icon"
+              src="img/icon/todolist.svg"
+              alt="투두리스트 아이콘"
+            />
             <div class="slide__work-tool">
               <p class="slide__work">디자인, 개발</p>
               <span class="slide__tool">HTML, CSS, JS</span>
@@ -446,12 +475,12 @@
       <section class="work-section netflix box3">
         <article class="slide">
           <div class="slide__info">
-              <h2 class="slide__title">Netflix</h2>
-              <img
-                class="netflix-icon"
-                src="img/icon/netflix.svg"
-                alt="넷플릭스 아이콘"
-              />
+            <h2 class="slide__title">Netflix</h2>
+            <img
+              class="netflix-icon"
+              src="img/icon/netflix.svg"
+              alt="넷플릭스 아이콘"
+            />
             <div class="slide__work-tool">
               <p class="slide__work">디자인</p>
               <span class="slide__tool">Photoshop, Adobe XD</span>
@@ -491,12 +520,12 @@
       <section class="work-section portfolio box4">
         <article class="slide">
           <div class="slide__info">
-              <h2 class="slide__title">Portfolio</h2>
-              <img
-                class="slide__icon"
-                src="img/icon/portfolio.svg"
-                alt="포트폴리오 아이콘"
-              />
+            <h2 class="slide__title">Portfolio</h2>
+            <img
+              class="slide__icon"
+              src="img/icon/portfolio.svg"
+              alt="포트폴리오 아이콘"
+            />
             <div class="slide__work-tool">
               <p class="slide__work">디자인, 개발</p>
               <span class="slide__tool">HTML, CSS, JS, Figma</span>
@@ -580,7 +609,9 @@
             </div>
           </div>
         </article>
-        <!-- footer -->
+      </section>
+
+      <!-- footer -->
       <footer>
         <div class="footer--container">
           <div class="contact">

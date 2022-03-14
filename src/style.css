@@ -1,13 +1,12 @@
 :root {
   --mainColor: #20c997;
   --backGroundColor: #eeeff0;
-  --font-futura: futura-pt, sans-serif;
   --font-noto: 'Noto Sans KR', sans-serif;
 }
 
 body {
+  font-family: 'Karla', sans-serif;
   position: relative;
-  font-family: futura-pt, sans-serif;
 }
 
 a {
@@ -34,17 +33,18 @@ button {
   height: 100vh;
   padding: 40px;
   box-sizing: border-box;
+  font-weight: 800;
 }
 
 .landing .landing__title {
   font-size: 70px;
-  font-weight: bold;
+  font-weight: 800;
   letter-spacing: -0.02em;
 }
 
 .landing .landing__subtitle {
   margin-top: 20px;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 600;
 }
 
@@ -119,16 +119,15 @@ button {
   height: 180px;
 }
 
-.about .about__profile .about__top .about__name {
+.about .about__profile .about__top .about__me .about__name {
   font-size: 24px;
   font-weight: 600;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: var(--font-noto);
   margin-top: 14px;
 }
 
-.about .about__profile .about__top .about__nickname {
+.about .about__profile .about__top .about__me .about__nickname {
   font-size: 18px;
-  font-family: var(--font-futura);
   font-weight: 400;
 }
 
@@ -242,16 +241,16 @@ button {
   outline: none;
   position: fixed;
   top: 36px;
-  left: -34px;
+  left: -35px;
   visibility: hidden;
   z-index: 9999;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  font-family: var(--font-futura);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   transform: rotate(90deg);
   color: rgba(0, 0, 0, 0.7);
+  font-family: 'Karla', sans-serif;
 }
 
 /* footer */
@@ -300,7 +299,6 @@ footer .footer-github:hover {
 
 footer .copyright {
   font-size: 14px;
-  font-family: 'futura-pt', sans-serif;
 }
 
 /* 1024px */
@@ -318,7 +316,7 @@ footer .copyright {
   }
 
   .projects-btn {
-    left: -30px;
+    left: -34px;
     padding: 8px 10px;
     font-size: 14px;
   }
@@ -327,8 +325,8 @@ footer .copyright {
 /* 768px */
 @media (max-width: 768px) {
   .projects-btn {
-    left: -26px;
-    padding: 6px 10px;
+    left: -30px;
+    padding: 8px 10px;
     font-size: 12px;
   }
 
@@ -376,11 +374,11 @@ footer .copyright {
     transition: 500ms ease-in-out;
   }
 
-  .about .about__profile .about__top .about__name {
+  .about .about__profile .about__top .about__me .about__name {
     font-size: 20px;
   }
 
-  .about .about__profile .about__top .about__nickname {
+  .about .about__profile .about__top .about__me .about__nickname {
     font-size: 16px;
   }
 
@@ -468,8 +466,8 @@ footer .copyright {
   }
 
   .projects-btn {
-    left: -27px;
-    padding: 4px 8px;
+    left: -29px;
+    padding: 6px 8px;
     font-size: 12px;
   }
 }

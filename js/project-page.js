@@ -65,7 +65,7 @@ slideBtn.forEach((button) =>
 
 // todolist 경고창 아이콘 마우스 오버 시 나오는 창
 const error = document.querySelector('.error');
-const warningWindow = document.querySelector('.warning--window');
+const warningWindow = document.querySelector('.warning');
 
 error.addEventListener('mouseover', () => {
   warningWindow.classList.add('show');

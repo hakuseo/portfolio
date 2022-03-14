@@ -70,7 +70,7 @@
 
 .timer .explain .explain__left .hover-me::before {
   content: 'Hover Here !';
-  font-family: 'futura-pt', sans-serif;
+
   font-weight: 700;
   font-size: 30px;
   color: #fff;
@@ -209,6 +209,7 @@
 
   .timer .explain .explain__left .hover-me::before {
     font-size: 24px;
+
     padding-bottom: 10px;
   }
 

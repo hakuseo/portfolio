@@ -1,5 +1,6 @@
 .work-section {
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Karla', sans-serif;
   width: 100%;
 }
 
@@ -27,8 +28,9 @@
 
 .work-section .slide .slide__info .slide__title {
   font-size: 70px;
-  font-weight: 700;
-  font-family: 'futura-pt', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.2px;
+
   margin-left: 30px;
   display: inline-block;
 }
@@ -56,13 +58,14 @@
   font-size: 13px;
   border-radius: 2px;
   box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .work-section .slide .slide__info .slide__tool {
   display: inline-block;
   font-size: 14px;
   margin-left: 8px;
-  font-family: 'futura-pt', sans-serif;
+
   font-weight: 500;
   opacity: 0.7;
 }
@@ -101,7 +104,7 @@
 }
 
 .work-section .slide .slide-box {
-  overflow: scroll;
+  overflow: hidden;
   width: 640px;
   max-width: 640px;
   height: 72%;
@@ -161,7 +164,6 @@
 }
 
 .github-page {
-  font-family: 'futura-pt', sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
